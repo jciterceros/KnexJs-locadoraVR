@@ -7,11 +7,15 @@ module.exports = {
   development: {
     client: "pg",
     connection: {
-      database: "fernandoLocadora",
+      database: "Locadora",
       user: "postgres",
       password: "postgres",
       host: "localhost",
       port: 5433,
+    },
+    migrations: {
+      tableName: "knex_migrations",
+      directory: `${__dirname}/src/database/migrations`,
     },
   },
 
