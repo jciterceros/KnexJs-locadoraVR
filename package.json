@@ -1,0 +1,13 @@
+{
+  "name": "knexjs-locadoravr",
+  "version": "1.0.0",
+  "description": "API CRUD em KnexJs SQL query builder feita para uma Locadora de veículos",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
