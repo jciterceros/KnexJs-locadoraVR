@@ -2,10 +2,11 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.seed = async function (knex) {
+exports.seed = async function (knex, debug = false) {
   // Deletes ALL existing entries
-  await knex("estado").del();
-  await knex("estado").insert([
+  // const del = knex("estado").del();
+
+  const insert = knex("estado").insert([
     {
       id: 11,
       descricao: "RONDONIA",
@@ -147,4 +148,11 @@ exports.seed = async function (knex) {
       sigla: "EX",
     },
   ]);
+  if (debug) {
+    console.log(insert.toString());
+    console.log("Estados inseridos com sucesso - modo debug");
+  } else {
+    await insert;
+    console.log("Estados inseridos com sucesso");
+  }
 };

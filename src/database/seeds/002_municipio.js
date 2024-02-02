@@ -2,10 +2,12 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.seed = async function (knex) {
+exports.seed = async function (knex, debug = false) {
   // Deletes ALL existing entries
-  await knex("municipio").del();
-  await knex("municipio").insert([
+  // await knex("municipio").del();
+  // await knex("municipio")
+  // const del = knex("municipio").del();
+  const insert = knex("municipio").insert([
     {
       id: 1200013,
       descricao: "ACRELANDIA",
@@ -16006,5 +16008,10279 @@ exports.seed = async function (knex) {
       descricao: "BELEM DE SAO FRANCISCO",
       id_estado: 26,
     },
+    {
+      id: 2601508,
+      descricao: "BELEM DE MARIA",
+      id_estado: 26,
+    },
+    {
+      id: 2601706,
+      descricao: "BELO JARDIM",
+      id_estado: 26,
+    },
+    {
+      id: 2601904,
+      descricao: "BEZERROS",
+      id_estado: 26,
+    },
+    {
+      id: 2601805,
+      descricao: "BETANIA",
+      id_estado: 26,
+    },
+    {
+      id: 2602001,
+      descricao: "BODOCO",
+      id_estado: 26,
+    },
+    {
+      id: 2602100,
+      descricao: "BOM CONSELHO",
+      id_estado: 26,
+    },
+    {
+      id: 2602209,
+      descricao: "BOM JARDIM",
+      id_estado: 26,
+    },
+    {
+      id: 2602407,
+      descricao: "BREJAO",
+      id_estado: 26,
+    },
+    {
+      id: 2602308,
+      descricao: "BONITO",
+      id_estado: 26,
+    },
+    {
+      id: 2602605,
+      descricao: "BREJO DA MADRE DE DEUS",
+      id_estado: 26,
+    },
+    {
+      id: 2602506,
+      descricao: "BREJINHO",
+      id_estado: 26,
+    },
+    {
+      id: 2602704,
+      descricao: "BUENOS AIRES",
+      id_estado: 26,
+    },
+    {
+      id: 2602803,
+      descricao: "BUIQUE",
+      id_estado: 26,
+    },
+    {
+      id: 2602902,
+      descricao: "CABO DE SANTO AGOSTINHO",
+      id_estado: 26,
+    },
+    {
+      id: 2603108,
+      descricao: "CACHOEIRINHA",
+      id_estado: 26,
+    },
+    {
+      id: 2603207,
+      descricao: "CAETES",
+      id_estado: 26,
+    },
+    {
+      id: 2603009,
+      descricao: "CABROBO",
+      id_estado: 26,
+    },
+    {
+      id: 2603405,
+      descricao: "CALUMBI",
+      id_estado: 26,
+    },
+    {
+      id: 2603306,
+      descricao: "CALCADO",
+      id_estado: 26,
+    },
+    {
+      id: 2603504,
+      descricao: "CAMOCIM DE SAO FELIX",
+      id_estado: 26,
+    },
+    {
+      id: 2603603,
+      descricao: "CAMUTANGA",
+      id_estado: 26,
+    },
+    {
+      id: 2603454,
+      descricao: "CAMARAGIBE",
+      id_estado: 26,
+    },
+    {
+      id: 2603801,
+      descricao: "CAPOEIRAS",
+      id_estado: 26,
+    },
+    {
+      id: 2603702,
+      descricao: "CANHOTINHO",
+      id_estado: 26,
+    },
+    {
+      id: 2604007,
+      descricao: "CARPINA",
+      id_estado: 26,
+    },
+    {
+      id: 2603926,
+      descricao: "CARNAUBEIRA DA PENHA",
+      id_estado: 26,
+    },
+    {
+      id: 2603900,
+      descricao: "CARNAIBA",
+      id_estado: 26,
+    },
+    {
+      id: 2604155,
+      descricao: "CASINHAS",
+      id_estado: 26,
+    },
+    {
+      id: 2604106,
+      descricao: "CARUARU",
+      id_estado: 26,
+    },
+    {
+      id: 2604304,
+      descricao: "CEDRO",
+      id_estado: 26,
+    },
+    {
+      id: 2604403,
+      descricao: "CHA DE ALEGRIA",
+      id_estado: 26,
+    },
+    {
+      id: 2604205,
+      descricao: "CATENDE",
+      id_estado: 26,
+    },
+    {
+      id: 2604601,
+      descricao: "CONDADO",
+      id_estado: 26,
+    },
+    {
+      id: 2604502,
+      descricao: "CHA GRANDE",
+      id_estado: 26,
+    },
+    {
+      id: 2604809,
+      descricao: "CORTES",
+      id_estado: 26,
+    },
+    {
+      id: 2604700,
+      descricao: "CORRENTES",
+      id_estado: 26,
+    },
+    {
+      id: 2604908,
+      descricao: "CUMARU",
+      id_estado: 26,
+    },
+    {
+      id: 2605103,
+      descricao: "CUSTODIA",
+      id_estado: 26,
+    },
+    {
+      id: 2605004,
+      descricao: "CUPIRA",
+      id_estado: 26,
+    },
+    {
+      id: 2605152,
+      descricao: "DORMENTES",
+      id_estado: 26,
+    },
+    {
+      id: 2605202,
+      descricao: "ESCADA",
+      id_estado: 26,
+    },
+    {
+      id: 2605301,
+      descricao: "EXU",
+      id_estado: 26,
+    },
+    {
+      id: 2605459,
+      descricao: "FERNANDO DE NORONHA",
+      id_estado: 26,
+    },
+    {
+      id: 2605509,
+      descricao: "FERREIROS",
+      id_estado: 26,
+    },
+    {
+      id: 2605400,
+      descricao: "FEIRA NOVA",
+      id_estado: 26,
+    },
+    {
+      id: 2605707,
+      descricao: "FLORESTA",
+      id_estado: 26,
+    },
+    {
+      id: 2605608,
+      descricao: "FLORES",
+      id_estado: 26,
+    },
+    {
+      id: 2605806,
+      descricao: "FREI MIGUELINHO",
+      id_estado: 26,
+    },
+    {
+      id: 2606002,
+      descricao: "GARANHUNS",
+      id_estado: 26,
+    },
+    {
+      id: 2605905,
+      descricao: "GAMELEIRA",
+      id_estado: 26,
+    },
+    {
+      id: 2606200,
+      descricao: "GOIANA",
+      id_estado: 26,
+    },
+    {
+      id: 2606101,
+      descricao: "GLORIA DO GOITA",
+      id_estado: 26,
+    },
+    {
+      id: 2606408,
+      descricao: "GRAVATA",
+      id_estado: 26,
+    },
+    {
+      id: 2606309,
+      descricao: "GRANITO",
+      id_estado: 26,
+    },
+    {
+      id: 2606606,
+      descricao: "IBIMIRIM",
+      id_estado: 26,
+    },
+    {
+      id: 2606507,
+      descricao: "IATI",
+      id_estado: 26,
+    },
+    {
+      id: 2606705,
+      descricao: "IBIRAJUBA",
+      id_estado: 26,
+    },
+    {
+      id: 2606804,
+      descricao: "IGARASSU",
+      id_estado: 26,
+    },
+    {
+      id: 2606903,
+      descricao: "IGUARACI",
+      id_estado: 26,
+    },
+    {
+      id: 2607109,
+      descricao: "INGAZEIRA",
+      id_estado: 26,
+    },
+    {
+      id: 2607000,
+      descricao: "INAJA",
+      id_estado: 26,
+    },
+    {
+      id: 2607307,
+      descricao: "IPUBI",
+      id_estado: 26,
+    },
+    {
+      id: 2607208,
+      descricao: "IPOJUCA",
+      id_estado: 26,
+    },
+    {
+      id: 2607406,
+      descricao: "ITACURUBA",
+      id_estado: 26,
+    },
+    {
+      id: 2607505,
+      descricao: "ITAIBA",
+      id_estado: 26,
+    },
+    {
+      id: 2607653,
+      descricao: "ITAMBE",
+      id_estado: 26,
+    },
+    {
+      id: 2607604,
+      descricao: "ILHA DE ITAMARACA",
+      id_estado: 26,
+    },
+    {
+      id: 2607703,
+      descricao: "ITAPETIM",
+      id_estado: 26,
+    },
+    {
+      id: 2607901,
+      descricao: "JABOATAO DOS GUARARAPES",
+      id_estado: 26,
+    },
+    {
+      id: 2607802,
+      descricao: "ITAQUITINGA",
+      id_estado: 26,
+    },
+    {
+      id: 2607752,
+      descricao: "ITAPISSUMA",
+      id_estado: 26,
+    },
+    {
+      id: 2608008,
+      descricao: "JATAUBA",
+      id_estado: 26,
+    },
+    {
+      id: 2607950,
+      descricao: "JAQUEIRA",
+      id_estado: 26,
+    },
+    {
+      id: 2608057,
+      descricao: "JATOBA",
+      id_estado: 26,
+    },
+    {
+      id: 2608206,
+      descricao: "JOAQUIM NABUCO",
+      id_estado: 26,
+    },
+    {
+      id: 2608107,
+      descricao: "JOAO ALFREDO",
+      id_estado: 26,
+    },
+    {
+      id: 2608255,
+      descricao: "JUCATI",
+      id_estado: 26,
+    },
+    {
+      id: 2608305,
+      descricao: "JUPI",
+      id_estado: 26,
+    },
+    {
+      id: 2608404,
+      descricao: "JUREMA",
+      id_estado: 26,
+    },
+    {
+      id: 2608602,
+      descricao: "LAGOA DO OURO",
+      id_estado: 26,
+    },
+    {
+      id: 2608503,
+      descricao: "LAGOA DO ITAENGA",
+      id_estado: 26,
+    },
+    {
+      id: 2608453,
+      descricao: "LAGOA DO CARRO",
+      id_estado: 26,
+    },
+    {
+      id: 2608750,
+      descricao: "LAGOA GRANDE",
+      id_estado: 26,
+    },
+    {
+      id: 2608701,
+      descricao: "LAGOA DOS GATOS",
+      id_estado: 26,
+    },
+    {
+      id: 2608909,
+      descricao: "LIMOEIRO",
+      id_estado: 26,
+    },
+    {
+      id: 2608800,
+      descricao: "LAJEDO",
+      id_estado: 26,
+    },
+    {
+      id: 2609105,
+      descricao: "MACHADOS",
+      id_estado: 26,
+    },
+    {
+      id: 2609006,
+      descricao: "MACAPARANA",
+      id_estado: 26,
+    },
+    {
+      id: 2609303,
+      descricao: "MIRANDIBA",
+      id_estado: 26,
+    },
+    {
+      id: 2609204,
+      descricao: "MARAIAL",
+      id_estado: 26,
+    },
+    {
+      id: 2609154,
+      descricao: "MANARI",
+      id_estado: 26,
+    },
+    {
+      id: 2609501,
+      descricao: "NAZARE DA MATA",
+      id_estado: 26,
+    },
+    {
+      id: 2609402,
+      descricao: "MORENO",
+      id_estado: 26,
+    },
+    {
+      id: 2609709,
+      descricao: "OROBO",
+      id_estado: 26,
+    },
+    {
+      id: 2609600,
+      descricao: "OLINDA",
+      id_estado: 26,
+    },
+    {
+      id: 2610004,
+      descricao: "PALMARES",
+      id_estado: 26,
+    },
+    {
+      id: 2609907,
+      descricao: "OURICURI",
+      id_estado: 26,
+    },
+    {
+      id: 2609808,
+      descricao: "OROCO",
+      id_estado: 26,
+    },
+    {
+      id: 2610202,
+      descricao: "PANELAS",
+      id_estado: 26,
+    },
+    {
+      id: 2610103,
+      descricao: "PALMEIRINA",
+      id_estado: 26,
+    },
+    {
+      id: 2610400,
+      descricao: "PARNAMIRIM",
+      id_estado: 26,
+    },
+    {
+      id: 2610301,
+      descricao: "PARANATAMA",
+      id_estado: 26,
+    },
+    {
+      id: 2610509,
+      descricao: "PASSIRA",
+      id_estado: 26,
+    },
+    {
+      id: 2610608,
+      descricao: "PAUDALHO",
+      id_estado: 26,
+    },
+    {
+      id: 2610806,
+      descricao: "PEDRA",
+      id_estado: 26,
+    },
+    {
+      id: 2610707,
+      descricao: "PAULISTA",
+      id_estado: 26,
+    },
+    {
+      id: 2610905,
+      descricao: "PESQUEIRA",
+      id_estado: 26,
+    },
+    {
+      id: 2611002,
+      descricao: "PETROLANDIA",
+      id_estado: 26,
+    },
+    {
+      id: 2611101,
+      descricao: "PETROLINA",
+      id_estado: 26,
+    },
+    {
+      id: 2611200,
+      descricao: "POCAO",
+      id_estado: 26,
+    },
+    {
+      id: 2611507,
+      descricao: "QUIPAPA",
+      id_estado: 26,
+    },
+    {
+      id: 2611408,
+      descricao: "PRIMAVERA",
+      id_estado: 26,
+    },
+    {
+      id: 2611309,
+      descricao: "POMBOS",
+      id_estado: 26,
+    },
+    {
+      id: 2611606,
+      descricao: "RECIFE",
+      id_estado: 26,
+    },
+    {
+      id: 2611533,
+      descricao: "QUIXABA",
+      id_estado: 26,
+    },
+    {
+      id: 2611705,
+      descricao: "RIACHO DAS ALMAS",
+      id_estado: 26,
+    },
+    {
+      id: 2611804,
+      descricao: "RIBEIRAO",
+      id_estado: 26,
+    },
+    {
+      id: 2611903,
+      descricao: "RIO FORMOSO",
+      id_estado: 26,
+    },
+    {
+      id: 2612000,
+      descricao: "SAIRE",
+      id_estado: 26,
+    },
+    {
+      id: 2612109,
+      descricao: "SALGADINHO",
+      id_estado: 26,
+    },
+    {
+      id: 2612208,
+      descricao: "SALGUEIRO",
+      id_estado: 26,
+    },
+    {
+      id: 2612406,
+      descricao: "SANHARO",
+      id_estado: 26,
+    },
+    {
+      id: 2612307,
+      descricao: "SALOA",
+      id_estado: 26,
+    },
+    {
+      id: 2612471,
+      descricao: "SANTA CRUZ DA BAIXA VERDE",
+      id_estado: 26,
+    },
+    {
+      id: 2612455,
+      descricao: "SANTA CRUZ",
+      id_estado: 26,
+    },
+    {
+      id: 2612554,
+      descricao: "SANTA FILOMENA",
+      id_estado: 26,
+    },
+    {
+      id: 2612505,
+      descricao: "SANTA CRUZ DO CAPIBARIBE",
+      id_estado: 26,
+    },
+    {
+      id: 2612604,
+      descricao: "SANTA MARIA DA BOA VISTA",
+      id_estado: 26,
+    },
+    {
+      id: 2612703,
+      descricao: "SANTA MARIA DO CAMBUCA",
+      id_estado: 26,
+    },
+    {
+      id: 2612901,
+      descricao: "SAO BENEDITO DO SUL",
+      id_estado: 26,
+    },
+    {
+      id: 2612802,
+      descricao: "SANTA TEREZINHA",
+      id_estado: 26,
+    },
+    {
+      id: 2613008,
+      descricao: "SAO BENTO DO UNA",
+      id_estado: 26,
+    },
+    {
+      id: 2613107,
+      descricao: "SAO CAITANO",
+      id_estado: 26,
+    },
+    {
+      id: 2613305,
+      descricao: "SAO JOAQUIM DO MONTE",
+      id_estado: 26,
+    },
+    {
+      id: 2613206,
+      descricao: "SAO JOAO",
+      id_estado: 26,
+    },
+    {
+      id: 2613602,
+      descricao: "SAO JOSE DO EGITO",
+      id_estado: 26,
+    },
+    {
+      id: 2613503,
+      descricao: "SAO JOSE DO BELMONTE",
+      id_estado: 26,
+    },
+    {
+      id: 2613404,
+      descricao: "SAO JOSE DA COROA GRANDE",
+      id_estado: 26,
+    },
+    {
+      id: 2613800,
+      descricao: "SAO VICENTE FERRER",
+      id_estado: 26,
+    },
+    {
+      id: 2613701,
+      descricao: "SAO LOURENCO DA MATA",
+      id_estado: 26,
+    },
+    {
+      id: 2613909,
+      descricao: "SERRA TALHADA",
+      id_estado: 26,
+    },
+    {
+      id: 2614006,
+      descricao: "SERRITA",
+      id_estado: 26,
+    },
+    {
+      id: 2614105,
+      descricao: "SERTANIA",
+      id_estado: 26,
+    },
+    {
+      id: 2614204,
+      descricao: "SIRINHAEM",
+      id_estado: 26,
+    },
+    {
+      id: 2614501,
+      descricao: "SURUBIM",
+      id_estado: 26,
+    },
+    {
+      id: 2614402,
+      descricao: "SOLIDAO",
+      id_estado: 26,
+    },
+    {
+      id: 2614303,
+      descricao: "MOREILANDIA",
+      id_estado: 26,
+    },
+    {
+      id: 2614600,
+      descricao: "TABIRA",
+      id_estado: 26,
+    },
+    {
+      id: 2614709,
+      descricao: "TACAIMBO",
+      id_estado: 26,
+    },
+    {
+      id: 2614808,
+      descricao: "TACARATU",
+      id_estado: 26,
+    },
+    {
+      id: 2614857,
+      descricao: "TAMANDARE",
+      id_estado: 26,
+    },
+    {
+      id: 2615102,
+      descricao: "TEREZINHA",
+      id_estado: 26,
+    },
+    {
+      id: 2615003,
+      descricao: "TAQUARITINGA DO NORTE",
+      id_estado: 26,
+    },
+    {
+      id: 2615300,
+      descricao: "TIMBAUBA",
+      id_estado: 26,
+    },
+    {
+      id: 2615201,
+      descricao: "TERRA NOVA",
+      id_estado: 26,
+    },
+    {
+      id: 2615508,
+      descricao: "TRACUNHAEM",
+      id_estado: 26,
+    },
+    {
+      id: 2615409,
+      descricao: "TORITAMA",
+      id_estado: 26,
+    },
+    {
+      id: 2615706,
+      descricao: "TRIUNFO",
+      id_estado: 26,
+    },
+    {
+      id: 2615607,
+      descricao: "TRINDADE",
+      id_estado: 26,
+    },
+    {
+      id: 2615805,
+      descricao: "TUPANATINGA",
+      id_estado: 26,
+    },
+    {
+      id: 2615904,
+      descricao: "TUPARETAMA",
+      id_estado: 26,
+    },
+    {
+      id: 2616183,
+      descricao: "VERTENTE DO LERIO",
+      id_estado: 26,
+    },
+    {
+      id: 2616001,
+      descricao: "VENTUROSA",
+      id_estado: 26,
+    },
+    {
+      id: 2616100,
+      descricao: "VERDEJANTE",
+      id_estado: 26,
+    },
+    {
+      id: 2616209,
+      descricao: "VERTENTES",
+      id_estado: 26,
+    },
+    {
+      id: 2616308,
+      descricao: "VICENCIA",
+      id_estado: 26,
+    },
+    {
+      id: 2616407,
+      descricao: "VITORIA DE SANTO ANTAO",
+      id_estado: 26,
+    },
+    {
+      id: 2200053,
+      descricao: "ACAUA",
+      id_estado: 22,
+    },
+    {
+      id: 2616506,
+      descricao: "XEXEU",
+      id_estado: 26,
+    },
+    {
+      id: 2200202,
+      descricao: "AGUA BRANCA",
+      id_estado: 22,
+    },
+    {
+      id: 2200251,
+      descricao: "ALAGOINHA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2200103,
+      descricao: "AGRICOLANDIA",
+      id_estado: 22,
+    },
+    {
+      id: 2200277,
+      descricao: "ALEGRETE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2200400,
+      descricao: "ALTOS",
+      id_estado: 22,
+    },
+    {
+      id: 2200301,
+      descricao: "ALTO LONGA",
+      id_estado: 22,
+    },
+    {
+      id: 2200608,
+      descricao: "ANGICAL DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2200509,
+      descricao: "AMARANTE",
+      id_estado: 22,
+    },
+    {
+      id: 2200459,
+      descricao: "ALVORADA DO GURGUEIA",
+      id_estado: 22,
+    },
+    {
+      id: 2200954,
+      descricao: "AROEIRAS DO ITAIM",
+      id_estado: 22,
+    },
+    {
+      id: 2200905,
+      descricao: "AROAZES",
+      id_estado: 22,
+    },
+    {
+      id: 2200707,
+      descricao: "ANISIO DE ABREU",
+      id_estado: 22,
+    },
+    {
+      id: 2200806,
+      descricao: "ANTONIO ALMEIDA",
+      id_estado: 22,
+    },
+    {
+      id: 2201101,
+      descricao: "AVELINO LOPES",
+      id_estado: 22,
+    },
+    {
+      id: 2201051,
+      descricao: "ASSUNCAO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2201002,
+      descricao: "ARRAIAL",
+      id_estado: 22,
+    },
+    {
+      id: 2201150,
+      descricao: "BAIXA GRANDE DO RIBEIRO",
+      id_estado: 22,
+    },
+    {
+      id: 2201200,
+      descricao: "BARRAS",
+      id_estado: 22,
+    },
+    {
+      id: 2201176,
+      descricao: "BARRA DALCANTARA",
+      id_estado: 22,
+    },
+    {
+      id: 2201309,
+      descricao: "BARREIRAS DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2201408,
+      descricao: "BARRO DURO",
+      id_estado: 22,
+    },
+    {
+      id: 2201606,
+      descricao: "BENEDITINOS",
+      id_estado: 22,
+    },
+    {
+      id: 2201572,
+      descricao: "BELEM DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2201507,
+      descricao: "BATALHA",
+      id_estado: 22,
+    },
+    {
+      id: 2201556,
+      descricao: "BELA VISTA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2201739,
+      descricao: "BETANIA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2201705,
+      descricao: "BERTOLINIA",
+      id_estado: 22,
+    },
+    {
+      id: 2201770,
+      descricao: "BOA HORA",
+      id_estado: 22,
+    },
+    {
+      id: 2201903,
+      descricao: "BOM JESUS",
+      id_estado: 22,
+    },
+    {
+      id: 2201804,
+      descricao: "BOCAINA",
+      id_estado: 22,
+    },
+    {
+      id: 2201929,
+      descricao: "BONFIM DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2201919,
+      descricao: "BOM PRINCIPIO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2201960,
+      descricao: "BRASILEIRA",
+      id_estado: 22,
+    },
+    {
+      id: 2201945,
+      descricao: "BOQUEIRAO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2201988,
+      descricao: "BREJO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202059,
+      descricao: "CABECEIRAS DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202026,
+      descricao: "BURITI DOS MONTES",
+      id_estado: 22,
+    },
+    {
+      id: 2202000,
+      descricao: "BURITI DOS LOPES",
+      id_estado: 22,
+    },
+    {
+      id: 2202091,
+      descricao: "CALDEIRAO GRANDE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202075,
+      descricao: "CAJAZEIRAS DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202083,
+      descricao: "CAJUEIRO DA PRAIA",
+      id_estado: 22,
+    },
+    {
+      id: 2202133,
+      descricao: "CAMPO GRANDE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202117,
+      descricao: "CAMPO ALEGRE DO FIDALGO",
+      id_estado: 22,
+    },
+    {
+      id: 2202109,
+      descricao: "CAMPINAS DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202174,
+      descricao: "CAMPO LARGO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202251,
+      descricao: "CANAVIEIRA",
+      id_estado: 22,
+    },
+    {
+      id: 2202208,
+      descricao: "CAMPO MAIOR",
+      id_estado: 22,
+    },
+    {
+      id: 2202307,
+      descricao: "CANTO DO BURITI",
+      id_estado: 22,
+    },
+    {
+      id: 2202455,
+      descricao: "CAPITAO GERVASIO OLIVEIRA",
+      id_estado: 22,
+    },
+    {
+      id: 2202406,
+      descricao: "CAPITAO DE CAMPOS",
+      id_estado: 22,
+    },
+    {
+      id: 2202539,
+      descricao: "CARAUBAS DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202554,
+      descricao: "CARIDADE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202505,
+      descricao: "CARACOL",
+      id_estado: 22,
+    },
+    {
+      id: 2202604,
+      descricao: "CASTELO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202653,
+      descricao: "CAXINGO",
+      id_estado: 22,
+    },
+    {
+      id: 2202703,
+      descricao: "COCAL",
+      id_estado: 22,
+    },
+    {
+      id: 2202711,
+      descricao: "COCAL DE TELHA",
+      id_estado: 22,
+    },
+    {
+      id: 2202729,
+      descricao: "COCAL DOS ALVES",
+      id_estado: 22,
+    },
+    {
+      id: 2202737,
+      descricao: "COIVARAS",
+      id_estado: 22,
+    },
+    {
+      id: 2202752,
+      descricao: "COLONIA DO GURGUEIA",
+      id_estado: 22,
+    },
+    {
+      id: 2202778,
+      descricao: "COLONIA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2202851,
+      descricao: "CORONEL JOSE DIAS",
+      id_estado: 22,
+    },
+    {
+      id: 2202802,
+      descricao: "CONCEICAO DO CANINDE",
+      id_estado: 22,
+    },
+    {
+      id: 2202901,
+      descricao: "CORRENTE",
+      id_estado: 22,
+    },
+    {
+      id: 2203008,
+      descricao: "CRISTALANDIA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2203206,
+      descricao: "CURIMATA",
+      id_estado: 22,
+    },
+    {
+      id: 2203107,
+      descricao: "CRISTINO CASTRO",
+      id_estado: 22,
+    },
+    {
+      id: 2203230,
+      descricao: "CURRAIS",
+      id_estado: 22,
+    },
+    {
+      id: 2203255,
+      descricao: "CURRALINHOS",
+      id_estado: 22,
+    },
+    {
+      id: 2203354,
+      descricao: "DIRCEU ARCOVERDE",
+      id_estado: 22,
+    },
+    {
+      id: 2203271,
+      descricao: "CURRAL NOVO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2203305,
+      descricao: "DEMERVAL LOBAO",
+      id_estado: 22,
+    },
+    {
+      id: 2203404,
+      descricao: "DOM EXPEDITO LOPES",
+      id_estado: 22,
+    },
+    {
+      id: 2203420,
+      descricao: "DOMINGOS MOURAO",
+      id_estado: 22,
+    },
+    {
+      id: 2203453,
+      descricao: "DOM INOCENCIO",
+      id_estado: 22,
+    },
+    {
+      id: 2203503,
+      descricao: "ELESBAO VELOSO",
+      id_estado: 22,
+    },
+    {
+      id: 2203602,
+      descricao: "ELISEU MARTINS",
+      id_estado: 22,
+    },
+    {
+      id: 2203800,
+      descricao: "FLORES DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2203701,
+      descricao: "ESPERANTINA",
+      id_estado: 22,
+    },
+    {
+      id: 2203750,
+      descricao: "FARTURA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2203909,
+      descricao: "FLORIANO",
+      id_estado: 22,
+    },
+    {
+      id: 2203859,
+      descricao: "FLORESTA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2204006,
+      descricao: "FRANCINOPOLIS",
+      id_estado: 22,
+    },
+    {
+      id: 2204105,
+      descricao: "FRANCISCO AYRES",
+      id_estado: 22,
+    },
+    {
+      id: 2204154,
+      descricao: "FRANCISCO MACEDO",
+      id_estado: 22,
+    },
+    {
+      id: 2204204,
+      descricao: "FRANCISCO SANTOS",
+      id_estado: 22,
+    },
+    {
+      id: 2204303,
+      descricao: "FRONTEIRAS",
+      id_estado: 22,
+    },
+    {
+      id: 2204352,
+      descricao: "GEMINIANO",
+      id_estado: 22,
+    },
+    {
+      id: 2204402,
+      descricao: "GILBUES",
+      id_estado: 22,
+    },
+    {
+      id: 2204501,
+      descricao: "GUADALUPE",
+      id_estado: 22,
+    },
+    {
+      id: 2204550,
+      descricao: "GUARIBAS",
+      id_estado: 22,
+    },
+    {
+      id: 2204600,
+      descricao: "HUGO NAPOLEAO",
+      id_estado: 22,
+    },
+    {
+      id: 2204659,
+      descricao: "ILHA GRANDE",
+      id_estado: 22,
+    },
+    {
+      id: 2204709,
+      descricao: "INHUMA",
+      id_estado: 22,
+    },
+    {
+      id: 2204808,
+      descricao: "IPIRANGA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2205102,
+      descricao: "ITAUEIRA",
+      id_estado: 22,
+    },
+    {
+      id: 2204907,
+      descricao: "ISAIAS COELHO",
+      id_estado: 22,
+    },
+    {
+      id: 2205003,
+      descricao: "ITAINOPOLIS",
+      id_estado: 22,
+    },
+    {
+      id: 2205151,
+      descricao: "JACOBINA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2205201,
+      descricao: "JAICOS",
+      id_estado: 22,
+    },
+    {
+      id: 2205250,
+      descricao: "JARDIM DO MULATO",
+      id_estado: 22,
+    },
+    {
+      id: 2205276,
+      descricao: "JATOBA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2205300,
+      descricao: "JERUMENHA",
+      id_estado: 22,
+    },
+    {
+      id: 2205409,
+      descricao: "JOAQUIM PIRES",
+      id_estado: 22,
+    },
+    {
+      id: 2205458,
+      descricao: "JOCA MARQUES",
+      id_estado: 22,
+    },
+    {
+      id: 2205508,
+      descricao: "JOSE DE FREITAS",
+      id_estado: 22,
+    },
+    {
+      id: 2205359,
+      descricao: "JOAO COSTA",
+      id_estado: 22,
+    },
+    {
+      id: 2205516,
+      descricao: "JUAZEIRO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2205524,
+      descricao: "JULIO BORGES",
+      id_estado: 22,
+    },
+    {
+      id: 2205532,
+      descricao: "JUREMA",
+      id_estado: 22,
+    },
+    {
+      id: 2205540,
+      descricao: "LAGOINHA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2205557,
+      descricao: "LAGOA ALEGRE",
+      id_estado: 22,
+    },
+    {
+      id: 2205573,
+      descricao: "LAGOA DE SAO FRANCISCO",
+      id_estado: 22,
+    },
+    {
+      id: 2205581,
+      descricao: "LAGOA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2205565,
+      descricao: "LAGOA DO BARRO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2205706,
+      descricao: "LUIS CORREIA",
+      id_estado: 22,
+    },
+    {
+      id: 2205607,
+      descricao: "LANDRI SALES",
+      id_estado: 22,
+    },
+    {
+      id: 2205599,
+      descricao: "LAGOA DO SITIO",
+      id_estado: 22,
+    },
+    {
+      id: 2205805,
+      descricao: "LUZILANDIA",
+      id_estado: 22,
+    },
+    {
+      id: 2205904,
+      descricao: "MANOEL EMIDIO",
+      id_estado: 22,
+    },
+    {
+      id: 2205854,
+      descricao: "MADEIRO",
+      id_estado: 22,
+    },
+    {
+      id: 2206001,
+      descricao: "MARCOS PARENTE",
+      id_estado: 22,
+    },
+    {
+      id: 2206050,
+      descricao: "MASSAPE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2205953,
+      descricao: "MARCOLANDIA",
+      id_estado: 22,
+    },
+    {
+      id: 2206209,
+      descricao: "MIGUEL ALVES",
+      id_estado: 22,
+    },
+    {
+      id: 2206308,
+      descricao: "MIGUEL LEAO",
+      id_estado: 22,
+    },
+    {
+      id: 2206100,
+      descricao: "MATIAS OLIMPIO",
+      id_estado: 22,
+    },
+    {
+      id: 2206407,
+      descricao: "MONSENHOR GIL",
+      id_estado: 22,
+    },
+    {
+      id: 2206357,
+      descricao: "MILTON BRANDAO",
+      id_estado: 22,
+    },
+    {
+      id: 2206506,
+      descricao: "MONSENHOR HIPOLITO",
+      id_estado: 22,
+    },
+    {
+      id: 2206654,
+      descricao: "MORRO CABECA NO TEMPO",
+      id_estado: 22,
+    },
+    {
+      id: 2206670,
+      descricao: "MORRO DO CHAPEU DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2206605,
+      descricao: "MONTE ALEGRE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2206704,
+      descricao: "NAZARE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2206696,
+      descricao: "MURICI DOS PORTELAS",
+      id_estado: 22,
+    },
+    {
+      id: 2206753,
+      descricao: "NOSSA SENHORA DE NAZARE",
+      id_estado: 22,
+    },
+    {
+      id: 2206951,
+      descricao: "NOVO SANTO ANTONIO",
+      id_estado: 22,
+    },
+    {
+      id: 2206902,
+      descricao: "NOVO ORIENTE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2206803,
+      descricao: "NOSSA SENHORA DOS REMEDIOS",
+      id_estado: 22,
+    },
+    {
+      id: 2207108,
+      descricao: "OLHO DAGUA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2207207,
+      descricao: "PADRE MARCOS",
+      id_estado: 22,
+    },
+    {
+      id: 2207009,
+      descricao: "OEIRAS",
+      id_estado: 22,
+    },
+    {
+      id: 2207306,
+      descricao: "PAES LANDIM",
+      id_estado: 22,
+    },
+    {
+      id: 2207355,
+      descricao: "PAJEU DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2207553,
+      descricao: "PAQUETA",
+      id_estado: 22,
+    },
+    {
+      id: 2207504,
+      descricao: "PALMEIRAIS",
+      id_estado: 22,
+    },
+    {
+      id: 2207603,
+      descricao: "PARNAGUA",
+      id_estado: 22,
+    },
+    {
+      id: 2207405,
+      descricao: "PALMEIRA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2207751,
+      descricao: "PASSAGEM FRANCA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2207702,
+      descricao: "PARNAIBA",
+      id_estado: 22,
+    },
+    {
+      id: 2207793,
+      descricao: "PAU DARCO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2207801,
+      descricao: "PAULISTANA",
+      id_estado: 22,
+    },
+    {
+      id: 2207777,
+      descricao: "PATOS DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2207900,
+      descricao: "PEDRO II",
+      id_estado: 22,
+    },
+    {
+      id: 2207850,
+      descricao: "PAVUSSU",
+      id_estado: 22,
+    },
+    {
+      id: 2207934,
+      descricao: "PEDRO LAURENTINO",
+      id_estado: 22,
+    },
+    {
+      id: 2207959,
+      descricao: "NOVA SANTA RITA",
+      id_estado: 22,
+    },
+    {
+      id: 2208106,
+      descricao: "PIMENTEIRAS",
+      id_estado: 22,
+    },
+    {
+      id: 2208205,
+      descricao: "PIO IX",
+      id_estado: 22,
+    },
+    {
+      id: 2208007,
+      descricao: "PICOS",
+      id_estado: 22,
+    },
+    {
+      id: 2208403,
+      descricao: "PIRIPIRI",
+      id_estado: 22,
+    },
+    {
+      id: 2208502,
+      descricao: "PORTO",
+      id_estado: 22,
+    },
+    {
+      id: 2208304,
+      descricao: "PIRACURUCA",
+      id_estado: 22,
+    },
+    {
+      id: 2208601,
+      descricao: "PRATA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2208650,
+      descricao: "QUEIMADA NOVA",
+      id_estado: 22,
+    },
+    {
+      id: 2208551,
+      descricao: "PORTO ALEGRE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2208700,
+      descricao: "REDENCAO DO GURGUEIA",
+      id_estado: 22,
+    },
+    {
+      id: 2208809,
+      descricao: "REGENERACAO",
+      id_estado: 22,
+    },
+    {
+      id: 2208874,
+      descricao: "RIBEIRA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2208908,
+      descricao: "RIBEIRO GONCALVES",
+      id_estado: 22,
+    },
+    {
+      id: 2208858,
+      descricao: "RIACHO FRIO",
+      id_estado: 22,
+    },
+    {
+      id: 2209104,
+      descricao: "SANTA CRUZ DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209153,
+      descricao: "SANTA CRUZ DOS MILAGRES",
+      id_estado: 22,
+    },
+    {
+      id: 2209005,
+      descricao: "RIO GRANDE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209302,
+      descricao: "SANTA LUZ",
+      id_estado: 22,
+    },
+    {
+      id: 2209203,
+      descricao: "SANTA FILOMENA",
+      id_estado: 22,
+    },
+    {
+      id: 2209351,
+      descricao: "SANTANA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209401,
+      descricao: "SANTO ANTONIO DE LISBOA",
+      id_estado: 22,
+    },
+    {
+      id: 2209450,
+      descricao: "SANTO ANTONIO DOS MILAGRES",
+      id_estado: 22,
+    },
+    {
+      id: 2209377,
+      descricao: "SANTA ROSA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209559,
+      descricao: "SAO BRAZ DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209609,
+      descricao: "SAO FELIX DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209500,
+      descricao: "SANTO INACIO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209708,
+      descricao: "SAO FRANCISCO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209757,
+      descricao: "SAO GONCALO DO GURGUEIA",
+      id_estado: 22,
+    },
+    {
+      id: 2209658,
+      descricao: "SAO FRANCISCO DE ASSIS DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209807,
+      descricao: "SAO GONCALO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2209856,
+      descricao: "SAO JOAO DA CANABRAVA",
+      id_estado: 22,
+    },
+    {
+      id: 2209872,
+      descricao: "SAO JOAO DA FRONTEIRA",
+      id_estado: 22,
+    },
+    {
+      id: 2209955,
+      descricao: "SAO JOAO DA VARJOTA",
+      id_estado: 22,
+    },
+    {
+      id: 2209971,
+      descricao: "SAO JOAO DO ARRAIAL",
+      id_estado: 22,
+    },
+    {
+      id: 2209906,
+      descricao: "SAO JOAO DA SERRA",
+      id_estado: 22,
+    },
+    {
+      id: 2210052,
+      descricao: "SAO JOSE DO DIVINO",
+      id_estado: 22,
+    },
+    {
+      id: 2210102,
+      descricao: "SAO JOSE DO PEIXE",
+      id_estado: 22,
+    },
+    {
+      id: 2210003,
+      descricao: "SAO JOAO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2210201,
+      descricao: "SAO JOSE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2210375,
+      descricao: "SAO LUIS DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2210359,
+      descricao: "SAO LOURENCO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2210300,
+      descricao: "SAO JULIAO",
+      id_estado: 22,
+    },
+    {
+      id: 2210409,
+      descricao: "SAO MIGUEL DO TAPUIO",
+      id_estado: 22,
+    },
+    {
+      id: 2210508,
+      descricao: "SAO PEDRO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2210383,
+      descricao: "SAO MIGUEL DA BAIXA GRANDE",
+      id_estado: 22,
+    },
+    {
+      id: 2210391,
+      descricao: "SAO MIGUEL DO FIDALGO",
+      id_estado: 22,
+    },
+    {
+      id: 2210607,
+      descricao: "SAO RAIMUNDO NONATO",
+      id_estado: 22,
+    },
+    {
+      id: 2210623,
+      descricao: "SEBASTIAO BARROS",
+      id_estado: 22,
+    },
+    {
+      id: 2210656,
+      descricao: "SIGEFREDO PACHECO",
+      id_estado: 22,
+    },
+    {
+      id: 2210631,
+      descricao: "SEBASTIAO LEAL",
+      id_estado: 22,
+    },
+    {
+      id: 2210706,
+      descricao: "SIMOES",
+      id_estado: 22,
+    },
+    {
+      id: 2210904,
+      descricao: "SOCORRO DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2210805,
+      descricao: "SIMPLICIO MENDES",
+      id_estado: 22,
+    },
+    {
+      id: 2210938,
+      descricao: "SUSSUAPARA",
+      id_estado: 22,
+    },
+    {
+      id: 2211001,
+      descricao: "TERESINA",
+      id_estado: 22,
+    },
+    {
+      id: 2210953,
+      descricao: "TAMBORIL DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2210979,
+      descricao: "TANQUE DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2211100,
+      descricao: "UNIAO",
+      id_estado: 22,
+    },
+    {
+      id: 2211308,
+      descricao: "VALENCA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2211209,
+      descricao: "URUCUI",
+      id_estado: 22,
+    },
+    {
+      id: 2211506,
+      descricao: "VERA MENDES",
+      id_estado: 22,
+    },
+    {
+      id: 2211605,
+      descricao: "VILA NOVA DO PIAUI",
+      id_estado: 22,
+    },
+    {
+      id: 2211407,
+      descricao: "VARZEA GRANDE",
+      id_estado: 22,
+    },
+    {
+      id: 2211357,
+      descricao: "VARZEA BRANCA",
+      id_estado: 22,
+    },
+    {
+      id: 2211704,
+      descricao: "WALL FERRAZ",
+      id_estado: 22,
+    },
+    {
+      id: 3300100,
+      descricao: "ANGRA DOS REIS",
+      id_estado: 33,
+    },
+    {
+      id: 3300159,
+      descricao: "APERIBE",
+      id_estado: 33,
+    },
+    {
+      id: 3300209,
+      descricao: "ARARUAMA",
+      id_estado: 33,
+    },
+    {
+      id: 3300225,
+      descricao: "AREAL",
+      id_estado: 33,
+    },
+    {
+      id: 3300233,
+      descricao: "ARMACAO DOS BUZIOS",
+      id_estado: 33,
+    },
+    {
+      id: 3300308,
+      descricao: "BARRA DO PIRAI",
+      id_estado: 33,
+    },
+    {
+      id: 3300258,
+      descricao: "ARRAIAL DO CABO",
+      id_estado: 33,
+    },
+    {
+      id: 3300407,
+      descricao: "BARRA MANSA",
+      id_estado: 33,
+    },
+    {
+      id: 3300456,
+      descricao: "BELFORD ROXO",
+      id_estado: 33,
+    },
+    {
+      id: 3300506,
+      descricao: "BOM JARDIM",
+      id_estado: 33,
+    },
+    {
+      id: 3300605,
+      descricao: "BOM JESUS DO ITABAPOANA",
+      id_estado: 33,
+    },
+    {
+      id: 3300704,
+      descricao: "CABO FRIO",
+      id_estado: 33,
+    },
+    {
+      id: 3300803,
+      descricao: "CACHOEIRAS DE MACACU",
+      id_estado: 33,
+    },
+    {
+      id: 3300902,
+      descricao: "CAMBUCI",
+      id_estado: 33,
+    },
+    {
+      id: 3300936,
+      descricao: "CARAPEBUS",
+      id_estado: 33,
+    },
+    {
+      id: 3301009,
+      descricao: "CAMPOS DOS GOYTACAZES",
+      id_estado: 33,
+    },
+    {
+      id: 3300951,
+      descricao: "COMENDADOR LEVY GASPARIAN",
+      id_estado: 33,
+    },
+    {
+      id: 3301108,
+      descricao: "CANTAGALO",
+      id_estado: 33,
+    },
+    {
+      id: 3301157,
+      descricao: "CARDOSO MOREIRA",
+      id_estado: 33,
+    },
+    {
+      id: 3301207,
+      descricao: "CARMO",
+      id_estado: 33,
+    },
+    {
+      id: 3301306,
+      descricao: "CASIMIRO DE ABREU",
+      id_estado: 33,
+    },
+    {
+      id: 3301504,
+      descricao: "CORDEIRO",
+      id_estado: 33,
+    },
+    {
+      id: 3301405,
+      descricao: "CONCEICAO DE MACABU",
+      id_estado: 33,
+    },
+    {
+      id: 3301702,
+      descricao: "DUQUE DE CAXIAS",
+      id_estado: 33,
+    },
+    {
+      id: 3301603,
+      descricao: "DUAS BARRAS",
+      id_estado: 33,
+    },
+    {
+      id: 3301801,
+      descricao: "ENGENHEIRO PAULO DE FRONTIN",
+      id_estado: 33,
+    },
+    {
+      id: 3301850,
+      descricao: "GUAPIMIRIM",
+      id_estado: 33,
+    },
+    {
+      id: 3301876,
+      descricao: "IGUABA GRANDE",
+      id_estado: 33,
+    },
+    {
+      id: 3301900,
+      descricao: "ITABORAI",
+      id_estado: 33,
+    },
+    {
+      id: 3302007,
+      descricao: "ITAGUAI",
+      id_estado: 33,
+    },
+    {
+      id: 3302056,
+      descricao: "ITALVA",
+      id_estado: 33,
+    },
+    {
+      id: 3302106,
+      descricao: "ITAOCARA",
+      id_estado: 33,
+    },
+    {
+      id: 3302205,
+      descricao: "ITAPERUNA",
+      id_estado: 33,
+    },
+    {
+      id: 3302270,
+      descricao: "JAPERI",
+      id_estado: 33,
+    },
+    {
+      id: 3302254,
+      descricao: "ITATIAIA",
+      id_estado: 33,
+    },
+    {
+      id: 3302304,
+      descricao: "LAJE DO MURIAE",
+      id_estado: 33,
+    },
+    {
+      id: 3302403,
+      descricao: "MACAE",
+      id_estado: 33,
+    },
+    {
+      id: 3302502,
+      descricao: "MAGE",
+      id_estado: 33,
+    },
+    {
+      id: 3302452,
+      descricao: "MACUCO",
+      id_estado: 33,
+    },
+    {
+      id: 3302601,
+      descricao: "MANGARATIBA",
+      id_estado: 33,
+    },
+    {
+      id: 3302700,
+      descricao: "MARICA",
+      id_estado: 33,
+    },
+    {
+      id: 3302809,
+      descricao: "MENDES",
+      id_estado: 33,
+    },
+    {
+      id: 3302858,
+      descricao: "MESQUITA",
+      id_estado: 33,
+    },
+    {
+      id: 3303005,
+      descricao: "MIRACEMA",
+      id_estado: 33,
+    },
+    {
+      id: 3302908,
+      descricao: "MIGUEL PEREIRA",
+      id_estado: 33,
+    },
+    {
+      id: 3303104,
+      descricao: "NATIVIDADE",
+      id_estado: 33,
+    },
+    {
+      id: 3303401,
+      descricao: "NOVA FRIBURGO",
+      id_estado: 33,
+    },
+    {
+      id: 3303302,
+      descricao: "NITEROI",
+      id_estado: 33,
+    },
+    {
+      id: 3303203,
+      descricao: "NILOPOLIS",
+      id_estado: 33,
+    },
+    {
+      id: 3303500,
+      descricao: "NOVA IGUACU",
+      id_estado: 33,
+    },
+    {
+      id: 3303708,
+      descricao: "PARAIBA DO SUL",
+      id_estado: 33,
+    },
+    {
+      id: 3303609,
+      descricao: "PARACAMBI",
+      id_estado: 33,
+    },
+    {
+      id: 3303807,
+      descricao: "PARATI",
+      id_estado: 33,
+    },
+    {
+      id: 3303856,
+      descricao: "PATY DO ALFERES",
+      id_estado: 33,
+    },
+    {
+      id: 3303906,
+      descricao: "PETROPOLIS",
+      id_estado: 33,
+    },
+    {
+      id: 3303955,
+      descricao: "PINHEIRAL",
+      id_estado: 33,
+    },
+    {
+      id: 3304003,
+      descricao: "PIRAI",
+      id_estado: 33,
+    },
+    {
+      id: 3304102,
+      descricao: "PORCIUNCULA",
+      id_estado: 33,
+    },
+    {
+      id: 3304110,
+      descricao: "PORTO REAL",
+      id_estado: 33,
+    },
+    {
+      id: 3304128,
+      descricao: "QUATIS",
+      id_estado: 33,
+    },
+    {
+      id: 3304144,
+      descricao: "QUEIMADOS",
+      id_estado: 33,
+    },
+    {
+      id: 3304151,
+      descricao: "QUISSAMA",
+      id_estado: 33,
+    },
+    {
+      id: 3304201,
+      descricao: "RESENDE",
+      id_estado: 33,
+    },
+    {
+      id: 3304300,
+      descricao: "RIO BONITO",
+      id_estado: 33,
+    },
+    {
+      id: 3304409,
+      descricao: "RIO CLARO",
+      id_estado: 33,
+    },
+    {
+      id: 3304508,
+      descricao: "RIO DAS FLORES",
+      id_estado: 33,
+    },
+    {
+      id: 3304524,
+      descricao: "RIO DAS OSTRAS",
+      id_estado: 33,
+    },
+    {
+      id: 3304557,
+      descricao: "RIO DE JANEIRO",
+      id_estado: 33,
+    },
+    {
+      id: 3304607,
+      descricao: "SANTA MARIA MADALENA",
+      id_estado: 33,
+    },
+    {
+      id: 3304706,
+      descricao: "SANTO ANTONIO DE PADUA",
+      id_estado: 33,
+    },
+    {
+      id: 3304805,
+      descricao: "SAO FIDELIS",
+      id_estado: 33,
+    },
+    {
+      id: 3304755,
+      descricao: "SAO FRANCISCO DE ITABAPOANA",
+      id_estado: 33,
+    },
+    {
+      id: 3304904,
+      descricao: "SAO GONCALO",
+      id_estado: 33,
+    },
+    {
+      id: 3305000,
+      descricao: "SAO JOAO DA BARRA",
+      id_estado: 33,
+    },
+    {
+      id: 3305109,
+      descricao: "SAO JOAO DE MERITI",
+      id_estado: 33,
+    },
+    {
+      id: 3305158,
+      descricao: "SAO JOSE DO VALE DO RIO PRETO",
+      id_estado: 33,
+    },
+    {
+      id: 3305133,
+      descricao: "SAO JOSE DE UBA",
+      id_estado: 33,
+    },
+    {
+      id: 3305208,
+      descricao: "SAO PEDRO DA ALDEIA",
+      id_estado: 33,
+    },
+    {
+      id: 3305307,
+      descricao: "SAO SEBASTIAO DO ALTO",
+      id_estado: 33,
+    },
+    {
+      id: 3305406,
+      descricao: "SAPUCAIA",
+      id_estado: 33,
+    },
+    {
+      id: 3305505,
+      descricao: "SAQUAREMA",
+      id_estado: 33,
+    },
+    {
+      id: 3305554,
+      descricao: "SEROPEDICA",
+      id_estado: 33,
+    },
+    {
+      id: 3305604,
+      descricao: "SILVA JARDIM",
+      id_estado: 33,
+    },
+    {
+      id: 3305703,
+      descricao: "SUMIDOURO",
+      id_estado: 33,
+    },
+    {
+      id: 3305752,
+      descricao: "TANGUA",
+      id_estado: 33,
+    },
+    {
+      id: 3305901,
+      descricao: "TRAJANO DE MORAIS",
+      id_estado: 33,
+    },
+    {
+      id: 3305802,
+      descricao: "TERESOPOLIS",
+      id_estado: 33,
+    },
+    {
+      id: 3306008,
+      descricao: "TRES RIOS",
+      id_estado: 33,
+    },
+    {
+      id: 3306107,
+      descricao: "VALENCA",
+      id_estado: 33,
+    },
+    {
+      id: 3306156,
+      descricao: "VARRESAI",
+      id_estado: 33,
+    },
+    {
+      id: 3306305,
+      descricao: "VOLTA REDONDA",
+      id_estado: 33,
+    },
+    {
+      id: 3306206,
+      descricao: "VASSOURAS",
+      id_estado: 33,
+    },
+    {
+      id: 2400307,
+      descricao: "AFONSO BEZERRA",
+      id_estado: 24,
+    },
+    {
+      id: 2400109,
+      descricao: "ACARI",
+      id_estado: 24,
+    },
+    {
+      id: 2400208,
+      descricao: "ACU",
+      id_estado: 24,
+    },
+    {
+      id: 2400505,
+      descricao: "ALEXANDRIA",
+      id_estado: 24,
+    },
+    {
+      id: 2400604,
+      descricao: "ALMINO AFONSO",
+      id_estado: 24,
+    },
+    {
+      id: 2400406,
+      descricao: "AGUA NOVA",
+      id_estado: 24,
+    },
+    {
+      id: 2400901,
+      descricao: "ANTONIO MARTINS",
+      id_estado: 24,
+    },
+    {
+      id: 2400802,
+      descricao: "ANGICOS",
+      id_estado: 24,
+    },
+    {
+      id: 2400703,
+      descricao: "ALTO DO RODRIGUES",
+      id_estado: 24,
+    },
+    {
+      id: 2401107,
+      descricao: "AREIA BRANCA",
+      id_estado: 24,
+    },
+    {
+      id: 2401008,
+      descricao: "APODI",
+      id_estado: 24,
+    },
+    {
+      id: 2401206,
+      descricao: "ARES",
+      id_estado: 24,
+    },
+    {
+      id: 2401404,
+      descricao: "BAIA FORMOSA",
+      id_estado: 24,
+    },
+    {
+      id: 2401453,
+      descricao: "BARAUNA",
+      id_estado: 24,
+    },
+    {
+      id: 2401305,
+      descricao: "AUGUSTO SEVERO",
+      id_estado: 24,
+    },
+    {
+      id: 2401503,
+      descricao: "BARCELONA",
+      id_estado: 24,
+    },
+    {
+      id: 2401602,
+      descricao: "BENTO FERNANDES",
+      id_estado: 24,
+    },
+    {
+      id: 2401651,
+      descricao: "BODO",
+      id_estado: 24,
+    },
+    {
+      id: 2401800,
+      descricao: "BREJINHO",
+      id_estado: 24,
+    },
+    {
+      id: 2401701,
+      descricao: "BOM JESUS",
+      id_estado: 24,
+    },
+    {
+      id: 2402006,
+      descricao: "CAICO",
+      id_estado: 24,
+    },
+    {
+      id: 2401909,
+      descricao: "CAICARA DO RIO DO VENTO",
+      id_estado: 24,
+    },
+    {
+      id: 2401859,
+      descricao: "CAICARA DO NORTE",
+      id_estado: 24,
+    },
+    {
+      id: 2402105,
+      descricao: "CAMPO REDONDO",
+      id_estado: 24,
+    },
+    {
+      id: 2402204,
+      descricao: "CANGUARETAMA",
+      id_estado: 24,
+    },
+    {
+      id: 2402303,
+      descricao: "CARAUBAS",
+      id_estado: 24,
+    },
+    {
+      id: 2402402,
+      descricao: "CARNAUBA DOS DANTAS",
+      id_estado: 24,
+    },
+    {
+      id: 2402501,
+      descricao: "CARNAUBAIS",
+      id_estado: 24,
+    },
+    {
+      id: 2402808,
+      descricao: "CORONEL EZEQUIEL",
+      id_estado: 24,
+    },
+    {
+      id: 2402709,
+      descricao: "CERRO CORA",
+      id_estado: 24,
+    },
+    {
+      id: 2402600,
+      descricao: "CEARAMIRIM",
+      id_estado: 24,
+    },
+    {
+      id: 2403004,
+      descricao: "CRUZETA",
+      id_estado: 24,
+    },
+    {
+      id: 2402907,
+      descricao: "CORONEL JOAO PESSOA",
+      id_estado: 24,
+    },
+    {
+      id: 2403103,
+      descricao: "CURRAIS NOVOS",
+      id_estado: 24,
+    },
+    {
+      id: 2403251,
+      descricao: "PARNAMIRIM",
+      id_estado: 24,
+    },
+    {
+      id: 2403202,
+      descricao: "DOUTOR SEVERIANO",
+      id_estado: 24,
+    },
+    {
+      id: 2403400,
+      descricao: "EQUADOR",
+      id_estado: 24,
+    },
+    {
+      id: 2403608,
+      descricao: "EXTREMOZ",
+      id_estado: 24,
+    },
+    {
+      id: 2403509,
+      descricao: "ESPIRITO SANTO",
+      id_estado: 24,
+    },
+    {
+      id: 2403301,
+      descricao: "ENCANTO",
+      id_estado: 24,
+    },
+    {
+      id: 2403806,
+      descricao: "FLORANIA",
+      id_estado: 24,
+    },
+    {
+      id: 2403756,
+      descricao: "FERNANDO PEDROZA",
+      id_estado: 24,
+    },
+    {
+      id: 2403707,
+      descricao: "FELIPE GUERRA",
+      id_estado: 24,
+    },
+    {
+      id: 2403905,
+      descricao: "FRANCISCO DANTAS",
+      id_estado: 24,
+    },
+    {
+      id: 2404002,
+      descricao: "FRUTUOSO GOMES",
+      id_estado: 24,
+    },
+    {
+      id: 2404200,
+      descricao: "GOIANINHA",
+      id_estado: 24,
+    },
+    {
+      id: 2404309,
+      descricao: "GOVERNADOR DIXSEPT ROSADO",
+      id_estado: 24,
+    },
+    {
+      id: 2404101,
+      descricao: "GALINHOS",
+      id_estado: 24,
+    },
+    {
+      id: 2404507,
+      descricao: "GUAMARE",
+      id_estado: 24,
+    },
+    {
+      id: 2404408,
+      descricao: "GROSSOS",
+      id_estado: 24,
+    },
+    {
+      id: 2404606,
+      descricao: "IELMO MARINHO",
+      id_estado: 24,
+    },
+    {
+      id: 2404705,
+      descricao: "IPANGUACU",
+      id_estado: 24,
+    },
+    {
+      id: 2404853,
+      descricao: "ITAJA",
+      id_estado: 24,
+    },
+    {
+      id: 2404903,
+      descricao: "ITAU",
+      id_estado: 24,
+    },
+    {
+      id: 2404804,
+      descricao: "IPUEIRA",
+      id_estado: 24,
+    },
+    {
+      id: 2405207,
+      descricao: "JANDUIS",
+      id_estado: 24,
+    },
+    {
+      id: 2405009,
+      descricao: "JACANA",
+      id_estado: 24,
+    },
+    {
+      id: 2405108,
+      descricao: "JANDAIRA",
+      id_estado: 24,
+    },
+    {
+      id: 2405306,
+      descricao: "JANUARIO CICCO",
+      id_estado: 24,
+    },
+    {
+      id: 2405405,
+      descricao: "JAPI",
+      id_estado: 24,
+    },
+    {
+      id: 2405504,
+      descricao: "JARDIM DE ANGICOS",
+      id_estado: 24,
+    },
+    {
+      id: 2405603,
+      descricao: "JARDIM DE PIRANHAS",
+      id_estado: 24,
+    },
+    {
+      id: 2405702,
+      descricao: "JARDIM DO SERIDO",
+      id_estado: 24,
+    },
+    {
+      id: 2405801,
+      descricao: "JOAO CAMARA",
+      id_estado: 24,
+    },
+    {
+      id: 2405900,
+      descricao: "JOAO DIAS",
+      id_estado: 24,
+    },
+    {
+      id: 2406007,
+      descricao: "JOSE DA PENHA",
+      id_estado: 24,
+    },
+    {
+      id: 2406106,
+      descricao: "JUCURUTU",
+      id_estado: 24,
+    },
+    {
+      id: 2406304,
+      descricao: "LAGOA DE PEDRAS",
+      id_estado: 24,
+    },
+    {
+      id: 2406155,
+      descricao: "JUNDIA",
+      id_estado: 24,
+    },
+    {
+      id: 2406205,
+      descricao: "LAGOA DANTA",
+      id_estado: 24,
+    },
+    {
+      id: 2406403,
+      descricao: "LAGOA DE VELHOS",
+      id_estado: 24,
+    },
+    {
+      id: 2406502,
+      descricao: "LAGOA NOVA",
+      id_estado: 24,
+    },
+    {
+      id: 2406601,
+      descricao: "LAGOA SALGADA",
+      id_estado: 24,
+    },
+    {
+      id: 2406700,
+      descricao: "LAJES",
+      id_estado: 24,
+    },
+    {
+      id: 2406809,
+      descricao: "LAJES PINTADAS",
+      id_estado: 24,
+    },
+    {
+      id: 2406908,
+      descricao: "LUCRECIA",
+      id_estado: 24,
+    },
+    {
+      id: 2407005,
+      descricao: "LUIS GOMES",
+      id_estado: 24,
+    },
+    {
+      id: 2407104,
+      descricao: "MACAIBA",
+      id_estado: 24,
+    },
+    {
+      id: 2407203,
+      descricao: "MACAU",
+      id_estado: 24,
+    },
+    {
+      id: 2407252,
+      descricao: "MAJOR SALES",
+      id_estado: 24,
+    },
+    {
+      id: 2407302,
+      descricao: "MARCELINO VIEIRA",
+      id_estado: 24,
+    },
+    {
+      id: 2407401,
+      descricao: "MARTINS",
+      id_estado: 24,
+    },
+    {
+      id: 2407500,
+      descricao: "MAXARANGUAPE",
+      id_estado: 24,
+    },
+    {
+      id: 2407609,
+      descricao: "MESSIAS TARGINO",
+      id_estado: 24,
+    },
+    {
+      id: 2407708,
+      descricao: "MONTANHAS",
+      id_estado: 24,
+    },
+    {
+      id: 2407807,
+      descricao: "MONTE ALEGRE",
+      id_estado: 24,
+    },
+    {
+      id: 2408003,
+      descricao: "MOSSORO",
+      id_estado: 24,
+    },
+    {
+      id: 2408102,
+      descricao: "NATAL",
+      id_estado: 24,
+    },
+    {
+      id: 2407906,
+      descricao: "MONTE DAS GAMELEIRAS",
+      id_estado: 24,
+    },
+    {
+      id: 2408201,
+      descricao: "NISIA FLORESTA",
+      id_estado: 24,
+    },
+    {
+      id: 2408300,
+      descricao: "NOVA CRUZ",
+      id_estado: 24,
+    },
+    {
+      id: 2408409,
+      descricao: "OLHODAGUA DO BORGES",
+      id_estado: 24,
+    },
+    {
+      id: 2408508,
+      descricao: "OURO BRANCO",
+      id_estado: 24,
+    },
+    {
+      id: 2408607,
+      descricao: "PARANA",
+      id_estado: 24,
+    },
+    {
+      id: 2408706,
+      descricao: "PARAU",
+      id_estado: 24,
+    },
+    {
+      id: 2408805,
+      descricao: "PARAZINHO",
+      id_estado: 24,
+    },
+    {
+      id: 2408904,
+      descricao: "PARELHAS",
+      id_estado: 24,
+    },
+    {
+      id: 2408953,
+      descricao: "RIO DO FOGO",
+      id_estado: 24,
+    },
+    {
+      id: 2409209,
+      descricao: "PASSAGEM",
+      id_estado: 24,
+    },
+    {
+      id: 2409308,
+      descricao: "PATU",
+      id_estado: 24,
+    },
+    {
+      id: 2409100,
+      descricao: "PASSA E FICA",
+      id_estado: 24,
+    },
+    {
+      id: 2409506,
+      descricao: "PEDRA GRANDE",
+      id_estado: 24,
+    },
+    {
+      id: 2409407,
+      descricao: "PAU DOS FERROS",
+      id_estado: 24,
+    },
+    {
+      id: 2409332,
+      descricao: "SANTA MARIA",
+      id_estado: 24,
+    },
+    {
+      id: 2409605,
+      descricao: "PEDRA PRETA",
+      id_estado: 24,
+    },
+    {
+      id: 2409704,
+      descricao: "PEDRO AVELINO",
+      id_estado: 24,
+    },
+    {
+      id: 2409803,
+      descricao: "PEDRO VELHO",
+      id_estado: 24,
+    },
+    {
+      id: 2410009,
+      descricao: "PILOES",
+      id_estado: 24,
+    },
+    {
+      id: 2409902,
+      descricao: "PENDENCIAS",
+      id_estado: 24,
+    },
+    {
+      id: 2410256,
+      descricao: "PORTO DO MANGUE",
+      id_estado: 24,
+    },
+    {
+      id: 2410207,
+      descricao: "PORTALEGRE",
+      id_estado: 24,
+    },
+    {
+      id: 2410108,
+      descricao: "POCO BRANCO",
+      id_estado: 24,
+    },
+    {
+      id: 2410405,
+      descricao: "PUREZA",
+      id_estado: 24,
+    },
+    {
+      id: 2410504,
+      descricao: "RAFAEL FERNANDES",
+      id_estado: 24,
+    },
+    {
+      id: 2410306,
+      descricao: "PRESIDENTE JUSCELINO",
+      id_estado: 24,
+    },
+    {
+      id: 2410702,
+      descricao: "RIACHO DA CRUZ",
+      id_estado: 24,
+    },
+    {
+      id: 2410801,
+      descricao: "RIACHO DE SANTANA",
+      id_estado: 24,
+    },
+    {
+      id: 2410603,
+      descricao: "RAFAEL GODEIRO",
+      id_estado: 24,
+    },
+    {
+      id: 2411007,
+      descricao: "RODOLFO FERNANDES",
+      id_estado: 24,
+    },
+    {
+      id: 2411056,
+      descricao: "TIBAU",
+      id_estado: 24,
+    },
+    {
+      id: 2410900,
+      descricao: "RIACHUELO",
+      id_estado: 24,
+    },
+    {
+      id: 2411205,
+      descricao: "SANTA CRUZ",
+      id_estado: 24,
+    },
+    {
+      id: 2411106,
+      descricao: "RUY BARBOSA",
+      id_estado: 24,
+    },
+    {
+      id: 2411429,
+      descricao: "SANTANA DO SERIDO",
+      id_estado: 24,
+    },
+    {
+      id: 2411403,
+      descricao: "SANTANA DO MATOS",
+      id_estado: 24,
+    },
+    {
+      id: 2411601,
+      descricao: "SAO BENTO DO NORTE",
+      id_estado: 24,
+    },
+    {
+      id: 2411700,
+      descricao: "SAO BENTO DO TRAIRI",
+      id_estado: 24,
+    },
+    {
+      id: 2411502,
+      descricao: "SANTO ANTONIO",
+      id_estado: 24,
+    },
+    {
+      id: 2411809,
+      descricao: "SAO FERNANDO",
+      id_estado: 24,
+    },
+    {
+      id: 2411908,
+      descricao: "SAO FRANCISCO DO OESTE",
+      id_estado: 24,
+    },
+    {
+      id: 2412203,
+      descricao: "SAO JOSE DE MIPIBU",
+      id_estado: 24,
+    },
+    {
+      id: 2412104,
+      descricao: "SAO JOAO DO SABUGI",
+      id_estado: 24,
+    },
+    {
+      id: 2412005,
+      descricao: "SAO GONCALO DO AMARANTE",
+      id_estado: 24,
+    },
+    {
+      id: 2412401,
+      descricao: "SAO JOSE DO SERIDO",
+      id_estado: 24,
+    },
+    {
+      id: 2412500,
+      descricao: "SAO MIGUEL",
+      id_estado: 24,
+    },
+    {
+      id: 2412302,
+      descricao: "SAO JOSE DO CAMPESTRE",
+      id_estado: 24,
+    },
+    {
+      id: 2412609,
+      descricao: "SAO PAULO DO POTENGI",
+      id_estado: 24,
+    },
+    {
+      id: 2412559,
+      descricao: "SAO MIGUEL DO GOSTOSO",
+      id_estado: 24,
+    },
+    {
+      id: 2412807,
+      descricao: "SAO RAFAEL",
+      id_estado: 24,
+    },
+    {
+      id: 2412906,
+      descricao: "SAO TOME",
+      id_estado: 24,
+    },
+    {
+      id: 2412708,
+      descricao: "SAO PEDRO",
+      id_estado: 24,
+    },
+    {
+      id: 2413003,
+      descricao: "SAO VICENTE",
+      id_estado: 24,
+    },
+    {
+      id: 2413102,
+      descricao: "SENADOR ELOI DE SOUZA",
+      id_estado: 24,
+    },
+    {
+      id: 2413300,
+      descricao: "SERRA DE SAO BENTO",
+      id_estado: 24,
+    },
+    {
+      id: 2413359,
+      descricao: "SERRA DO MEL",
+      id_estado: 24,
+    },
+    {
+      id: 2413201,
+      descricao: "SENADOR GEORGINO AVELINO",
+      id_estado: 24,
+    },
+    {
+      id: 2413508,
+      descricao: "SERRINHA",
+      id_estado: 24,
+    },
+    {
+      id: 2413409,
+      descricao: "SERRA NEGRA DO NORTE",
+      id_estado: 24,
+    },
+    {
+      id: 2413706,
+      descricao: "SITIO NOVO",
+      id_estado: 24,
+    },
+    {
+      id: 2413607,
+      descricao: "SEVERIANO MELO",
+      id_estado: 24,
+    },
+    {
+      id: 2413557,
+      descricao: "SERRINHA DOS PINTOS",
+      id_estado: 24,
+    },
+    {
+      id: 2413904,
+      descricao: "TAIPU",
+      id_estado: 24,
+    },
+    {
+      id: 2413805,
+      descricao: "TABOLEIRO GRANDE",
+      id_estado: 24,
+    },
+    {
+      id: 2414001,
+      descricao: "TANGARA",
+      id_estado: 24,
+    },
+    {
+      id: 2414159,
+      descricao: "TENENTE LAURENTINO CRUZ",
+      id_estado: 24,
+    },
+    {
+      id: 2414100,
+      descricao: "TENENTE ANANIAS",
+      id_estado: 24,
+    },
+    {
+      id: 2414407,
+      descricao: "TOUROS",
+      id_estado: 24,
+    },
+    {
+      id: 2414308,
+      descricao: "TIMBAUBA DOS BATISTAS",
+      id_estado: 24,
+    },
+    {
+      id: 2414209,
+      descricao: "TIBAU DO SUL",
+      id_estado: 24,
+    },
+    {
+      id: 2414506,
+      descricao: "UMARIZAL",
+      id_estado: 24,
+    },
+    {
+      id: 2414605,
+      descricao: "UPANEMA",
+      id_estado: 24,
+    },
+    {
+      id: 2414456,
+      descricao: "TRIUNFO POTIGUAR",
+      id_estado: 24,
+    },
+    {
+      id: 2414753,
+      descricao: "VENHAVER",
+      id_estado: 24,
+    },
+    {
+      id: 2414803,
+      descricao: "VERA CRUZ",
+      id_estado: 24,
+    },
+    {
+      id: 2414704,
+      descricao: "VARZEA",
+      id_estado: 24,
+    },
+    {
+      id: 2415008,
+      descricao: "VILA FLOR",
+      id_estado: 24,
+    },
+    {
+      id: 2414902,
+      descricao: "VICOSA",
+      id_estado: 24,
+    },
+    {
+      id: 4300034,
+      descricao: "ACEGUA",
+      id_estado: 43,
+    },
+    {
+      id: 4300059,
+      descricao: "AGUA SANTA",
+      id_estado: 43,
+    },
+    {
+      id: 4300109,
+      descricao: "AGUDO",
+      id_estado: 43,
+    },
+    {
+      id: 4300307,
+      descricao: "ALECRIM",
+      id_estado: 43,
+    },
+    {
+      id: 4300208,
+      descricao: "AJURICABA",
+      id_estado: 43,
+    },
+    {
+      id: 4300406,
+      descricao: "ALEGRETE",
+      id_estado: 43,
+    },
+    {
+      id: 4300455,
+      descricao: "ALEGRIA",
+      id_estado: 43,
+    },
+    {
+      id: 4300471,
+      descricao: "ALMIRANTE TAMANDARE DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4300505,
+      descricao: "ALPESTRE",
+      id_estado: 43,
+    },
+    {
+      id: 4300554,
+      descricao: "ALTO ALEGRE",
+      id_estado: 43,
+    },
+    {
+      id: 4300604,
+      descricao: "ALVORADA",
+      id_estado: 43,
+    },
+    {
+      id: 4300638,
+      descricao: "AMARAL FERRADOR",
+      id_estado: 43,
+    },
+    {
+      id: 4300570,
+      descricao: "ALTO FELIZ",
+      id_estado: 43,
+    },
+    {
+      id: 4300646,
+      descricao: "AMETISTA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4300661,
+      descricao: "ANDRE DA ROCHA",
+      id_estado: 43,
+    },
+    {
+      id: 4300802,
+      descricao: "ANTONIO PRADO",
+      id_estado: 43,
+    },
+    {
+      id: 4300703,
+      descricao: "ANTA GORDA",
+      id_estado: 43,
+    },
+    {
+      id: 4300877,
+      descricao: "ARARICA",
+      id_estado: 43,
+    },
+    {
+      id: 4300851,
+      descricao: "ARAMBARE",
+      id_estado: 43,
+    },
+    {
+      id: 4300901,
+      descricao: "ARATIBA",
+      id_estado: 43,
+    },
+    {
+      id: 4301008,
+      descricao: "ARROIO DO MEIO",
+      id_estado: 43,
+    },
+    {
+      id: 4301107,
+      descricao: "ARROIO DOS RATOS",
+      id_estado: 43,
+    },
+    {
+      id: 4301206,
+      descricao: "ARROIO DO TIGRE",
+      id_estado: 43,
+    },
+    {
+      id: 4301073,
+      descricao: "ARROIO DO PADRE",
+      id_estado: 43,
+    },
+    {
+      id: 4301057,
+      descricao: "ARROIO DO SAL",
+      id_estado: 43,
+    },
+    {
+      id: 4301404,
+      descricao: "ARVOREZINHA",
+      id_estado: 43,
+    },
+    {
+      id: 4301305,
+      descricao: "ARROIO GRANDE",
+      id_estado: 43,
+    },
+    {
+      id: 4301503,
+      descricao: "AUGUSTO PESTANA",
+      id_estado: 43,
+    },
+    {
+      id: 4301552,
+      descricao: "AUREA",
+      id_estado: 43,
+    },
+    {
+      id: 4301602,
+      descricao: "BAGE",
+      id_estado: 43,
+    },
+    {
+      id: 4301651,
+      descricao: "BARAO",
+      id_estado: 43,
+    },
+    {
+      id: 4301636,
+      descricao: "BALNEARIO PINHAL",
+      id_estado: 43,
+    },
+    {
+      id: 4301701,
+      descricao: "BARAO DE COTEGIPE",
+      id_estado: 43,
+    },
+    {
+      id: 4301800,
+      descricao: "BARRACAO",
+      id_estado: 43,
+    },
+    {
+      id: 4301750,
+      descricao: "BARAO DO TRIUNFO",
+      id_estado: 43,
+    },
+    {
+      id: 4301859,
+      descricao: "BARRA DO GUARITA",
+      id_estado: 43,
+    },
+    {
+      id: 4301875,
+      descricao: "BARRA DO QUARAI",
+      id_estado: 43,
+    },
+    {
+      id: 4301925,
+      descricao: "BARRA DO RIO AZUL",
+      id_estado: 43,
+    },
+    {
+      id: 4301909,
+      descricao: "BARRA DO RIBEIRO",
+      id_estado: 43,
+    },
+    {
+      id: 4302055,
+      descricao: "BENJAMIN CONSTANT DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4301958,
+      descricao: "BARRA FUNDA",
+      id_estado: 43,
+    },
+    {
+      id: 4302006,
+      descricao: "BARROS CASSAL",
+      id_estado: 43,
+    },
+    {
+      id: 4302105,
+      descricao: "BENTO GONCALVES",
+      id_estado: 43,
+    },
+    {
+      id: 4302154,
+      descricao: "BOA VISTA DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4302220,
+      descricao: "BOA VISTA DO CADEADO",
+      id_estado: 43,
+    },
+    {
+      id: 4302204,
+      descricao: "BOA VISTA DO BURICA",
+      id_estado: 43,
+    },
+    {
+      id: 4302303,
+      descricao: "BOM JESUS",
+      id_estado: 43,
+    },
+    {
+      id: 4302253,
+      descricao: "BOA VISTA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4302238,
+      descricao: "BOA VISTA DO INCRA",
+      id_estado: 43,
+    },
+    {
+      id: 4302352,
+      descricao: "BOM PRINCIPIO",
+      id_estado: 43,
+    },
+    {
+      id: 4302402,
+      descricao: "BOM RETIRO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4302378,
+      descricao: "BOM PROGRESSO",
+      id_estado: 43,
+    },
+    {
+      id: 4302451,
+      descricao: "BOQUEIRAO DO LEAO",
+      id_estado: 43,
+    },
+    {
+      id: 4302501,
+      descricao: "BOSSOROCA",
+      id_estado: 43,
+    },
+    {
+      id: 4302584,
+      descricao: "BOZANO",
+      id_estado: 43,
+    },
+    {
+      id: 4302659,
+      descricao: "BROCHIER",
+      id_estado: 43,
+    },
+    {
+      id: 4302600,
+      descricao: "BRAGA",
+      id_estado: 43,
+    },
+    {
+      id: 4302709,
+      descricao: "BUTIA",
+      id_estado: 43,
+    },
+    {
+      id: 4302808,
+      descricao: "CACAPAVA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4302907,
+      descricao: "CACEQUI",
+      id_estado: 43,
+    },
+    {
+      id: 4303004,
+      descricao: "CACHOEIRA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4303103,
+      descricao: "CACHOEIRINHA",
+      id_estado: 43,
+    },
+    {
+      id: 4303400,
+      descricao: "CAICARA",
+      id_estado: 43,
+    },
+    {
+      id: 4303301,
+      descricao: "CAIBATE",
+      id_estado: 43,
+    },
+    {
+      id: 4303202,
+      descricao: "CACIQUE DOBLE",
+      id_estado: 43,
+    },
+    {
+      id: 4303509,
+      descricao: "CAMAQUA",
+      id_estado: 43,
+    },
+    {
+      id: 4303558,
+      descricao: "CAMARGO",
+      id_estado: 43,
+    },
+    {
+      id: 4303673,
+      descricao: "CAMPESTRE DA SERRA",
+      id_estado: 43,
+    },
+    {
+      id: 4303608,
+      descricao: "CAMBARA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4303905,
+      descricao: "CAMPO BOM",
+      id_estado: 43,
+    },
+    {
+      id: 4303806,
+      descricao: "CAMPINAS DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4303707,
+      descricao: "CAMPINA DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4304002,
+      descricao: "CAMPO NOVO",
+      id_estado: 43,
+    },
+    {
+      id: 4304101,
+      descricao: "CAMPOS BORGES",
+      id_estado: 43,
+    },
+    {
+      id: 4304200,
+      descricao: "CANDELARIA",
+      id_estado: 43,
+    },
+    {
+      id: 4304358,
+      descricao: "CANDIOTA",
+      id_estado: 43,
+    },
+    {
+      id: 4304309,
+      descricao: "CANDIDO GODOI",
+      id_estado: 43,
+    },
+    {
+      id: 4304408,
+      descricao: "CANELA",
+      id_estado: 43,
+    },
+    {
+      id: 4304614,
+      descricao: "CANUDOS DO VALE",
+      id_estado: 43,
+    },
+    {
+      id: 4304507,
+      descricao: "CANGUCU",
+      id_estado: 43,
+    },
+    {
+      id: 4304606,
+      descricao: "CANOAS",
+      id_estado: 43,
+    },
+    {
+      id: 4304622,
+      descricao: "CAPAO BONITO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4304630,
+      descricao: "CAPAO DA CANOA",
+      id_estado: 43,
+    },
+    {
+      id: 4304663,
+      descricao: "CAPAO DO LEAO",
+      id_estado: 43,
+    },
+    {
+      id: 4304655,
+      descricao: "CAPAO DO CIPO",
+      id_estado: 43,
+    },
+    {
+      id: 4304671,
+      descricao: "CAPIVARI DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4304705,
+      descricao: "CARAZINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4304697,
+      descricao: "CAPITAO",
+      id_estado: 43,
+    },
+    {
+      id: 4304689,
+      descricao: "CAPELA DE SANTANA",
+      id_estado: 43,
+    },
+    {
+      id: 4304804,
+      descricao: "CARLOS BARBOSA",
+      id_estado: 43,
+    },
+    {
+      id: 4304713,
+      descricao: "CARAA",
+      id_estado: 43,
+    },
+    {
+      id: 4304853,
+      descricao: "CARLOS GOMES",
+      id_estado: 43,
+    },
+    {
+      id: 4305009,
+      descricao: "CATUIPE",
+      id_estado: 43,
+    },
+    {
+      id: 4304903,
+      descricao: "CASCA",
+      id_estado: 43,
+    },
+    {
+      id: 4304952,
+      descricao: "CASEIROS",
+      id_estado: 43,
+    },
+    {
+      id: 4305108,
+      descricao: "CAXIAS DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4305116,
+      descricao: "CENTENARIO",
+      id_estado: 43,
+    },
+    {
+      id: 4305124,
+      descricao: "CERRITO",
+      id_estado: 43,
+    },
+    {
+      id: 4305132,
+      descricao: "CERRO BRANCO",
+      id_estado: 43,
+    },
+    {
+      id: 4305157,
+      descricao: "CERRO GRANDE",
+      id_estado: 43,
+    },
+    {
+      id: 4305173,
+      descricao: "CERRO GRANDE DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4305207,
+      descricao: "CERRO LARGO",
+      id_estado: 43,
+    },
+    {
+      id: 4305306,
+      descricao: "CHAPADA",
+      id_estado: 43,
+    },
+    {
+      id: 4305355,
+      descricao: "CHARQUEADAS",
+      id_estado: 43,
+    },
+    {
+      id: 4305371,
+      descricao: "CHARRUA",
+      id_estado: 43,
+    },
+    {
+      id: 4305439,
+      descricao: "CHUI",
+      id_estado: 43,
+    },
+    {
+      id: 4305405,
+      descricao: "CHIAPETTA",
+      id_estado: 43,
+    },
+    {
+      id: 4305447,
+      descricao: "CHUVISCA",
+      id_estado: 43,
+    },
+    {
+      id: 4305454,
+      descricao: "CIDREIRA",
+      id_estado: 43,
+    },
+    {
+      id: 4305504,
+      descricao: "CIRIACO",
+      id_estado: 43,
+    },
+    {
+      id: 4305587,
+      descricao: "COLINAS",
+      id_estado: 43,
+    },
+    {
+      id: 4305603,
+      descricao: "COLORADO",
+      id_estado: 43,
+    },
+    {
+      id: 4305801,
+      descricao: "CONSTANTINA",
+      id_estado: 43,
+    },
+    {
+      id: 4305702,
+      descricao: "CONDOR",
+      id_estado: 43,
+    },
+    {
+      id: 4305850,
+      descricao: "COQUEIROS DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4305835,
+      descricao: "COQUEIRO BAIXO",
+      id_estado: 43,
+    },
+    {
+      id: 4305871,
+      descricao: "CORONEL BARROS",
+      id_estado: 43,
+    },
+    {
+      id: 4305900,
+      descricao: "CORONEL BICACO",
+      id_estado: 43,
+    },
+    {
+      id: 4305959,
+      descricao: "COTIPORA",
+      id_estado: 43,
+    },
+    {
+      id: 4305975,
+      descricao: "COXILHA",
+      id_estado: 43,
+    },
+    {
+      id: 4305934,
+      descricao: "CORONEL PILAR",
+      id_estado: 43,
+    },
+    {
+      id: 4306007,
+      descricao: "CRISSIUMAL",
+      id_estado: 43,
+    },
+    {
+      id: 4306056,
+      descricao: "CRISTAL",
+      id_estado: 43,
+    },
+    {
+      id: 4306106,
+      descricao: "CRUZ ALTA",
+      id_estado: 43,
+    },
+    {
+      id: 4306072,
+      descricao: "CRISTAL DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4306304,
+      descricao: "DAVID CANABARRO",
+      id_estado: 43,
+    },
+    {
+      id: 4306130,
+      descricao: "CRUZALTENSE",
+      id_estado: 43,
+    },
+    {
+      id: 4306205,
+      descricao: "CRUZEIRO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4306353,
+      descricao: "DEZESSEIS DE NOVEMBRO",
+      id_estado: 43,
+    },
+    {
+      id: 4306320,
+      descricao: "DERRUBADAS",
+      id_estado: 43,
+    },
+    {
+      id: 4306379,
+      descricao: "DILERMANDO DE AGUIAR",
+      id_estado: 43,
+    },
+    {
+      id: 4306429,
+      descricao: "DOIS IRMAOS DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4306403,
+      descricao: "DOIS IRMAOS",
+      id_estado: 43,
+    },
+    {
+      id: 4306502,
+      descricao: "DOM FELICIANO",
+      id_estado: 43,
+    },
+    {
+      id: 4306452,
+      descricao: "DOIS LAJEADOS",
+      id_estado: 43,
+    },
+    {
+      id: 4306551,
+      descricao: "DOM PEDRO DE ALCANTARA",
+      id_estado: 43,
+    },
+    {
+      id: 4306601,
+      descricao: "DOM PEDRITO",
+      id_estado: 43,
+    },
+    {
+      id: 4306734,
+      descricao: "DOUTOR MAURICIO CARDOSO",
+      id_estado: 43,
+    },
+    {
+      id: 4306700,
+      descricao: "DONA FRANCISCA",
+      id_estado: 43,
+    },
+    {
+      id: 4306759,
+      descricao: "DOUTOR RICARDO",
+      id_estado: 43,
+    },
+    {
+      id: 4306767,
+      descricao: "ELDORADO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4306809,
+      descricao: "ENCANTADO",
+      id_estado: 43,
+    },
+    {
+      id: 4306908,
+      descricao: "ENCRUZILHADA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4306924,
+      descricao: "ENGENHO VELHO",
+      id_estado: 43,
+    },
+    {
+      id: 4306957,
+      descricao: "ENTRE RIOS DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4306932,
+      descricao: "ENTREIJUIS",
+      id_estado: 43,
+    },
+    {
+      id: 4306973,
+      descricao: "EREBANGO",
+      id_estado: 43,
+    },
+    {
+      id: 4307005,
+      descricao: "ERECHIM",
+      id_estado: 43,
+    },
+    {
+      id: 4307054,
+      descricao: "ERNESTINA",
+      id_estado: 43,
+    },
+    {
+      id: 4307104,
+      descricao: "HERVAL",
+      id_estado: 43,
+    },
+    {
+      id: 4307203,
+      descricao: "ERVAL GRANDE",
+      id_estado: 43,
+    },
+    {
+      id: 4307302,
+      descricao: "ERVAL SECO",
+      id_estado: 43,
+    },
+    {
+      id: 4307401,
+      descricao: "ESMERALDA",
+      id_estado: 43,
+    },
+    {
+      id: 4307450,
+      descricao: "ESPERANCA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4307500,
+      descricao: "ESPUMOSO",
+      id_estado: 43,
+    },
+    {
+      id: 4307609,
+      descricao: "ESTANCIA VELHA",
+      id_estado: 43,
+    },
+    {
+      id: 4307559,
+      descricao: "ESTACAO",
+      id_estado: 43,
+    },
+    {
+      id: 4307708,
+      descricao: "ESTEIO",
+      id_estado: 43,
+    },
+    {
+      id: 4307807,
+      descricao: "ESTRELA",
+      id_estado: 43,
+    },
+    {
+      id: 4307815,
+      descricao: "ESTRELA VELHA",
+      id_estado: 43,
+    },
+    {
+      id: 4307864,
+      descricao: "FAGUNDES VARELA",
+      id_estado: 43,
+    },
+    {
+      id: 4307831,
+      descricao: "EUGENIO DE CASTRO",
+      id_estado: 43,
+    },
+    {
+      id: 4307906,
+      descricao: "FARROUPILHA",
+      id_estado: 43,
+    },
+    {
+      id: 4308003,
+      descricao: "FAXINAL DO SOTURNO",
+      id_estado: 43,
+    },
+    {
+      id: 4308052,
+      descricao: "FAXINALZINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4308078,
+      descricao: "FAZENDA VILANOVA",
+      id_estado: 43,
+    },
+    {
+      id: 4308102,
+      descricao: "FELIZ",
+      id_estado: 43,
+    },
+    {
+      id: 4308201,
+      descricao: "FLORES DA CUNHA",
+      id_estado: 43,
+    },
+    {
+      id: 4308250,
+      descricao: "FLORIANO PEIXOTO",
+      id_estado: 43,
+    },
+    {
+      id: 4308300,
+      descricao: "FONTOURA XAVIER",
+      id_estado: 43,
+    },
+    {
+      id: 4308409,
+      descricao: "FORMIGUEIRO",
+      id_estado: 43,
+    },
+    {
+      id: 4308433,
+      descricao: "FORQUETINHA",
+      id_estado: 43,
+    },
+    {
+      id: 4308458,
+      descricao: "FORTALEZA DOS VALOS",
+      id_estado: 43,
+    },
+    {
+      id: 4308508,
+      descricao: "FREDERICO WESTPHALEN",
+      id_estado: 43,
+    },
+    {
+      id: 4308607,
+      descricao: "GARIBALDI",
+      id_estado: 43,
+    },
+    {
+      id: 4308656,
+      descricao: "GARRUCHOS",
+      id_estado: 43,
+    },
+    {
+      id: 4308706,
+      descricao: "GAURAMA",
+      id_estado: 43,
+    },
+    {
+      id: 4308805,
+      descricao: "GENERAL CAMARA",
+      id_estado: 43,
+    },
+    {
+      id: 4308854,
+      descricao: "GENTIL",
+      id_estado: 43,
+    },
+    {
+      id: 4308904,
+      descricao: "GETULIO VARGAS",
+      id_estado: 43,
+    },
+    {
+      id: 4309001,
+      descricao: "GIRUA",
+      id_estado: 43,
+    },
+    {
+      id: 4309050,
+      descricao: "GLORINHA",
+      id_estado: 43,
+    },
+    {
+      id: 4309100,
+      descricao: "GRAMADO",
+      id_estado: 43,
+    },
+    {
+      id: 4309126,
+      descricao: "GRAMADO DOS LOUREIROS",
+      id_estado: 43,
+    },
+    {
+      id: 4309159,
+      descricao: "GRAMADO XAVIER",
+      id_estado: 43,
+    },
+    {
+      id: 4309209,
+      descricao: "GRAVATAI",
+      id_estado: 43,
+    },
+    {
+      id: 4309258,
+      descricao: "GUABIJU",
+      id_estado: 43,
+    },
+    {
+      id: 4309308,
+      descricao: "GUAIBA",
+      id_estado: 43,
+    },
+    {
+      id: 4309407,
+      descricao: "GUAPORE",
+      id_estado: 43,
+    },
+    {
+      id: 4309506,
+      descricao: "GUARANI DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4309555,
+      descricao: "HARMONIA",
+      id_estado: 43,
+    },
+    {
+      id: 4309571,
+      descricao: "HERVEIRAS",
+      id_estado: 43,
+    },
+    {
+      id: 4309605,
+      descricao: "HORIZONTINA",
+      id_estado: 43,
+    },
+    {
+      id: 4309654,
+      descricao: "HULHA NEGRA",
+      id_estado: 43,
+    },
+    {
+      id: 4309704,
+      descricao: "HUMAITA",
+      id_estado: 43,
+    },
+    {
+      id: 4309753,
+      descricao: "IBARAMA",
+      id_estado: 43,
+    },
+    {
+      id: 4309803,
+      descricao: "IBIACA",
+      id_estado: 43,
+    },
+    {
+      id: 4309902,
+      descricao: "IBIRAIARAS",
+      id_estado: 43,
+    },
+    {
+      id: 4309951,
+      descricao: "IBIRAPUITA",
+      id_estado: 43,
+    },
+    {
+      id: 4310009,
+      descricao: "IBIRUBA",
+      id_estado: 43,
+    },
+    {
+      id: 4310108,
+      descricao: "IGREJINHA",
+      id_estado: 43,
+    },
+    {
+      id: 4310207,
+      descricao: "IJUI",
+      id_estado: 43,
+    },
+    {
+      id: 4310306,
+      descricao: "ILOPOLIS",
+      id_estado: 43,
+    },
+    {
+      id: 4310330,
+      descricao: "IMBE",
+      id_estado: 43,
+    },
+    {
+      id: 4310363,
+      descricao: "IMIGRANTE",
+      id_estado: 43,
+    },
+    {
+      id: 4310405,
+      descricao: "INDEPENDENCIA",
+      id_estado: 43,
+    },
+    {
+      id: 4310413,
+      descricao: "INHACORA",
+      id_estado: 43,
+    },
+    {
+      id: 4310439,
+      descricao: "IPE",
+      id_estado: 43,
+    },
+    {
+      id: 4310462,
+      descricao: "IPIRANGA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4310504,
+      descricao: "IRAI",
+      id_estado: 43,
+    },
+    {
+      id: 4310538,
+      descricao: "ITAARA",
+      id_estado: 43,
+    },
+    {
+      id: 4310553,
+      descricao: "ITACURUBI",
+      id_estado: 43,
+    },
+    {
+      id: 4310579,
+      descricao: "ITAPUCA",
+      id_estado: 43,
+    },
+    {
+      id: 4310603,
+      descricao: "ITAQUI",
+      id_estado: 43,
+    },
+    {
+      id: 4310652,
+      descricao: "ITATI",
+      id_estado: 43,
+    },
+    {
+      id: 4310702,
+      descricao: "ITATIBA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4310751,
+      descricao: "IVORA",
+      id_estado: 43,
+    },
+    {
+      id: 4310801,
+      descricao: "IVOTI",
+      id_estado: 43,
+    },
+    {
+      id: 4310850,
+      descricao: "JABOTICABA",
+      id_estado: 43,
+    },
+    {
+      id: 4310876,
+      descricao: "JACUIZINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4310900,
+      descricao: "JACUTINGA",
+      id_estado: 43,
+    },
+    {
+      id: 4311007,
+      descricao: "JAGUARAO",
+      id_estado: 43,
+    },
+    {
+      id: 4311106,
+      descricao: "JAGUARI",
+      id_estado: 43,
+    },
+    {
+      id: 4311122,
+      descricao: "JAQUIRANA",
+      id_estado: 43,
+    },
+    {
+      id: 4311130,
+      descricao: "JARI",
+      id_estado: 43,
+    },
+    {
+      id: 4311205,
+      descricao: "JULIO DE CASTILHOS",
+      id_estado: 43,
+    },
+    {
+      id: 4311155,
+      descricao: "JOIA",
+      id_estado: 43,
+    },
+    {
+      id: 4311239,
+      descricao: "LAGOA BONITA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4311254,
+      descricao: "LAGOAO",
+      id_estado: 43,
+    },
+    {
+      id: 4311270,
+      descricao: "LAGOA DOS TRES CANTOS",
+      id_estado: 43,
+    },
+    {
+      id: 4311304,
+      descricao: "LAGOA VERMELHA",
+      id_estado: 43,
+    },
+    {
+      id: 4311429,
+      descricao: "LAJEADO DO BUGRE",
+      id_estado: 43,
+    },
+    {
+      id: 4311403,
+      descricao: "LAJEADO",
+      id_estado: 43,
+    },
+    {
+      id: 4311502,
+      descricao: "LAVRAS DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4311601,
+      descricao: "LIBERATO SALZANO",
+      id_estado: 43,
+    },
+    {
+      id: 4311627,
+      descricao: "LINDOLFO COLLOR",
+      id_estado: 43,
+    },
+    {
+      id: 4311643,
+      descricao: "LINHA NOVA",
+      id_estado: 43,
+    },
+    {
+      id: 4311700,
+      descricao: "MACHADINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4311718,
+      descricao: "MACAMBARA",
+      id_estado: 43,
+    },
+    {
+      id: 4311734,
+      descricao: "MAMPITUBA",
+      id_estado: 43,
+    },
+    {
+      id: 4311759,
+      descricao: "MANOEL VIANA",
+      id_estado: 43,
+    },
+    {
+      id: 4311775,
+      descricao: "MAQUINE",
+      id_estado: 43,
+    },
+    {
+      id: 4311791,
+      descricao: "MARATA",
+      id_estado: 43,
+    },
+    {
+      id: 4311809,
+      descricao: "MARAU",
+      id_estado: 43,
+    },
+    {
+      id: 4311908,
+      descricao: "MARCELINO RAMOS",
+      id_estado: 43,
+    },
+    {
+      id: 4312005,
+      descricao: "MARIANO MORO",
+      id_estado: 43,
+    },
+    {
+      id: 4312054,
+      descricao: "MARQUES DE SOUZA",
+      id_estado: 43,
+    },
+    {
+      id: 4311981,
+      descricao: "MARIANA PIMENTEL",
+      id_estado: 43,
+    },
+    {
+      id: 4312104,
+      descricao: "MATA",
+      id_estado: 43,
+    },
+    {
+      id: 4312153,
+      descricao: "MATO LEITAO",
+      id_estado: 43,
+    },
+    {
+      id: 4312138,
+      descricao: "MATO CASTELHANO",
+      id_estado: 43,
+    },
+    {
+      id: 4312203,
+      descricao: "MAXIMILIANO DE ALMEIDA",
+      id_estado: 43,
+    },
+    {
+      id: 4312179,
+      descricao: "MATO QUEIMADO",
+      id_estado: 43,
+    },
+    {
+      id: 4312252,
+      descricao: "MINAS DO LEAO",
+      id_estado: 43,
+    },
+    {
+      id: 4312302,
+      descricao: "MIRAGUAI",
+      id_estado: 43,
+    },
+    {
+      id: 4312351,
+      descricao: "MONTAURI",
+      id_estado: 43,
+    },
+    {
+      id: 4312385,
+      descricao: "MONTE BELO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4312377,
+      descricao: "MONTE ALEGRE DOS CAMPOS",
+      id_estado: 43,
+    },
+    {
+      id: 4312401,
+      descricao: "MONTENEGRO",
+      id_estado: 43,
+    },
+    {
+      id: 4312443,
+      descricao: "MORRINHOS DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4312427,
+      descricao: "MORMACO",
+      id_estado: 43,
+    },
+    {
+      id: 4312450,
+      descricao: "MORRO REDONDO",
+      id_estado: 43,
+    },
+    {
+      id: 4312476,
+      descricao: "MORRO REUTER",
+      id_estado: 43,
+    },
+    {
+      id: 4312500,
+      descricao: "MOSTARDAS",
+      id_estado: 43,
+    },
+    {
+      id: 4312617,
+      descricao: "MUITOS CAPOES",
+      id_estado: 43,
+    },
+    {
+      id: 4312609,
+      descricao: "MUCUM",
+      id_estado: 43,
+    },
+    {
+      id: 4312658,
+      descricao: "NAOMETOQUE",
+      id_estado: 43,
+    },
+    {
+      id: 4312625,
+      descricao: "MULITERNO",
+      id_estado: 43,
+    },
+    {
+      id: 4312674,
+      descricao: "NICOLAU VERGUEIRO",
+      id_estado: 43,
+    },
+    {
+      id: 4312708,
+      descricao: "NONOAI",
+      id_estado: 43,
+    },
+    {
+      id: 4312807,
+      descricao: "NOVA ARACA",
+      id_estado: 43,
+    },
+    {
+      id: 4312757,
+      descricao: "NOVA ALVORADA",
+      id_estado: 43,
+    },
+    {
+      id: 4312955,
+      descricao: "NOVA BOA VISTA",
+      id_estado: 43,
+    },
+    {
+      id: 4313003,
+      descricao: "NOVA BRESCIA",
+      id_estado: 43,
+    },
+    {
+      id: 4312906,
+      descricao: "NOVA BASSANO",
+      id_estado: 43,
+    },
+    {
+      id: 4313037,
+      descricao: "NOVA ESPERANCA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4313011,
+      descricao: "NOVA CANDELARIA",
+      id_estado: 43,
+    },
+    {
+      id: 4313086,
+      descricao: "NOVA PADUA",
+      id_estado: 43,
+    },
+    {
+      id: 4313060,
+      descricao: "NOVA HARTZ",
+      id_estado: 43,
+    },
+    {
+      id: 4313201,
+      descricao: "NOVA PETROPOLIS",
+      id_estado: 43,
+    },
+    {
+      id: 4313102,
+      descricao: "NOVA PALMA",
+      id_estado: 43,
+    },
+    {
+      id: 4313300,
+      descricao: "NOVA PRATA",
+      id_estado: 43,
+    },
+    {
+      id: 4313359,
+      descricao: "NOVA ROMA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4313375,
+      descricao: "NOVA SANTA RITA",
+      id_estado: 43,
+    },
+    {
+      id: 4313334,
+      descricao: "NOVA RAMADA",
+      id_estado: 43,
+    },
+    {
+      id: 4313391,
+      descricao: "NOVO CABRAIS",
+      id_estado: 43,
+    },
+    {
+      id: 4313409,
+      descricao: "NOVO HAMBURGO",
+      id_estado: 43,
+    },
+    {
+      id: 4313441,
+      descricao: "NOVO TIRADENTES",
+      id_estado: 43,
+    },
+    {
+      id: 4313425,
+      descricao: "NOVO MACHADO",
+      id_estado: 43,
+    },
+    {
+      id: 4313508,
+      descricao: "OSORIO",
+      id_estado: 43,
+    },
+    {
+      id: 4313490,
+      descricao: "NOVO BARREIRO",
+      id_estado: 43,
+    },
+    {
+      id: 4313466,
+      descricao: "NOVO XINGU",
+      id_estado: 43,
+    },
+    {
+      id: 4313607,
+      descricao: "PAIM FILHO",
+      id_estado: 43,
+    },
+    {
+      id: 4313656,
+      descricao: "PALMARES DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4313706,
+      descricao: "PALMEIRA DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4313904,
+      descricao: "PANAMBI",
+      id_estado: 43,
+    },
+    {
+      id: 4313805,
+      descricao: "PALMITINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4313953,
+      descricao: "PANTANO GRANDE",
+      id_estado: 43,
+    },
+    {
+      id: 4314027,
+      descricao: "PARAISO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4314001,
+      descricao: "PARAI",
+      id_estado: 43,
+    },
+    {
+      id: 4314050,
+      descricao: "PAROBE",
+      id_estado: 43,
+    },
+    {
+      id: 4314035,
+      descricao: "PARECI NOVO",
+      id_estado: 43,
+    },
+    {
+      id: 4314068,
+      descricao: "PASSA SETE",
+      id_estado: 43,
+    },
+    {
+      id: 4314100,
+      descricao: "PASSO FUNDO",
+      id_estado: 43,
+    },
+    {
+      id: 4314076,
+      descricao: "PASSO DO SOBRADO",
+      id_estado: 43,
+    },
+    {
+      id: 4314134,
+      descricao: "PAULO BENTO",
+      id_estado: 43,
+    },
+    {
+      id: 4314159,
+      descricao: "PAVERAMA",
+      id_estado: 43,
+    },
+    {
+      id: 4314175,
+      descricao: "PEDRAS ALTAS",
+      id_estado: 43,
+    },
+    {
+      id: 4314308,
+      descricao: "PEJUCARA",
+      id_estado: 43,
+    },
+    {
+      id: 4314209,
+      descricao: "PEDRO OSORIO",
+      id_estado: 43,
+    },
+    {
+      id: 4314407,
+      descricao: "PELOTAS",
+      id_estado: 43,
+    },
+    {
+      id: 4314423,
+      descricao: "PICADA CAFE",
+      id_estado: 43,
+    },
+    {
+      id: 4314464,
+      descricao: "PINHAL DA SERRA",
+      id_estado: 43,
+    },
+    {
+      id: 4314456,
+      descricao: "PINHAL",
+      id_estado: 43,
+    },
+    {
+      id: 4314472,
+      descricao: "PINHAL GRANDE",
+      id_estado: 43,
+    },
+    {
+      id: 4314498,
+      descricao: "PINHEIRINHO DO VALE",
+      id_estado: 43,
+    },
+    {
+      id: 4314555,
+      descricao: "PIRAPO",
+      id_estado: 43,
+    },
+    {
+      id: 4314506,
+      descricao: "PINHEIRO MACHADO",
+      id_estado: 43,
+    },
+    {
+      id: 4314605,
+      descricao: "PIRATINI",
+      id_estado: 43,
+    },
+    {
+      id: 4314704,
+      descricao: "PLANALTO",
+      id_estado: 43,
+    },
+    {
+      id: 4314753,
+      descricao: "POCO DAS ANTAS",
+      id_estado: 43,
+    },
+    {
+      id: 4314779,
+      descricao: "PONTAO",
+      id_estado: 43,
+    },
+    {
+      id: 4314803,
+      descricao: "PORTAO",
+      id_estado: 43,
+    },
+    {
+      id: 4314787,
+      descricao: "PONTE PRETA",
+      id_estado: 43,
+    },
+    {
+      id: 4314902,
+      descricao: "PORTO ALEGRE",
+      id_estado: 43,
+    },
+    {
+      id: 4315008,
+      descricao: "PORTO LUCENA",
+      id_estado: 43,
+    },
+    {
+      id: 4315073,
+      descricao: "PORTO VERA CRUZ",
+      id_estado: 43,
+    },
+    {
+      id: 4315057,
+      descricao: "PORTO MAUA",
+      id_estado: 43,
+    },
+    {
+      id: 4315149,
+      descricao: "PRESIDENTE LUCENA",
+      id_estado: 43,
+    },
+    {
+      id: 4315131,
+      descricao: "POUSO NOVO",
+      id_estado: 43,
+    },
+    {
+      id: 4315107,
+      descricao: "PORTO XAVIER",
+      id_estado: 43,
+    },
+    {
+      id: 4315156,
+      descricao: "PROGRESSO",
+      id_estado: 43,
+    },
+    {
+      id: 4315172,
+      descricao: "PROTASIO ALVES",
+      id_estado: 43,
+    },
+    {
+      id: 4315305,
+      descricao: "QUARAI",
+      id_estado: 43,
+    },
+    {
+      id: 4315206,
+      descricao: "PUTINGA",
+      id_estado: 43,
+    },
+    {
+      id: 4315321,
+      descricao: "QUEVEDOS",
+      id_estado: 43,
+    },
+    {
+      id: 4315313,
+      descricao: "QUATRO IRMAOS",
+      id_estado: 43,
+    },
+    {
+      id: 4315354,
+      descricao: "QUINZE DE NOVEMBRO",
+      id_estado: 43,
+    },
+    {
+      id: 4315404,
+      descricao: "REDENTORA",
+      id_estado: 43,
+    },
+    {
+      id: 4315503,
+      descricao: "RESTINGA SECA",
+      id_estado: 43,
+    },
+    {
+      id: 4315453,
+      descricao: "RELVADO",
+      id_estado: 43,
+    },
+    {
+      id: 4315602,
+      descricao: "RIO GRANDE",
+      id_estado: 43,
+    },
+    {
+      id: 4315552,
+      descricao: "RIO DOS INDIOS",
+      id_estado: 43,
+    },
+    {
+      id: 4315701,
+      descricao: "RIO PARDO",
+      id_estado: 43,
+    },
+    {
+      id: 4315800,
+      descricao: "ROCA SALES",
+      id_estado: 43,
+    },
+    {
+      id: 4315750,
+      descricao: "RIOZINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4315909,
+      descricao: "RODEIO BONITO",
+      id_estado: 43,
+    },
+    {
+      id: 4316006,
+      descricao: "ROLANTE",
+      id_estado: 43,
+    },
+    {
+      id: 4315958,
+      descricao: "ROLADOR",
+      id_estado: 43,
+    },
+    {
+      id: 4316204,
+      descricao: "RONDINHA",
+      id_estado: 43,
+    },
+    {
+      id: 4316105,
+      descricao: "RONDA ALTA",
+      id_estado: 43,
+    },
+    {
+      id: 4316303,
+      descricao: "ROQUE GONZALES",
+      id_estado: 43,
+    },
+    {
+      id: 4316402,
+      descricao: "ROSARIO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4316436,
+      descricao: "SALDANHA MARINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4316428,
+      descricao: "SAGRADA FAMILIA",
+      id_estado: 43,
+    },
+    {
+      id: 4316451,
+      descricao: "SALTO DO JACUI",
+      id_estado: 43,
+    },
+    {
+      id: 4316477,
+      descricao: "SALVADOR DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4316501,
+      descricao: "SALVADOR DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4316709,
+      descricao: "SANTA BARBARA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4316600,
+      descricao: "SANANDUVA",
+      id_estado: 43,
+    },
+    {
+      id: 4320909,
+      descricao: "TAPEJARA",
+      id_estado: 43,
+    },
+    {
+      id: 4316733,
+      descricao: "SANTA CECILIA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4316808,
+      descricao: "SANTA CRUZ DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4316758,
+      descricao: "SANTA CLARA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4316907,
+      descricao: "SANTA MARIA",
+      id_estado: 43,
+    },
+    {
+      id: 4316972,
+      descricao: "SANTA MARGARIDA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4316956,
+      descricao: "SANTA MARIA DO HERVAL",
+      id_estado: 43,
+    },
+    {
+      id: 4317004,
+      descricao: "SANTANA DA BOA VISTA",
+      id_estado: 43,
+    },
+    {
+      id: 4317103,
+      descricao: "SANT ANA DO LIVRAMENTO",
+      id_estado: 43,
+    },
+    {
+      id: 4317251,
+      descricao: "SANTA TEREZA",
+      id_estado: 43,
+    },
+    {
+      id: 4317202,
+      descricao: "SANTA ROSA",
+      id_estado: 43,
+    },
+    {
+      id: 4317301,
+      descricao: "SANTA VITORIA DO PALMAR",
+      id_estado: 43,
+    },
+    {
+      id: 4317400,
+      descricao: "SANTIAGO",
+      id_estado: 43,
+    },
+    {
+      id: 4317509,
+      descricao: "SANTO ANGELO",
+      id_estado: 43,
+    },
+    {
+      id: 4317558,
+      descricao: "SANTO ANTONIO DO PALMA",
+      id_estado: 43,
+    },
+    {
+      id: 4317608,
+      descricao: "SANTO ANTONIO DA PATRULHA",
+      id_estado: 43,
+    },
+    {
+      id: 4317707,
+      descricao: "SANTO ANTONIO DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4317756,
+      descricao: "SANTO ANTONIO DO PLANALTO",
+      id_estado: 43,
+    },
+    {
+      id: 4317806,
+      descricao: "SANTO AUGUSTO",
+      id_estado: 43,
+    },
+    {
+      id: 4317954,
+      descricao: "SANTO EXPEDITO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4317905,
+      descricao: "SANTO CRISTO",
+      id_estado: 43,
+    },
+    {
+      id: 4318051,
+      descricao: "SAO DOMINGOS DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4318002,
+      descricao: "SAO BORJA",
+      id_estado: 43,
+    },
+    {
+      id: 4318101,
+      descricao: "SAO FRANCISCO DE ASSIS",
+      id_estado: 43,
+    },
+    {
+      id: 4318200,
+      descricao: "SAO FRANCISCO DE PAULA",
+      id_estado: 43,
+    },
+    {
+      id: 4318309,
+      descricao: "SAO GABRIEL",
+      id_estado: 43,
+    },
+    {
+      id: 4318408,
+      descricao: "SAO JERONIMO",
+      id_estado: 43,
+    },
+    {
+      id: 4318432,
+      descricao: "SAO JOAO DO POLESINE",
+      id_estado: 43,
+    },
+    {
+      id: 4318424,
+      descricao: "SAO JOAO DA URTIGA",
+      id_estado: 43,
+    },
+    {
+      id: 4318457,
+      descricao: "SAO JOSE DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4318440,
+      descricao: "SAO JORGE",
+      id_estado: 43,
+    },
+    {
+      id: 4318465,
+      descricao: "SAO JOSE DO HERVAL",
+      id_estado: 43,
+    },
+    {
+      id: 4318481,
+      descricao: "SAO JOSE DO HORTENCIO",
+      id_estado: 43,
+    },
+    {
+      id: 4318499,
+      descricao: "SAO JOSE DO INHACORA",
+      id_estado: 43,
+    },
+    {
+      id: 4318507,
+      descricao: "SAO JOSE DO NORTE",
+      id_estado: 43,
+    },
+    {
+      id: 4318606,
+      descricao: "SAO JOSE DO OURO",
+      id_estado: 43,
+    },
+    {
+      id: 4318614,
+      descricao: "SAO JOSE DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4318622,
+      descricao: "SAO JOSE DOS AUSENTES",
+      id_estado: 43,
+    },
+    {
+      id: 4318804,
+      descricao: "SAO LOURENCO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4318705,
+      descricao: "SAO LEOPOLDO",
+      id_estado: 43,
+    },
+    {
+      id: 4318903,
+      descricao: "SAO LUIZ GONZAGA",
+      id_estado: 43,
+    },
+    {
+      id: 4319109,
+      descricao: "SAO MARTINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4319000,
+      descricao: "SAO MARCOS",
+      id_estado: 43,
+    },
+    {
+      id: 4319125,
+      descricao: "SAO MARTINHO DA SERRA",
+      id_estado: 43,
+    },
+    {
+      id: 4319158,
+      descricao: "SAO MIGUEL DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4319208,
+      descricao: "SAO NICOLAU",
+      id_estado: 43,
+    },
+    {
+      id: 4319307,
+      descricao: "SAO PAULO DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4319356,
+      descricao: "SAO PEDRO DA SERRA",
+      id_estado: 43,
+    },
+    {
+      id: 4319364,
+      descricao: "SAO PEDRO DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4319372,
+      descricao: "SAO PEDRO DO BUTIA",
+      id_estado: 43,
+    },
+    {
+      id: 4319406,
+      descricao: "SAO PEDRO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4319505,
+      descricao: "SAO SEBASTIAO DO CAI",
+      id_estado: 43,
+    },
+    {
+      id: 4319604,
+      descricao: "SAO SEPE",
+      id_estado: 43,
+    },
+    {
+      id: 4319703,
+      descricao: "SAO VALENTIM",
+      id_estado: 43,
+    },
+    {
+      id: 4319711,
+      descricao: "SAO VALENTIM DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4319737,
+      descricao: "SAO VALERIO DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4319752,
+      descricao: "SAO VENDELINO",
+      id_estado: 43,
+    },
+    {
+      id: 4319802,
+      descricao: "SAO VICENTE DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4319901,
+      descricao: "SAPIRANGA",
+      id_estado: 43,
+    },
+    {
+      id: 4320008,
+      descricao: "SAPUCAIA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4320206,
+      descricao: "SEBERI",
+      id_estado: 43,
+    },
+    {
+      id: 4320107,
+      descricao: "SARANDI",
+      id_estado: 43,
+    },
+    {
+      id: 4320230,
+      descricao: "SEDE NOVA",
+      id_estado: 43,
+    },
+    {
+      id: 4320263,
+      descricao: "SEGREDO",
+      id_estado: 43,
+    },
+    {
+      id: 4320321,
+      descricao: "SENADOR SALGADO FILHO",
+      id_estado: 43,
+    },
+    {
+      id: 4320305,
+      descricao: "SELBACH",
+      id_estado: 43,
+    },
+    {
+      id: 4320354,
+      descricao: "SENTINELA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4320404,
+      descricao: "SERAFINA CORREA",
+      id_estado: 43,
+    },
+    {
+      id: 4320453,
+      descricao: "SERIO",
+      id_estado: 43,
+    },
+    {
+      id: 4320552,
+      descricao: "SERTAO SANTANA",
+      id_estado: 43,
+    },
+    {
+      id: 4320578,
+      descricao: "SETE DE SETEMBRO",
+      id_estado: 43,
+    },
+    {
+      id: 4320503,
+      descricao: "SERTAO",
+      id_estado: 43,
+    },
+    {
+      id: 4320651,
+      descricao: "SILVEIRA MARTINS",
+      id_estado: 43,
+    },
+    {
+      id: 4320602,
+      descricao: "SEVERIANO DE ALMEIDA",
+      id_estado: 43,
+    },
+    {
+      id: 4320701,
+      descricao: "SOBRADINHO",
+      id_estado: 43,
+    },
+    {
+      id: 4320677,
+      descricao: "SINIMBU",
+      id_estado: 43,
+    },
+    {
+      id: 4320800,
+      descricao: "SOLEDADE",
+      id_estado: 43,
+    },
+    {
+      id: 4320859,
+      descricao: "TABAI",
+      id_estado: 43,
+    },
+    {
+      id: 4321006,
+      descricao: "TAPERA",
+      id_estado: 43,
+    },
+    {
+      id: 4321204,
+      descricao: "TAQUARA",
+      id_estado: 43,
+    },
+    {
+      id: 4321105,
+      descricao: "TAPES",
+      id_estado: 43,
+    },
+    {
+      id: 4321329,
+      descricao: "TAQUARUCU DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4321303,
+      descricao: "TAQUARI",
+      id_estado: 43,
+    },
+    {
+      id: 4321352,
+      descricao: "TAVARES",
+      id_estado: 43,
+    },
+    {
+      id: 4321402,
+      descricao: "TENENTE PORTELA",
+      id_estado: 43,
+    },
+    {
+      id: 4321436,
+      descricao: "TERRA DE AREIA",
+      id_estado: 43,
+    },
+    {
+      id: 4321451,
+      descricao: "TEUTONIA",
+      id_estado: 43,
+    },
+    {
+      id: 4321469,
+      descricao: "TIO HUGO",
+      id_estado: 43,
+    },
+    {
+      id: 4321477,
+      descricao: "TIRADENTES DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4321493,
+      descricao: "TOROPI",
+      id_estado: 43,
+    },
+    {
+      id: 4321501,
+      descricao: "TORRES",
+      id_estado: 43,
+    },
+    {
+      id: 4321626,
+      descricao: "TRAVESSEIRO",
+      id_estado: 43,
+    },
+    {
+      id: 4321600,
+      descricao: "TRAMANDAI",
+      id_estado: 43,
+    },
+    {
+      id: 4321634,
+      descricao: "TRES ARROIOS",
+      id_estado: 43,
+    },
+    {
+      id: 4321667,
+      descricao: "TRES CACHOEIRAS",
+      id_estado: 43,
+    },
+    {
+      id: 4321709,
+      descricao: "TRES COROAS",
+      id_estado: 43,
+    },
+    {
+      id: 4321808,
+      descricao: "TRES DE MAIO",
+      id_estado: 43,
+    },
+    {
+      id: 4321832,
+      descricao: "TRES FORQUILHAS",
+      id_estado: 43,
+    },
+    {
+      id: 4321857,
+      descricao: "TRES PALMEIRAS",
+      id_estado: 43,
+    },
+    {
+      id: 4321907,
+      descricao: "TRES PASSOS",
+      id_estado: 43,
+    },
+    {
+      id: 4322004,
+      descricao: "TRIUNFO",
+      id_estado: 43,
+    },
+    {
+      id: 4321956,
+      descricao: "TRINDADE DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4322103,
+      descricao: "TUCUNDUVA",
+      id_estado: 43,
+    },
+    {
+      id: 4322152,
+      descricao: "TUNAS",
+      id_estado: 43,
+    },
+    {
+      id: 4322186,
+      descricao: "TUPANCI DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4322202,
+      descricao: "TUPANCIRETA",
+      id_estado: 43,
+    },
+    {
+      id: 4322251,
+      descricao: "TUPANDI",
+      id_estado: 43,
+    },
+    {
+      id: 4322301,
+      descricao: "TUPARENDI",
+      id_estado: 43,
+    },
+    {
+      id: 4322327,
+      descricao: "TURUCU",
+      id_estado: 43,
+    },
+    {
+      id: 4322343,
+      descricao: "UBIRETAMA",
+      id_estado: 43,
+    },
+    {
+      id: 4322350,
+      descricao: "UNIAO DA SERRA",
+      id_estado: 43,
+    },
+    {
+      id: 4322400,
+      descricao: "URUGUAIANA",
+      id_estado: 43,
+    },
+    {
+      id: 4322376,
+      descricao: "UNISTALDA",
+      id_estado: 43,
+    },
+    {
+      id: 4322509,
+      descricao: "VACARIA",
+      id_estado: 43,
+    },
+    {
+      id: 4322525,
+      descricao: "VALE VERDE",
+      id_estado: 43,
+    },
+    {
+      id: 4322541,
+      descricao: "VALE REAL",
+      id_estado: 43,
+    },
+    {
+      id: 4322533,
+      descricao: "VALE DO SOL",
+      id_estado: 43,
+    },
+    {
+      id: 4322558,
+      descricao: "VANINI",
+      id_estado: 43,
+    },
+    {
+      id: 4322608,
+      descricao: "VENANCIO AIRES",
+      id_estado: 43,
+    },
+    {
+      id: 4322707,
+      descricao: "VERA CRUZ",
+      id_estado: 43,
+    },
+    {
+      id: 4322905,
+      descricao: "VIADUTOS",
+      id_estado: 43,
+    },
+    {
+      id: 4322855,
+      descricao: "VESPASIANO CORREA",
+      id_estado: 43,
+    },
+    {
+      id: 4322806,
+      descricao: "VERANOPOLIS",
+      id_estado: 43,
+    },
+    {
+      id: 4323002,
+      descricao: "VIAMAO",
+      id_estado: 43,
+    },
+    {
+      id: 4323101,
+      descricao: "VICENTE DUTRA",
+      id_estado: 43,
+    },
+    {
+      id: 4323200,
+      descricao: "VICTOR GRAEFF",
+      id_estado: 43,
+    },
+    {
+      id: 4323309,
+      descricao: "VILA FLORES",
+      id_estado: 43,
+    },
+    {
+      id: 4323358,
+      descricao: "VILA LANGARO",
+      id_estado: 43,
+    },
+    {
+      id: 4323408,
+      descricao: "VILA MARIA",
+      id_estado: 43,
+    },
+    {
+      id: 4323507,
+      descricao: "VISTA ALEGRE",
+      id_estado: 43,
+    },
+    {
+      id: 4323457,
+      descricao: "VILA NOVA DO SUL",
+      id_estado: 43,
+    },
+    {
+      id: 4323606,
+      descricao: "VISTA ALEGRE DO PRATA",
+      id_estado: 43,
+    },
+    {
+      id: 4323705,
+      descricao: "VISTA GAUCHA",
+      id_estado: 43,
+    },
+    {
+      id: 4323754,
+      descricao: "VITORIA DAS MISSOES",
+      id_estado: 43,
+    },
+    {
+      id: 4323770,
+      descricao: "WESTFALIA",
+      id_estado: 43,
+    },
+    {
+      id: 4323804,
+      descricao: "XANGRILA",
+      id_estado: 43,
+    },
+    {
+      id: 1100015,
+      descricao: "ALTA FLORESTA DOESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100031,
+      descricao: "CABIXI",
+      id_estado: 11,
+    },
+    {
+      id: 1100023,
+      descricao: "ARIQUEMES",
+      id_estado: 11,
+    },
+    {
+      id: 1100049,
+      descricao: "CACOAL",
+      id_estado: 11,
+    },
+    {
+      id: 1100056,
+      descricao: "CEREJEIRAS",
+      id_estado: 11,
+    },
+    {
+      id: 1100064,
+      descricao: "COLORADO DO OESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100072,
+      descricao: "CORUMBIARA",
+      id_estado: 11,
+    },
+    {
+      id: 1100080,
+      descricao: "COSTA MARQUES",
+      id_estado: 11,
+    },
+    {
+      id: 1100098,
+      descricao: "ESPIGAO DOESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100106,
+      descricao: "GUAJARAMIRIM",
+      id_estado: 11,
+    },
+    {
+      id: 1100114,
+      descricao: "JARU",
+      id_estado: 11,
+    },
+    {
+      id: 1100122,
+      descricao: "JIPARANA",
+      id_estado: 11,
+    },
+    {
+      id: 1100130,
+      descricao: "MACHADINHO DOESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100148,
+      descricao: "NOVA BRASILANDIA DOESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100155,
+      descricao: "OURO PRETO DO OESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100189,
+      descricao: "PIMENTA BUENO",
+      id_estado: 11,
+    },
+    {
+      id: 1100205,
+      descricao: "PORTO VELHO",
+      id_estado: 11,
+    },
+    {
+      id: 1100254,
+      descricao: "PRESIDENTE MEDICI",
+      id_estado: 11,
+    },
+    {
+      id: 1100262,
+      descricao: "RIO CRESPO",
+      id_estado: 11,
+    },
+    {
+      id: 1100296,
+      descricao: "SANTA LUZIA DOESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100304,
+      descricao: "VILHENA",
+      id_estado: 11,
+    },
+    {
+      id: 1100288,
+      descricao: "ROLIM DE MOURA",
+      id_estado: 11,
+    },
+    {
+      id: 1100320,
+      descricao: "SAO MIGUEL DO GUAPORE",
+      id_estado: 11,
+    },
+    {
+      id: 1100338,
+      descricao: "NOVA MAMORE",
+      id_estado: 11,
+    },
+    {
+      id: 1100346,
+      descricao: "ALVORADA DOESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100379,
+      descricao: "ALTO ALEGRE DOS PARECIS",
+      id_estado: 11,
+    },
+    {
+      id: 1100452,
+      descricao: "BURITIS",
+      id_estado: 11,
+    },
+    {
+      id: 1100403,
+      descricao: "ALTO PARAISO",
+      id_estado: 11,
+    },
+    {
+      id: 1100502,
+      descricao: "NOVO HORIZONTE DO OESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1100601,
+      descricao: "CACAULANDIA",
+      id_estado: 11,
+    },
+    {
+      id: 1100700,
+      descricao: "CAMPO NOVO DE RONDONIA",
+      id_estado: 11,
+    },
+    {
+      id: 1100809,
+      descricao: "CANDEIAS DO JAMARI",
+      id_estado: 11,
+    },
+    {
+      id: 1100908,
+      descricao: "CASTANHEIRAS",
+      id_estado: 11,
+    },
+    {
+      id: 1100924,
+      descricao: "CHUPINGUAIA",
+      id_estado: 11,
+    },
+    {
+      id: 1100940,
+      descricao: "CUJUBIM",
+      id_estado: 11,
+    },
+    {
+      id: 1101104,
+      descricao: "ITAPUA DO OESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1101005,
+      descricao: "GOVERNADOR JORGE TEIXEIRA",
+      id_estado: 11,
+    },
+    {
+      id: 1101203,
+      descricao: "MINISTRO ANDREAZZA",
+      id_estado: 11,
+    },
+    {
+      id: 1101401,
+      descricao: "MONTE NEGRO",
+      id_estado: 11,
+    },
+    {
+      id: 1101302,
+      descricao: "MIRANTE DA SERRA",
+      id_estado: 11,
+    },
+    {
+      id: 1101435,
+      descricao: "NOVA UNIAO",
+      id_estado: 11,
+    },
+    {
+      id: 1101450,
+      descricao: "PARECIS",
+      id_estado: 11,
+    },
+    {
+      id: 1101468,
+      descricao: "PIMENTEIRAS DO OESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1101476,
+      descricao: "PRIMAVERA DE RONDONIA",
+      id_estado: 11,
+    },
+    {
+      id: 1101484,
+      descricao: "SAO FELIPE DOESTE",
+      id_estado: 11,
+    },
+    {
+      id: 1101492,
+      descricao: "SAO FRANCISCO DO GUAPORE",
+      id_estado: 11,
+    },
+    {
+      id: 1101500,
+      descricao: "SERINGUEIRAS",
+      id_estado: 11,
+    },
+    {
+      id: 1101559,
+      descricao: "TEIXEIROPOLIS",
+      id_estado: 11,
+    },
+    {
+      id: 1101708,
+      descricao: "URUPA",
+      id_estado: 11,
+    },
+    {
+      id: 1101609,
+      descricao: "THEOBROMA",
+      id_estado: 11,
+    },
+    {
+      id: 1101807,
+      descricao: "VALE DO PARAISO",
+      id_estado: 11,
+    },
+    {
+      id: 1101757,
+      descricao: "VALE DO ANARI",
+      id_estado: 11,
+    },
+    {
+      id: 1400050,
+      descricao: "ALTO ALEGRE",
+      id_estado: 14,
+    },
+    {
+      id: 1400100,
+      descricao: "BOA VISTA",
+      id_estado: 14,
+    },
+    {
+      id: 1400027,
+      descricao: "AMAJARI",
+      id_estado: 14,
+    },
+    {
+      id: 1400175,
+      descricao: "CANTA",
+      id_estado: 14,
+    },
+    {
+      id: 1400209,
+      descricao: "CARACARAI",
+      id_estado: 14,
+    },
+    {
+      id: 1400159,
+      descricao: "BONFIM",
+      id_estado: 14,
+    },
+    {
+      id: 1400282,
+      descricao: "IRACEMA",
+      id_estado: 14,
+    },
+    {
+      id: 1400233,
+      descricao: "CAROEBE",
+      id_estado: 14,
+    },
+    {
+      id: 1400308,
+      descricao: "MUCAJAI",
+      id_estado: 14,
+    },
+    {
+      id: 1400456,
+      descricao: "PACARAIMA",
+      id_estado: 14,
+    },
+    {
+      id: 1400472,
+      descricao: "RORAINOPOLIS",
+      id_estado: 14,
+    },
+    {
+      id: 1400407,
+      descricao: "NORMANDIA",
+      id_estado: 14,
+    },
+    {
+      id: 1400506,
+      descricao: "SAO JOAO DA BALIZA",
+      id_estado: 14,
+    },
+    {
+      id: 1400605,
+      descricao: "SAO LUIZ",
+      id_estado: 14,
+    },
+    {
+      id: 1400704,
+      descricao: "UIRAMUTA",
+      id_estado: 14,
+    },
+    {
+      id: 4200200,
+      descricao: "AGROLANDIA",
+      id_estado: 42,
+    },
+    {
+      id: 4200101,
+      descricao: "ABELARDO LUZ",
+      id_estado: 42,
+    },
+    {
+      id: 4200051,
+      descricao: "ABDON BATISTA",
+      id_estado: 42,
+    },
+    {
+      id: 4200408,
+      descricao: "AGUA DOCE",
+      id_estado: 42,
+    },
+    {
+      id: 4200309,
+      descricao: "AGRONOMICA",
+      id_estado: 42,
+    },
+    {
+      id: 4200606,
+      descricao: "AGUAS MORNAS",
+      id_estado: 42,
+    },
+    {
+      id: 4200507,
+      descricao: "AGUAS DE CHAPECO",
+      id_estado: 42,
+    },
+    {
+      id: 4200556,
+      descricao: "AGUAS FRIAS",
+      id_estado: 42,
+    },
+    {
+      id: 4200705,
+      descricao: "ALFREDO WAGNER",
+      id_estado: 42,
+    },
+    {
+      id: 4200804,
+      descricao: "ANCHIETA",
+      id_estado: 42,
+    },
+    {
+      id: 4200754,
+      descricao: "ALTO BELA VISTA",
+      id_estado: 42,
+    },
+    {
+      id: 4200903,
+      descricao: "ANGELINA",
+      id_estado: 42,
+    },
+    {
+      id: 4201000,
+      descricao: "ANITA GARIBALDI",
+      id_estado: 42,
+    },
+    {
+      id: 4201208,
+      descricao: "ANTONIO CARLOS",
+      id_estado: 42,
+    },
+    {
+      id: 4201257,
+      descricao: "APIUNA",
+      id_estado: 42,
+    },
+    {
+      id: 4201109,
+      descricao: "ANITAPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4201307,
+      descricao: "ARAQUARI",
+      id_estado: 42,
+    },
+    {
+      id: 4201273,
+      descricao: "ARABUTA",
+      id_estado: 42,
+    },
+    {
+      id: 4201406,
+      descricao: "ARARANGUA",
+      id_estado: 42,
+    },
+    {
+      id: 4201505,
+      descricao: "ARMAZEM",
+      id_estado: 42,
+    },
+    {
+      id: 4201604,
+      descricao: "ARROIO TRINTA",
+      id_estado: 42,
+    },
+    {
+      id: 4201653,
+      descricao: "ARVOREDO",
+      id_estado: 42,
+    },
+    {
+      id: 4201901,
+      descricao: "AURORA",
+      id_estado: 42,
+    },
+    {
+      id: 4201802,
+      descricao: "ATALANTA",
+      id_estado: 42,
+    },
+    {
+      id: 4201703,
+      descricao: "ASCURRA",
+      id_estado: 42,
+    },
+    {
+      id: 4202008,
+      descricao: "BALNEARIO CAMBORIU",
+      id_estado: 42,
+    },
+    {
+      id: 4201950,
+      descricao: "BALNEARIO ARROIO DO SILVA",
+      id_estado: 42,
+    },
+    {
+      id: 4202057,
+      descricao: "BALNEARIO BARRA DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4202081,
+      descricao: "BANDEIRANTE",
+      id_estado: 42,
+    },
+    {
+      id: 4202073,
+      descricao: "BALNEARIO GAIVOTA",
+      id_estado: 42,
+    },
+    {
+      id: 4202107,
+      descricao: "BARRA VELHA",
+      id_estado: 42,
+    },
+    {
+      id: 4202099,
+      descricao: "BARRA BONITA",
+      id_estado: 42,
+    },
+    {
+      id: 4202131,
+      descricao: "BELA VISTA DO TOLDO",
+      id_estado: 42,
+    },
+    {
+      id: 4202206,
+      descricao: "BENEDITO NOVO",
+      id_estado: 42,
+    },
+    {
+      id: 4202156,
+      descricao: "BELMONTE",
+      id_estado: 42,
+    },
+    {
+      id: 4202305,
+      descricao: "BIGUACU",
+      id_estado: 42,
+    },
+    {
+      id: 4202438,
+      descricao: "BOCAINA DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4202404,
+      descricao: "BLUMENAU",
+      id_estado: 42,
+    },
+    {
+      id: 4202537,
+      descricao: "BOM JESUS",
+      id_estado: 42,
+    },
+    {
+      id: 4202503,
+      descricao: "BOM JARDIM DA SERRA",
+      id_estado: 42,
+    },
+    {
+      id: 4202453,
+      descricao: "BOMBINHAS",
+      id_estado: 42,
+    },
+    {
+      id: 4202602,
+      descricao: "BOM RETIRO",
+      id_estado: 42,
+    },
+    {
+      id: 4202578,
+      descricao: "BOM JESUS DO OESTE",
+      id_estado: 42,
+    },
+    {
+      id: 4202701,
+      descricao: "BOTUVERA",
+      id_estado: 42,
+    },
+    {
+      id: 4202800,
+      descricao: "BRACO DO NORTE",
+      id_estado: 42,
+    },
+    {
+      id: 4202875,
+      descricao: "BRUNOPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4202909,
+      descricao: "BRUSQUE",
+      id_estado: 42,
+    },
+    {
+      id: 4202859,
+      descricao: "BRACO DO TROMBUDO",
+      id_estado: 42,
+    },
+    {
+      id: 4203105,
+      descricao: "CAIBI",
+      id_estado: 42,
+    },
+    {
+      id: 4203006,
+      descricao: "CACADOR",
+      id_estado: 42,
+    },
+    {
+      id: 4203154,
+      descricao: "CALMON",
+      id_estado: 42,
+    },
+    {
+      id: 4203204,
+      descricao: "CAMBORIU",
+      id_estado: 42,
+    },
+    {
+      id: 4203402,
+      descricao: "CAMPO BELO DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4203303,
+      descricao: "CAMPO ALEGRE",
+      id_estado: 42,
+    },
+    {
+      id: 4203253,
+      descricao: "CAPAO ALTO",
+      id_estado: 42,
+    },
+    {
+      id: 4203600,
+      descricao: "CAMPOS NOVOS",
+      id_estado: 42,
+    },
+    {
+      id: 4203501,
+      descricao: "CAMPO ERE",
+      id_estado: 42,
+    },
+    {
+      id: 4203709,
+      descricao: "CANELINHA",
+      id_estado: 42,
+    },
+    {
+      id: 4203808,
+      descricao: "CANOINHAS",
+      id_estado: 42,
+    },
+    {
+      id: 4203907,
+      descricao: "CAPINZAL",
+      id_estado: 42,
+    },
+    {
+      id: 4203956,
+      descricao: "CAPIVARI DE BAIXO",
+      id_estado: 42,
+    },
+    {
+      id: 4204103,
+      descricao: "CAXAMBU DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4204004,
+      descricao: "CATANDUVAS",
+      id_estado: 42,
+    },
+    {
+      id: 4204152,
+      descricao: "CELSO RAMOS",
+      id_estado: 42,
+    },
+    {
+      id: 4204194,
+      descricao: "CHAPADAO DO LAGEADO",
+      id_estado: 42,
+    },
+    {
+      id: 4204178,
+      descricao: "CERRO NEGRO",
+      id_estado: 42,
+    },
+    {
+      id: 4204202,
+      descricao: "CHAPECO",
+      id_estado: 42,
+    },
+    {
+      id: 4204251,
+      descricao: "COCAL DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4204301,
+      descricao: "CONCORDIA",
+      id_estado: 42,
+    },
+    {
+      id: 4204400,
+      descricao: "CORONEL FREITAS",
+      id_estado: 42,
+    },
+    {
+      id: 4204350,
+      descricao: "CORDILHEIRA ALTA",
+      id_estado: 42,
+    },
+    {
+      id: 4204459,
+      descricao: "CORONEL MARTINS",
+      id_estado: 42,
+    },
+    {
+      id: 4204558,
+      descricao: "CORREIA PINTO",
+      id_estado: 42,
+    },
+    {
+      id: 4204509,
+      descricao: "CORUPA",
+      id_estado: 42,
+    },
+    {
+      id: 4204756,
+      descricao: "CUNHATAI",
+      id_estado: 42,
+    },
+    {
+      id: 4204707,
+      descricao: "CUNHA PORA",
+      id_estado: 42,
+    },
+    {
+      id: 4204608,
+      descricao: "CRICIUMA",
+      id_estado: 42,
+    },
+    {
+      id: 4204806,
+      descricao: "CURITIBANOS",
+      id_estado: 42,
+    },
+    {
+      id: 4205001,
+      descricao: "DIONISIO CERQUEIRA",
+      id_estado: 42,
+    },
+    {
+      id: 4204905,
+      descricao: "DESCANSO",
+      id_estado: 42,
+    },
+    {
+      id: 4205100,
+      descricao: "DONA EMMA",
+      id_estado: 42,
+    },
+    {
+      id: 4205191,
+      descricao: "ERMO",
+      id_estado: 42,
+    },
+    {
+      id: 4205175,
+      descricao: "ENTRE RIOS",
+      id_estado: 42,
+    },
+    {
+      id: 4205159,
+      descricao: "DOUTOR PEDRINHO",
+      id_estado: 42,
+    },
+    {
+      id: 4205308,
+      descricao: "FAXINAL DOS GUEDES",
+      id_estado: 42,
+    },
+    {
+      id: 4205209,
+      descricao: "ERVAL VELHO",
+      id_estado: 42,
+    },
+    {
+      id: 4205407,
+      descricao: "FLORIANOPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4205357,
+      descricao: "FLOR DO SERTAO",
+      id_estado: 42,
+    },
+    {
+      id: 4205431,
+      descricao: "FORMOSA DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4205506,
+      descricao: "FRAIBURGO",
+      id_estado: 42,
+    },
+    {
+      id: 4205555,
+      descricao: "FREI ROGERIO",
+      id_estado: 42,
+    },
+    {
+      id: 4205456,
+      descricao: "FORQUILHINHA",
+      id_estado: 42,
+    },
+    {
+      id: 4205704,
+      descricao: "GAROPABA",
+      id_estado: 42,
+    },
+    {
+      id: 4205605,
+      descricao: "GALVAO",
+      id_estado: 42,
+    },
+    {
+      id: 4205803,
+      descricao: "GARUVA",
+      id_estado: 42,
+    },
+    {
+      id: 4206108,
+      descricao: "GRAO PARA",
+      id_estado: 42,
+    },
+    {
+      id: 4205902,
+      descricao: "GASPAR",
+      id_estado: 42,
+    },
+    {
+      id: 4206009,
+      descricao: "GOVERNADOR CELSO RAMOS",
+      id_estado: 42,
+    },
+    {
+      id: 4206306,
+      descricao: "GUABIRUBA",
+      id_estado: 42,
+    },
+    {
+      id: 4206207,
+      descricao: "GRAVATAL",
+      id_estado: 42,
+    },
+    {
+      id: 4206504,
+      descricao: "GUARAMIRIM",
+      id_estado: 42,
+    },
+    {
+      id: 4206405,
+      descricao: "GUARACIABA",
+      id_estado: 42,
+    },
+    {
+      id: 4206652,
+      descricao: "GUATAMBU",
+      id_estado: 42,
+    },
+    {
+      id: 4206603,
+      descricao: "GUARUJA DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4206801,
+      descricao: "IBICARE",
+      id_estado: 42,
+    },
+    {
+      id: 4206751,
+      descricao: "IBIAM",
+      id_estado: 42,
+    },
+    {
+      id: 4206702,
+      descricao: "HERVAL DOESTE",
+      id_estado: 42,
+    },
+    {
+      id: 4206900,
+      descricao: "IBIRAMA",
+      id_estado: 42,
+    },
+    {
+      id: 4207007,
+      descricao: "ICARA",
+      id_estado: 42,
+    },
+    {
+      id: 4207106,
+      descricao: "ILHOTA",
+      id_estado: 42,
+    },
+    {
+      id: 4207205,
+      descricao: "IMARUI",
+      id_estado: 42,
+    },
+    {
+      id: 4207403,
+      descricao: "IMBUIA",
+      id_estado: 42,
+    },
+    {
+      id: 4207304,
+      descricao: "IMBITUBA",
+      id_estado: 42,
+    },
+    {
+      id: 4207502,
+      descricao: "INDAIAL",
+      id_estado: 42,
+    },
+    {
+      id: 4207577,
+      descricao: "IOMERE",
+      id_estado: 42,
+    },
+    {
+      id: 4207684,
+      descricao: "IPUACU",
+      id_estado: 42,
+    },
+    {
+      id: 4207601,
+      descricao: "IPIRA",
+      id_estado: 42,
+    },
+    {
+      id: 4207650,
+      descricao: "IPORA DO OESTE",
+      id_estado: 42,
+    },
+    {
+      id: 4207759,
+      descricao: "IRACEMINHA",
+      id_estado: 42,
+    },
+    {
+      id: 4207809,
+      descricao: "IRANI",
+      id_estado: 42,
+    },
+    {
+      id: 4207700,
+      descricao: "IPUMIRIM",
+      id_estado: 42,
+    },
+    {
+      id: 4207908,
+      descricao: "IRINEOPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4207858,
+      descricao: "IRATI",
+      id_estado: 42,
+    },
+    {
+      id: 4208104,
+      descricao: "ITAIOPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4208005,
+      descricao: "ITA",
+      id_estado: 42,
+    },
+    {
+      id: 4208302,
+      descricao: "ITAPEMA",
+      id_estado: 42,
+    },
+    {
+      id: 4208203,
+      descricao: "ITAJAI",
+      id_estado: 42,
+    },
+    {
+      id: 4208401,
+      descricao: "ITAPIRANGA",
+      id_estado: 42,
+    },
+    {
+      id: 4208450,
+      descricao: "ITAPOA",
+      id_estado: 42,
+    },
+    {
+      id: 4208500,
+      descricao: "ITUPORANGA",
+      id_estado: 42,
+    },
+    {
+      id: 4208609,
+      descricao: "JABORA",
+      id_estado: 42,
+    },
+    {
+      id: 4208708,
+      descricao: "JACINTO MACHADO",
+      id_estado: 42,
+    },
+    {
+      id: 4208807,
+      descricao: "JAGUARUNA",
+      id_estado: 42,
+    },
+    {
+      id: 4208906,
+      descricao: "JARAGUA DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4208955,
+      descricao: "JARDINOPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4209003,
+      descricao: "JOACABA",
+      id_estado: 42,
+    },
+    {
+      id: 4209102,
+      descricao: "JOINVILLE",
+      id_estado: 42,
+    },
+    {
+      id: 4209201,
+      descricao: "LACERDOPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4209151,
+      descricao: "JOSE BOITEUX",
+      id_estado: 42,
+    },
+    {
+      id: 4209177,
+      descricao: "JUPIA",
+      id_estado: 42,
+    },
+    {
+      id: 4209409,
+      descricao: "LAGUNA",
+      id_estado: 42,
+    },
+    {
+      id: 4209300,
+      descricao: "LAGES",
+      id_estado: 42,
+    },
+    {
+      id: 4209458,
+      descricao: "LAJEADO GRANDE",
+      id_estado: 42,
+    },
+    {
+      id: 4209508,
+      descricao: "LAURENTINO",
+      id_estado: 42,
+    },
+    {
+      id: 4209607,
+      descricao: "LAURO MULLER",
+      id_estado: 42,
+    },
+    {
+      id: 4209805,
+      descricao: "LEOBERTO LEAL",
+      id_estado: 42,
+    },
+    {
+      id: 4209706,
+      descricao: "LEBON REGIS",
+      id_estado: 42,
+    },
+    {
+      id: 4209904,
+      descricao: "LONTRAS",
+      id_estado: 42,
+    },
+    {
+      id: 4209854,
+      descricao: "LINDOIA DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4210001,
+      descricao: "LUIZ ALVES",
+      id_estado: 42,
+    },
+    {
+      id: 4210035,
+      descricao: "LUZERNA",
+      id_estado: 42,
+    },
+    {
+      id: 4210050,
+      descricao: "MACIEIRA",
+      id_estado: 42,
+    },
+    {
+      id: 4210100,
+      descricao: "MAFRA",
+      id_estado: 42,
+    },
+    {
+      id: 4210209,
+      descricao: "MAJOR GERCINO",
+      id_estado: 42,
+    },
+    {
+      id: 4210407,
+      descricao: "MARACAJA",
+      id_estado: 42,
+    },
+    {
+      id: 4210308,
+      descricao: "MAJOR VIEIRA",
+      id_estado: 42,
+    },
+    {
+      id: 4210555,
+      descricao: "MAREMA",
+      id_estado: 42,
+    },
+    {
+      id: 4210506,
+      descricao: "MARAVILHA",
+      id_estado: 42,
+    },
+    {
+      id: 4210605,
+      descricao: "MASSARANDUBA",
+      id_estado: 42,
+    },
+    {
+      id: 4210704,
+      descricao: "MATOS COSTA",
+      id_estado: 42,
+    },
+    {
+      id: 4210803,
+      descricao: "MELEIRO",
+      id_estado: 42,
+    },
+    {
+      id: 4211009,
+      descricao: "MONDAI",
+      id_estado: 42,
+    },
+    {
+      id: 4210902,
+      descricao: "MODELO",
+      id_estado: 42,
+    },
+    {
+      id: 4210852,
+      descricao: "MIRIM DOCE",
+      id_estado: 42,
+    },
+    {
+      id: 4211108,
+      descricao: "MONTE CASTELO",
+      id_estado: 42,
+    },
+    {
+      id: 4211058,
+      descricao: "MONTE CARLO",
+      id_estado: 42,
+    },
+    {
+      id: 4211207,
+      descricao: "MORRO DA FUMACA",
+      id_estado: 42,
+    },
+    {
+      id: 4211256,
+      descricao: "MORRO GRANDE",
+      id_estado: 42,
+    },
+    {
+      id: 4211454,
+      descricao: "NOVA ITABERABA",
+      id_estado: 42,
+    },
+    {
+      id: 4211405,
+      descricao: "NOVA ERECHIM",
+      id_estado: 42,
+    },
+    {
+      id: 4211306,
+      descricao: "NAVEGANTES",
+      id_estado: 42,
+    },
+    {
+      id: 4211603,
+      descricao: "NOVA VENEZA",
+      id_estado: 42,
+    },
+    {
+      id: 4211504,
+      descricao: "NOVA TRENTO",
+      id_estado: 42,
+    },
+    {
+      id: 4211702,
+      descricao: "ORLEANS",
+      id_estado: 42,
+    },
+    {
+      id: 4211652,
+      descricao: "NOVO HORIZONTE",
+      id_estado: 42,
+    },
+    {
+      id: 4211751,
+      descricao: "OTACILIO COSTA",
+      id_estado: 42,
+    },
+    {
+      id: 4211801,
+      descricao: "OURO",
+      id_estado: 42,
+    },
+    {
+      id: 4211850,
+      descricao: "OURO VERDE",
+      id_estado: 42,
+    },
+    {
+      id: 4211876,
+      descricao: "PAIAL",
+      id_estado: 42,
+    },
+    {
+      id: 4211892,
+      descricao: "PAINEL",
+      id_estado: 42,
+    },
+    {
+      id: 4211900,
+      descricao: "PALHOCA",
+      id_estado: 42,
+    },
+    {
+      id: 4212007,
+      descricao: "PALMA SOLA",
+      id_estado: 42,
+    },
+    {
+      id: 4212106,
+      descricao: "PALMITOS",
+      id_estado: 42,
+    },
+    {
+      id: 4212056,
+      descricao: "PALMEIRA",
+      id_estado: 42,
+    },
+    {
+      id: 4212205,
+      descricao: "PAPANDUVA",
+      id_estado: 42,
+    },
+    {
+      id: 4212239,
+      descricao: "PARAISO",
+      id_estado: 42,
+    },
+    {
+      id: 4212254,
+      descricao: "PASSO DE TORRES",
+      id_estado: 42,
+    },
+    {
+      id: 4212304,
+      descricao: "PAULO LOPES",
+      id_estado: 42,
+    },
+    {
+      id: 4212403,
+      descricao: "PEDRAS GRANDES",
+      id_estado: 42,
+    },
+    {
+      id: 4212270,
+      descricao: "PASSOS MAIA",
+      id_estado: 42,
+    },
+    {
+      id: 4212700,
+      descricao: "PETROLANDIA",
+      id_estado: 42,
+    },
+    {
+      id: 4212502,
+      descricao: "PENHA",
+      id_estado: 42,
+    },
+    {
+      id: 4212601,
+      descricao: "PERITIBA",
+      id_estado: 42,
+    },
+    {
+      id: 4212809,
+      descricao: "BALNEARIO PICARRAS",
+      id_estado: 42,
+    },
+    {
+      id: 4212908,
+      descricao: "PINHALZINHO",
+      id_estado: 42,
+    },
+    {
+      id: 4213104,
+      descricao: "PIRATUBA",
+      id_estado: 42,
+    },
+    {
+      id: 4213005,
+      descricao: "PINHEIRO PRETO",
+      id_estado: 42,
+    },
+    {
+      id: 4213153,
+      descricao: "PLANALTO ALEGRE",
+      id_estado: 42,
+    },
+    {
+      id: 4213203,
+      descricao: "POMERODE",
+      id_estado: 42,
+    },
+    {
+      id: 4213302,
+      descricao: "PONTE ALTA",
+      id_estado: 42,
+    },
+    {
+      id: 4213351,
+      descricao: "PONTE ALTA DO NORTE",
+      id_estado: 42,
+    },
+    {
+      id: 4213401,
+      descricao: "PONTE SERRADA",
+      id_estado: 42,
+    },
+    {
+      id: 4213500,
+      descricao: "PORTO BELO",
+      id_estado: 42,
+    },
+    {
+      id: 4213609,
+      descricao: "PORTO UNIAO",
+      id_estado: 42,
+    },
+    {
+      id: 4213807,
+      descricao: "PRAIA GRANDE",
+      id_estado: 42,
+    },
+    {
+      id: 4213708,
+      descricao: "POUSO REDONDO",
+      id_estado: 42,
+    },
+    {
+      id: 4213906,
+      descricao: "PRESIDENTE CASTELLO BRANCO",
+      id_estado: 42,
+    },
+    {
+      id: 4214003,
+      descricao: "PRESIDENTE GETULIO",
+      id_estado: 42,
+    },
+    {
+      id: 4214151,
+      descricao: "PRINCESA",
+      id_estado: 42,
+    },
+    {
+      id: 4214102,
+      descricao: "PRESIDENTE NEREU",
+      id_estado: 42,
+    },
+    {
+      id: 4214201,
+      descricao: "QUILOMBO",
+      id_estado: 42,
+    },
+    {
+      id: 4214300,
+      descricao: "RANCHO QUEIMADO",
+      id_estado: 42,
+    },
+    {
+      id: 4214409,
+      descricao: "RIO DAS ANTAS",
+      id_estado: 42,
+    },
+    {
+      id: 4214508,
+      descricao: "RIO DO CAMPO",
+      id_estado: 42,
+    },
+    {
+      id: 4214607,
+      descricao: "RIO DO OESTE",
+      id_estado: 42,
+    },
+    {
+      id: 4214706,
+      descricao: "RIO DOS CEDROS",
+      id_estado: 42,
+    },
+    {
+      id: 4214805,
+      descricao: "RIO DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4214904,
+      descricao: "RIO FORTUNA",
+      id_estado: 42,
+    },
+    {
+      id: 4215000,
+      descricao: "RIO NEGRINHO",
+      id_estado: 42,
+    },
+    {
+      id: 4215075,
+      descricao: "RIQUEZA",
+      id_estado: 42,
+    },
+    {
+      id: 4215059,
+      descricao: "RIO RUFINO",
+      id_estado: 42,
+    },
+    {
+      id: 4215307,
+      descricao: "SALETE",
+      id_estado: 42,
+    },
+    {
+      id: 4215208,
+      descricao: "ROMELANDIA",
+      id_estado: 42,
+    },
+    {
+      id: 4215109,
+      descricao: "RODEIO",
+      id_estado: 42,
+    },
+    {
+      id: 4215406,
+      descricao: "SALTO VELOSO",
+      id_estado: 42,
+    },
+    {
+      id: 4215455,
+      descricao: "SANGAO",
+      id_estado: 42,
+    },
+    {
+      id: 4215356,
+      descricao: "SALTINHO",
+      id_estado: 42,
+    },
+    {
+      id: 4215554,
+      descricao: "SANTA HELENA",
+      id_estado: 42,
+    },
+    {
+      id: 4215505,
+      descricao: "SANTA CECILIA",
+      id_estado: 42,
+    },
+    {
+      id: 4215604,
+      descricao: "SANTA ROSA DE LIMA",
+      id_estado: 42,
+    },
+    {
+      id: 4215653,
+      descricao: "SANTA ROSA DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4215679,
+      descricao: "SANTA TEREZINHA",
+      id_estado: 42,
+    },
+    {
+      id: 4215687,
+      descricao: "SANTA TEREZINHA DO PROGRESSO",
+      id_estado: 42,
+    },
+    {
+      id: 4215695,
+      descricao: "SANTIAGO DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4215752,
+      descricao: "SAO BERNARDINO",
+      id_estado: 42,
+    },
+    {
+      id: 4215703,
+      descricao: "SANTO AMARO DA IMPERATRIZ",
+      id_estado: 42,
+    },
+    {
+      id: 4215901,
+      descricao: "SAO BONIFACIO",
+      id_estado: 42,
+    },
+    {
+      id: 4215802,
+      descricao: "SAO BENTO DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4216008,
+      descricao: "SAO CARLOS",
+      id_estado: 42,
+    },
+    {
+      id: 4216107,
+      descricao: "SAO DOMINGOS",
+      id_estado: 42,
+    },
+    {
+      id: 4216057,
+      descricao: "SAO CRISTOVAO DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4216206,
+      descricao: "SAO FRANCISCO DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4216255,
+      descricao: "SAO JOAO DO OESTE",
+      id_estado: 42,
+    },
+    {
+      id: 4216305,
+      descricao: "SAO JOAO BATISTA",
+      id_estado: 42,
+    },
+    {
+      id: 4216354,
+      descricao: "SAO JOAO DO ITAPERIU",
+      id_estado: 42,
+    },
+    {
+      id: 4216503,
+      descricao: "SAO JOAQUIM",
+      id_estado: 42,
+    },
+    {
+      id: 4216404,
+      descricao: "SAO JOAO DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4216602,
+      descricao: "SAO JOSE",
+      id_estado: 42,
+    },
+    {
+      id: 4216701,
+      descricao: "SAO JOSE DO CEDRO",
+      id_estado: 42,
+    },
+    {
+      id: 4216800,
+      descricao: "SAO JOSE DO CERRITO",
+      id_estado: 42,
+    },
+    {
+      id: 4216909,
+      descricao: "SAO LOURENCO DO OESTE",
+      id_estado: 42,
+    },
+    {
+      id: 4217006,
+      descricao: "SAO LUDGERO",
+      id_estado: 42,
+    },
+    {
+      id: 4217105,
+      descricao: "SAO MARTINHO",
+      id_estado: 42,
+    },
+    {
+      id: 4217154,
+      descricao: "SAO MIGUEL DA BOA VISTA",
+      id_estado: 42,
+    },
+    {
+      id: 4217204,
+      descricao: "SAO MIGUEL DO OESTE",
+      id_estado: 42,
+    },
+    {
+      id: 4217253,
+      descricao: "SAO PEDRO DE ALCANTARA",
+      id_estado: 42,
+    },
+    {
+      id: 4217303,
+      descricao: "SAUDADES",
+      id_estado: 42,
+    },
+    {
+      id: 4217402,
+      descricao: "SCHROEDER",
+      id_estado: 42,
+    },
+    {
+      id: 4217501,
+      descricao: "SEARA",
+      id_estado: 42,
+    },
+    {
+      id: 4217600,
+      descricao: "SIDEROPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4217709,
+      descricao: "SOMBRIO",
+      id_estado: 42,
+    },
+    {
+      id: 4217550,
+      descricao: "SERRA ALTA",
+      id_estado: 42,
+    },
+    {
+      id: 4217808,
+      descricao: "TAIO",
+      id_estado: 42,
+    },
+    {
+      id: 4217758,
+      descricao: "SUL BRASIL",
+      id_estado: 42,
+    },
+    {
+      id: 4217907,
+      descricao: "TANGARA",
+      id_estado: 42,
+    },
+    {
+      id: 4217956,
+      descricao: "TIGRINHOS",
+      id_estado: 42,
+    },
+    {
+      id: 4218004,
+      descricao: "TIJUCAS",
+      id_estado: 42,
+    },
+    {
+      id: 4218103,
+      descricao: "TIMBE DO SUL",
+      id_estado: 42,
+    },
+    {
+      id: 4218202,
+      descricao: "TIMBO",
+      id_estado: 42,
+    },
+    {
+      id: 4218251,
+      descricao: "TIMBO GRANDE",
+      id_estado: 42,
+    },
+    {
+      id: 4218301,
+      descricao: "TRES BARRAS",
+      id_estado: 42,
+    },
+    {
+      id: 4218400,
+      descricao: "TREZE DE MAIO",
+      id_estado: 42,
+    },
+    {
+      id: 4218350,
+      descricao: "TREVISO",
+      id_estado: 42,
+    },
+    {
+      id: 4218509,
+      descricao: "TREZE TILIAS",
+      id_estado: 42,
+    },
+    {
+      id: 4218608,
+      descricao: "TROMBUDO CENTRAL",
+      id_estado: 42,
+    },
+    {
+      id: 4218707,
+      descricao: "TUBARAO",
+      id_estado: 42,
+    },
+    {
+      id: 4218756,
+      descricao: "TUNAPOLIS",
+      id_estado: 42,
+    },
+    {
+      id: 4218806,
+      descricao: "TURVO",
+      id_estado: 42,
+    },
+    {
+      id: 4218905,
+      descricao: "URUBICI",
+      id_estado: 42,
+    },
+    {
+      id: 4218855,
+      descricao: "UNIAO DO OESTE",
+      id_estado: 42,
+    },
+    {
+      id: 4219002,
+      descricao: "URUSSANGA",
+      id_estado: 42,
+    },
+    {
+      id: 4219101,
+      descricao: "VARGEAO",
+      id_estado: 42,
+    },
+    {
+      id: 4218954,
+      descricao: "URUPEMA",
+      id_estado: 42,
+    },
+    {
+      id: 4219176,
+      descricao: "VARGEM BONITA",
+      id_estado: 42,
+    },
+    {
+      id: 4219150,
+      descricao: "VARGEM",
+      id_estado: 42,
+    },
+    {
+      id: 4219200,
+      descricao: "VIDAL RAMOS",
+      id_estado: 42,
+    },
+    {
+      id: 4219309,
+      descricao: "VIDEIRA",
+      id_estado: 42,
+    },
+    {
+      id: 4219408,
+      descricao: "WITMARSUM",
+      id_estado: 42,
+    },
+    {
+      id: 4219358,
+      descricao: "VITOR MEIRELES",
+      id_estado: 42,
+    },
+    {
+      id: 4219606,
+      descricao: "XAVANTINA",
+      id_estado: 42,
+    },
+    {
+      id: 4219507,
+      descricao: "XANXERE",
+      id_estado: 42,
+    },
+    {
+      id: 4219705,
+      descricao: "XAXIM",
+      id_estado: 42,
+    },
+    {
+      id: 4219853,
+      descricao: "ZORTEA",
+      id_estado: 42,
+    },
+    {
+      id: 2800100,
+      descricao: "AMPARO DE SAO FRANCISCO",
+      id_estado: 28,
+    },
+    {
+      id: 2800209,
+      descricao: "AQUIDABA",
+      id_estado: 28,
+    },
+    {
+      id: 2800308,
+      descricao: "ARACAJU",
+      id_estado: 28,
+    },
+    {
+      id: 2800407,
+      descricao: "ARAUA",
+      id_estado: 28,
+    },
+    {
+      id: 2800506,
+      descricao: "AREIA BRANCA",
+      id_estado: 28,
+    },
+    {
+      id: 2800605,
+      descricao: "BARRA DOS COQUEIROS",
+      id_estado: 28,
+    },
+    {
+      id: 2800670,
+      descricao: "BOQUIM",
+      id_estado: 28,
+    },
+    {
+      id: 2800704,
+      descricao: "BREJO GRANDE",
+      id_estado: 28,
+    },
+    {
+      id: 2801009,
+      descricao: "CAMPO DO BRITO",
+      id_estado: 28,
+    },
+    {
+      id: 2801108,
+      descricao: "CANHOBA",
+      id_estado: 28,
+    },
+    {
+      id: 2801207,
+      descricao: "CANINDE DE SAO FRANCISCO",
+      id_estado: 28,
+    },
+    {
+      id: 2801306,
+      descricao: "CAPELA",
+      id_estado: 28,
+    },
+    {
+      id: 2801405,
+      descricao: "CARIRA",
+      id_estado: 28,
+    },
+    {
+      id: 2801504,
+      descricao: "CARMOPOLIS",
+      id_estado: 28,
+    },
+    {
+      id: 2801603,
+      descricao: "CEDRO DE SAO JOAO",
+      id_estado: 28,
+    },
+    {
+      id: 2801702,
+      descricao: "CRISTINAPOLIS",
+      id_estado: 28,
+    },
+    {
+      id: 2801900,
+      descricao: "CUMBE",
+      id_estado: 28,
+    },
+    {
+      id: 2802007,
+      descricao: "DIVINA PASTORA",
+      id_estado: 28,
+    },
+    {
+      id: 2802106,
+      descricao: "ESTANCIA",
+      id_estado: 28,
+    },
+    {
+      id: 2802205,
+      descricao: "FEIRA NOVA",
+      id_estado: 28,
+    },
+    {
+      id: 2802304,
+      descricao: "FREI PAULO",
+      id_estado: 28,
+    },
+    {
+      id: 2802403,
+      descricao: "GARARU",
+      id_estado: 28,
+    },
+    {
+      id: 2802502,
+      descricao: "GENERAL MAYNARD",
+      id_estado: 28,
+    },
+    {
+      id: 2802601,
+      descricao: "GRACHO CARDOSO",
+      id_estado: 28,
+    },
+    {
+      id: 2802700,
+      descricao: "ILHA DAS FLORES",
+      id_estado: 28,
+    },
+    {
+      id: 2802809,
+      descricao: "INDIAROBA",
+      id_estado: 28,
+    },
+    {
+      id: 2802908,
+      descricao: "ITABAIANA",
+      id_estado: 28,
+    },
+    {
+      id: 2803005,
+      descricao: "ITABAIANINHA",
+      id_estado: 28,
+    },
+    {
+      id: 2803104,
+      descricao: "ITABI",
+      id_estado: 28,
+    },
+    {
+      id: 2803203,
+      descricao: "ITAPORANGA DAJUDA",
+      id_estado: 28,
+    },
+    {
+      id: 2803302,
+      descricao: "JAPARATUBA",
+      id_estado: 28,
+    },
+    {
+      id: 2803401,
+      descricao: "JAPOATA",
+      id_estado: 28,
+    },
+    {
+      id: 2803500,
+      descricao: "LAGARTO",
+      id_estado: 28,
+    },
+    {
+      id: 2803609,
+      descricao: "LARANJEIRAS",
+      id_estado: 28,
+    },
+    {
+      id: 2803708,
+      descricao: "MACAMBIRA",
+      id_estado: 28,
+    },
+    {
+      id: 2803807,
+      descricao: "MALHADA DOS BOIS",
+      id_estado: 28,
+    },
+    {
+      id: 2803906,
+      descricao: "MALHADOR",
+      id_estado: 28,
+    },
+    {
+      id: 2804003,
+      descricao: "MARUIM",
+      id_estado: 28,
+    },
+    {
+      id: 2804102,
+      descricao: "MOITA BONITA",
+      id_estado: 28,
+    },
+    {
+      id: 2804201,
+      descricao: "MONTE ALEGRE DE SERGIPE",
+      id_estado: 28,
+    },
+    {
+      id: 2804300,
+      descricao: "MURIBECA",
+      id_estado: 28,
+    },
+    {
+      id: 2804409,
+      descricao: "NEOPOLIS",
+      id_estado: 28,
+    },
+    {
+      id: 2804458,
+      descricao: "NOSSA SENHORA APARECIDA",
+      id_estado: 28,
+    },
+    {
+      id: 2804508,
+      descricao: "NOSSA SENHORA DA GLORIA",
+      id_estado: 28,
+    },
+    {
+      id: 2804607,
+      descricao: "NOSSA SENHORA DAS DORES",
+      id_estado: 28,
+    },
+    {
+      id: 2804706,
+      descricao: "NOSSA SENHORA DE LOURDES",
+      id_estado: 28,
+    },
+    {
+      id: 2804805,
+      descricao: "NOSSA SENHORA DO SOCORRO",
+      id_estado: 28,
+    },
+    {
+      id: 2804904,
+      descricao: "PACATUBA",
+      id_estado: 28,
+    },
+    {
+      id: 2805000,
+      descricao: "PEDRA MOLE",
+      id_estado: 28,
+    },
+    {
+      id: 2805109,
+      descricao: "PEDRINHAS",
+      id_estado: 28,
+    },
+    {
+      id: 2805208,
+      descricao: "PINHAO",
+      id_estado: 28,
+    },
+    {
+      id: 2805307,
+      descricao: "PIRAMBU",
+      id_estado: 28,
+    },
+    {
+      id: 2805406,
+      descricao: "POCO REDONDO",
+      id_estado: 28,
+    },
+    {
+      id: 2805505,
+      descricao: "POCO VERDE",
+      id_estado: 28,
+    },
+    {
+      id: 2805604,
+      descricao: "PORTO DA FOLHA",
+      id_estado: 28,
+    },
+    {
+      id: 2805703,
+      descricao: "PROPRIA",
+      id_estado: 28,
+    },
+    {
+      id: 2805802,
+      descricao: "RIACHAO DO DANTAS",
+      id_estado: 28,
+    },
+    {
+      id: 2805901,
+      descricao: "RIACHUELO",
+      id_estado: 28,
+    },
+    {
+      id: 2806008,
+      descricao: "RIBEIROPOLIS",
+      id_estado: 28,
+    },
+    {
+      id: 2806107,
+      descricao: "ROSARIO DO CATETE",
+      id_estado: 28,
+    },
+    {
+      id: 2806206,
+      descricao: "SALGADO",
+      id_estado: 28,
+    },
+    {
+      id: 2806305,
+      descricao: "SANTA LUZIA DO ITANHY",
+      id_estado: 28,
+    },
+    {
+      id: 2806404,
+      descricao: "SANTANA DO SAO FRANCISCO",
+      id_estado: 28,
+    },
+    {
+      id: 2806503,
+      descricao: "SANTA ROSA DE LIMA",
+      id_estado: 28,
+    },
+    {
+      id: 2806602,
+      descricao: "SANTO AMARO DAS BROTAS",
+      id_estado: 28,
+    },
+    {
+      id: 2806701,
+      descricao: "SAO CRISTOVAO",
+      id_estado: 28,
+    },
+    {
+      id: 2806800,
+      descricao: "SAO DOMINGOS",
+      id_estado: 28,
+    },
+    {
+      id: 2806909,
+      descricao: "SAO FRANCISCO",
+      id_estado: 28,
+    },
+    {
+      id: 2807006,
+      descricao: "SAO MIGUEL DO ALEIXO",
+      id_estado: 28,
+    },
+    {
+      id: 2807105,
+      descricao: "SIMAO DIAS",
+      id_estado: 28,
+    },
+    {
+      id: 2807204,
+      descricao: "SIRIRI",
+      id_estado: 28,
+    },
+    {
+      id: 2807303,
+      descricao: "TELHA",
+      id_estado: 28,
+    },
+    {
+      id: 2807402,
+      descricao: "TOBIAS BARRETO",
+      id_estado: 28,
+    },
+    {
+      id: 2807501,
+      descricao: "TOMAR DO GERU",
+      id_estado: 28,
+    },
+    {
+      id: 2807600,
+      descricao: "UMBAUBA",
+      id_estado: 28,
+    },
+    {
+      id: 1700251,
+      descricao: "ABREULANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1700301,
+      descricao: "AGUIARNOPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1700350,
+      descricao: "ALIANCA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1700400,
+      descricao: "ALMAS",
+      id_estado: 17,
+    },
+    {
+      id: 1700707,
+      descricao: "ALVORADA",
+      id_estado: 17,
+    },
+    {
+      id: 1701002,
+      descricao: "ANANAS",
+      id_estado: 17,
+    },
+    {
+      id: 1701051,
+      descricao: "ANGICO",
+      id_estado: 17,
+    },
+    {
+      id: 1701101,
+      descricao: "APARECIDA DO RIO NEGRO",
+      id_estado: 17,
+    },
+    {
+      id: 1701309,
+      descricao: "ARAGOMINAS",
+      id_estado: 17,
+    },
+    {
+      id: 1701903,
+      descricao: "ARAGUACEMA",
+      id_estado: 17,
+    },
+    {
+      id: 1702000,
+      descricao: "ARAGUACU",
+      id_estado: 17,
+    },
+    {
+      id: 1702109,
+      descricao: "ARAGUAINA",
+      id_estado: 17,
+    },
+    {
+      id: 1702158,
+      descricao: "ARAGUANA",
+      id_estado: 17,
+    },
+    {
+      id: 1702208,
+      descricao: "ARAGUATINS",
+      id_estado: 17,
+    },
+    {
+      id: 1702307,
+      descricao: "ARAPOEMA",
+      id_estado: 17,
+    },
+    {
+      id: 1702406,
+      descricao: "ARRAIAS",
+      id_estado: 17,
+    },
+    {
+      id: 1702554,
+      descricao: "AUGUSTINOPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1702703,
+      descricao: "AURORA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1702901,
+      descricao: "AXIXA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1703008,
+      descricao: "BABACULANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1703057,
+      descricao: "BANDEIRANTES DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1703073,
+      descricao: "BARRA DO OURO",
+      id_estado: 17,
+    },
+    {
+      id: 1703107,
+      descricao: "BARROLANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1703206,
+      descricao: "BERNARDO SAYAO",
+      id_estado: 17,
+    },
+    {
+      id: 1703305,
+      descricao: "BOM JESUS DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1703602,
+      descricao: "BRASILANDIA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1703701,
+      descricao: "BREJINHO DE NAZARE",
+      id_estado: 17,
+    },
+    {
+      id: 1703800,
+      descricao: "BURITI DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1703826,
+      descricao: "CACHOEIRINHA",
+      id_estado: 17,
+    },
+    {
+      id: 1703842,
+      descricao: "CAMPOS LINDOS",
+      id_estado: 17,
+    },
+    {
+      id: 1703867,
+      descricao: "CARIRI DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1703883,
+      descricao: "CARMOLANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1703891,
+      descricao: "CARRASCO BONITO",
+      id_estado: 17,
+    },
+    {
+      id: 1703909,
+      descricao: "CASEARA",
+      id_estado: 17,
+    },
+    {
+      id: 1704105,
+      descricao: "CENTENARIO",
+      id_estado: 17,
+    },
+    {
+      id: 1704600,
+      descricao: "CHAPADA DE AREIA",
+      id_estado: 17,
+    },
+    {
+      id: 1705102,
+      descricao: "CHAPADA DA NATIVIDADE",
+      id_estado: 17,
+    },
+    {
+      id: 1705508,
+      descricao: "COLINAS DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1705557,
+      descricao: "COMBINADO",
+      id_estado: 17,
+    },
+    {
+      id: 1705607,
+      descricao: "CONCEICAO DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1706001,
+      descricao: "COUTO MAGALHAES",
+      id_estado: 17,
+    },
+    {
+      id: 1706100,
+      descricao: "CRISTALANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1706258,
+      descricao: "CRIXAS DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1706506,
+      descricao: "DARCINOPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1707009,
+      descricao: "DIANOPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1707108,
+      descricao: "DIVINOPOLIS DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1707207,
+      descricao: "DOIS IRMAOS DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1707306,
+      descricao: "DUERE",
+      id_estado: 17,
+    },
+    {
+      id: 1707405,
+      descricao: "ESPERANTINA",
+      id_estado: 17,
+    },
+    {
+      id: 1707553,
+      descricao: "FATIMA",
+      id_estado: 17,
+    },
+    {
+      id: 1707652,
+      descricao: "FIGUEIROPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1707702,
+      descricao: "FILADELFIA",
+      id_estado: 17,
+    },
+    {
+      id: 1708205,
+      descricao: "FORMOSO DO ARAGUAIA",
+      id_estado: 17,
+    },
+    {
+      id: 1708254,
+      descricao: "FORTALEZA DO TABOCAO",
+      id_estado: 17,
+    },
+    {
+      id: 1708304,
+      descricao: "GOIANORTE",
+      id_estado: 17,
+    },
+    {
+      id: 1709005,
+      descricao: "GOIATINS",
+      id_estado: 17,
+    },
+    {
+      id: 1709302,
+      descricao: "GUARAI",
+      id_estado: 17,
+    },
+    {
+      id: 1709500,
+      descricao: "GURUPI",
+      id_estado: 17,
+    },
+    {
+      id: 1709807,
+      descricao: "IPUEIRAS",
+      id_estado: 17,
+    },
+    {
+      id: 1710508,
+      descricao: "ITACAJA",
+      id_estado: 17,
+    },
+    {
+      id: 1710706,
+      descricao: "ITAGUATINS",
+      id_estado: 17,
+    },
+    {
+      id: 1710904,
+      descricao: "ITAPIRATINS",
+      id_estado: 17,
+    },
+    {
+      id: 1711100,
+      descricao: "ITAPORA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1711506,
+      descricao: "JAU DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1711803,
+      descricao: "JUARINA",
+      id_estado: 17,
+    },
+    {
+      id: 1711902,
+      descricao: "LAGOA DA CONFUSAO",
+      id_estado: 17,
+    },
+    {
+      id: 1711951,
+      descricao: "LAGOA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1712009,
+      descricao: "LAJEADO",
+      id_estado: 17,
+    },
+    {
+      id: 1712157,
+      descricao: "LAVANDEIRA",
+      id_estado: 17,
+    },
+    {
+      id: 1712405,
+      descricao: "LIZARDA",
+      id_estado: 17,
+    },
+    {
+      id: 1712454,
+      descricao: "LUZINOPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1712504,
+      descricao: "MARIANOPOLIS DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1712702,
+      descricao: "MATEIROS",
+      id_estado: 17,
+    },
+    {
+      id: 1712801,
+      descricao: "MAURILANDIA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1713205,
+      descricao: "MIRACEMA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1713304,
+      descricao: "MIRANORTE",
+      id_estado: 17,
+    },
+    {
+      id: 1713601,
+      descricao: "MONTE DO CARMO",
+      id_estado: 17,
+    },
+    {
+      id: 1713700,
+      descricao: "MONTE SANTO DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1713809,
+      descricao: "PALMEIRAS DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1713957,
+      descricao: "MURICILANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1714203,
+      descricao: "NATIVIDADE",
+      id_estado: 17,
+    },
+    {
+      id: 1714302,
+      descricao: "NAZARE",
+      id_estado: 17,
+    },
+    {
+      id: 1714880,
+      descricao: "NOVA OLINDA",
+      id_estado: 17,
+    },
+    {
+      id: 1715002,
+      descricao: "NOVA ROSALANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1715101,
+      descricao: "NOVO ACORDO",
+      id_estado: 17,
+    },
+    {
+      id: 1715150,
+      descricao: "NOVO ALEGRE",
+      id_estado: 17,
+    },
+    {
+      id: 1715259,
+      descricao: "NOVO JARDIM",
+      id_estado: 17,
+    },
+    {
+      id: 1715507,
+      descricao: "OLIVEIRA DE FATIMA",
+      id_estado: 17,
+    },
+    {
+      id: 1715705,
+      descricao: "PALMEIRANTE",
+      id_estado: 17,
+    },
+    {
+      id: 1715754,
+      descricao: "PALMEIROPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1716109,
+      descricao: "PARAISO DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1716208,
+      descricao: "PARANA",
+      id_estado: 17,
+    },
+    {
+      id: 1716307,
+      descricao: "PAU DARCO",
+      id_estado: 17,
+    },
+    {
+      id: 1716505,
+      descricao: "PEDRO AFONSO",
+      id_estado: 17,
+    },
+    {
+      id: 1716604,
+      descricao: "PEIXE",
+      id_estado: 17,
+    },
+    {
+      id: 1716653,
+      descricao: "PEQUIZEIRO",
+      id_estado: 17,
+    },
+    {
+      id: 1716703,
+      descricao: "COLMEIA",
+      id_estado: 17,
+    },
+    {
+      id: 1717008,
+      descricao: "PINDORAMA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1717206,
+      descricao: "PIRAQUE",
+      id_estado: 17,
+    },
+    {
+      id: 1717503,
+      descricao: "PIUM",
+      id_estado: 17,
+    },
+    {
+      id: 1717800,
+      descricao: "PONTE ALTA DO BOM JESUS",
+      id_estado: 17,
+    },
+    {
+      id: 1717909,
+      descricao: "PONTE ALTA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1718006,
+      descricao: "PORTO ALEGRE DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1718204,
+      descricao: "PORTO NACIONAL",
+      id_estado: 17,
+    },
+    {
+      id: 1718303,
+      descricao: "PRAIA NORTE",
+      id_estado: 17,
+    },
+    {
+      id: 1718402,
+      descricao: "PRESIDENTE KENNEDY",
+      id_estado: 17,
+    },
+    {
+      id: 1718451,
+      descricao: "PUGMIL",
+      id_estado: 17,
+    },
+    {
+      id: 1718501,
+      descricao: "RECURSOLANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1718550,
+      descricao: "RIACHINHO",
+      id_estado: 17,
+    },
+    {
+      id: 1718659,
+      descricao: "RIO DA CONCEICAO",
+      id_estado: 17,
+    },
+    {
+      id: 1718709,
+      descricao: "RIO DOS BOIS",
+      id_estado: 17,
+    },
+    {
+      id: 1718758,
+      descricao: "RIO SONO",
+      id_estado: 17,
+    },
+    {
+      id: 1718808,
+      descricao: "SAMPAIO",
+      id_estado: 17,
+    },
+    {
+      id: 1718840,
+      descricao: "SANDOLANDIA",
+      id_estado: 17,
+    },
+    {
+      id: 1718865,
+      descricao: "SANTA FE DO ARAGUAIA",
+      id_estado: 17,
+    },
+    {
+      id: 1718881,
+      descricao: "SANTA MARIA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1718899,
+      descricao: "SANTA RITA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1718907,
+      descricao: "SANTA ROSA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1719004,
+      descricao: "SANTA TEREZA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720002,
+      descricao: "SANTA TEREZINHA DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720101,
+      descricao: "SAO BENTO DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720150,
+      descricao: "SAO FELIX DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720200,
+      descricao: "SAO MIGUEL DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720259,
+      descricao: "SAO SALVADOR DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720309,
+      descricao: "SAO SEBASTIAO DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720499,
+      descricao: "SAO VALERIO DA NATIVIDADE",
+      id_estado: 17,
+    },
+    {
+      id: 1720655,
+      descricao: "SILVANOPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1720804,
+      descricao: "SITIO NOVO DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720853,
+      descricao: "SUCUPIRA",
+      id_estado: 17,
+    },
+    {
+      id: 1720903,
+      descricao: "TAGUATINGA",
+      id_estado: 17,
+    },
+    {
+      id: 1720937,
+      descricao: "TAIPAS DO TOCANTINS",
+      id_estado: 17,
+    },
+    {
+      id: 1720978,
+      descricao: "TALISMA",
+      id_estado: 17,
+    },
+    {
+      id: 1721000,
+      descricao: "PALMAS",
+      id_estado: 17,
+    },
+    {
+      id: 1721109,
+      descricao: "TOCANTINIA",
+      id_estado: 17,
+    },
+    {
+      id: 1721208,
+      descricao: "TOCANTINOPOLIS",
+      id_estado: 17,
+    },
+    {
+      id: 1721257,
+      descricao: "TUPIRAMA",
+      id_estado: 17,
+    },
+    {
+      id: 1721307,
+      descricao: "TUPIRATINS",
+      id_estado: 17,
+    },
+    {
+      id: 5300108,
+      descricao: "BRASILIA",
+      id_estado: 53,
+    },
+    {
+      id: 9999999,
+      descricao: "EXTERIOR",
+      id_estado: 99,
+    },
+    {
+      id: 3500105,
+      descricao: "ADAMANTINA",
+      id_estado: 35,
+    },
+    {
+      id: 3500204,
+      descricao: "ADOLFO",
+      id_estado: 35,
+    },
+    {
+      id: 3500303,
+      descricao: "AGUAI",
+      id_estado: 35,
+    },
+    {
+      id: 3500402,
+      descricao: "AGUAS DA PRATA",
+      id_estado: 35,
+    },
+    {
+      id: 3500501,
+      descricao: "AGUAS DE LINDOIA",
+      id_estado: 35,
+    },
+    {
+      id: 3500550,
+      descricao: "AGUAS DE SANTA BARBARA",
+      id_estado: 35,
+    },
+    {
+      id: 3500600,
+      descricao: "AGUAS DE SAO PEDRO",
+      id_estado: 35,
+    },
+    {
+      id: 3500709,
+      descricao: "AGUDOS",
+      id_estado: 35,
+    },
+    {
+      id: 3500758,
+      descricao: "ALAMBARI",
+      id_estado: 35,
+    },
+    {
+      id: 3500808,
+      descricao: "ALFREDO MARCONDES",
+      id_estado: 35,
+    },
+    {
+      id: 3500907,
+      descricao: "ALTAIR",
+      id_estado: 35,
+    },
+    {
+      id: 3501004,
+      descricao: "ALTINOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3501103,
+      descricao: "ALTO ALEGRE",
+      id_estado: 35,
+    },
+    {
+      id: 3501152,
+      descricao: "ALUMINIO",
+      id_estado: 35,
+    },
+    {
+      id: 3501202,
+      descricao: "ALVARES FLORENCE",
+      id_estado: 35,
+    },
+    {
+      id: 3501301,
+      descricao: "ALVARES MACHADO",
+      id_estado: 35,
+    },
+    {
+      id: 3501400,
+      descricao: "ALVARO DE CARVALHO",
+      id_estado: 35,
+    },
+    {
+      id: 3501509,
+      descricao: "ALVINLANDIA",
+      id_estado: 35,
+    },
+    {
+      id: 3501608,
+      descricao: "AMERICANA",
+      id_estado: 35,
+    },
+    {
+      id: 3501707,
+      descricao: "AMERICO BRASILIENSE",
+      id_estado: 35,
+    },
+    {
+      id: 3501806,
+      descricao: "AMERICO DE CAMPOS",
+      id_estado: 35,
+    },
+    {
+      id: 3501905,
+      descricao: "AMPARO",
+      id_estado: 35,
+    },
+    {
+      id: 3502002,
+      descricao: "ANALANDIA",
+      id_estado: 35,
+    },
+    {
+      id: 3502101,
+      descricao: "ANDRADINA",
+      id_estado: 35,
+    },
+    {
+      id: 3502200,
+      descricao: "ANGATUBA",
+      id_estado: 35,
+    },
+    {
+      id: 3502309,
+      descricao: "ANHEMBI",
+      id_estado: 35,
+    },
+    {
+      id: 3502408,
+      descricao: "ANHUMAS",
+      id_estado: 35,
+    },
+    {
+      id: 3502507,
+      descricao: "APARECIDA",
+      id_estado: 35,
+    },
+    {
+      id: 3502606,
+      descricao: "APARECIDA DOESTE",
+      id_estado: 35,
+    },
+    {
+      id: 3502705,
+      descricao: "APIAI",
+      id_estado: 35,
+    },
+    {
+      id: 3502754,
+      descricao: "ARACARIGUAMA",
+      id_estado: 35,
+    },
+    {
+      id: 3502804,
+      descricao: "ARACATUBA",
+      id_estado: 35,
+    },
+    {
+      id: 3502903,
+      descricao: "ARACOIABA DA SERRA",
+      id_estado: 35,
+    },
+    {
+      id: 3503000,
+      descricao: "ARAMINA",
+      id_estado: 35,
+    },
+    {
+      id: 3503109,
+      descricao: "ARANDU",
+      id_estado: 35,
+    },
+    {
+      id: 3503158,
+      descricao: "ARAPEI",
+      id_estado: 35,
+    },
+    {
+      id: 3503208,
+      descricao: "ARARAQUARA",
+      id_estado: 35,
+    },
+    {
+      id: 3503307,
+      descricao: "ARARAS",
+      id_estado: 35,
+    },
+    {
+      id: 3503356,
+      descricao: "ARCOIRIS",
+      id_estado: 35,
+    },
+    {
+      id: 3503406,
+      descricao: "AREALVA",
+      id_estado: 35,
+    },
+    {
+      id: 3503505,
+      descricao: "AREIAS",
+      id_estado: 35,
+    },
+    {
+      id: 3503604,
+      descricao: "AREIOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3503703,
+      descricao: "ARIRANHA",
+      id_estado: 35,
+    },
+    {
+      id: 3503802,
+      descricao: "ARTUR NOGUEIRA",
+      id_estado: 35,
+    },
+    {
+      id: 3503901,
+      descricao: "ARUJA",
+      id_estado: 35,
+    },
+    {
+      id: 3503950,
+      descricao: "ASPASIA",
+      id_estado: 35,
+    },
+    {
+      id: 3504008,
+      descricao: "ASSIS",
+      id_estado: 35,
+    },
+    {
+      id: 3504107,
+      descricao: "ATIBAIA",
+      id_estado: 35,
+    },
+    {
+      id: 3504206,
+      descricao: "AURIFLAMA",
+      id_estado: 35,
+    },
+    {
+      id: 3504305,
+      descricao: "AVAI",
+      id_estado: 35,
+    },
+    {
+      id: 3504404,
+      descricao: "AVANHANDAVA",
+      id_estado: 35,
+    },
+    {
+      id: 3504503,
+      descricao: "AVARE",
+      id_estado: 35,
+    },
+    {
+      id: 3504602,
+      descricao: "BADY BASSITT",
+      id_estado: 35,
+    },
+    {
+      id: 3504701,
+      descricao: "BALBINOS",
+      id_estado: 35,
+    },
+    {
+      id: 3504800,
+      descricao: "BALSAMO",
+      id_estado: 35,
+    },
+    {
+      id: 3504909,
+      descricao: "BANANAL",
+      id_estado: 35,
+    },
+    {
+      id: 3505005,
+      descricao: "BARAO DE ANTONINA",
+      id_estado: 35,
+    },
+    {
+      id: 3505104,
+      descricao: "BARBOSA",
+      id_estado: 35,
+    },
+    {
+      id: 3505203,
+      descricao: "BARIRI",
+      id_estado: 35,
+    },
+    {
+      id: 3505302,
+      descricao: "BARRA BONITA",
+      id_estado: 35,
+    },
+    {
+      id: 3505351,
+      descricao: "BARRA DO CHAPEU",
+      id_estado: 35,
+    },
+    {
+      id: 3505401,
+      descricao: "BARRA DO TURVO",
+      id_estado: 35,
+    },
+    {
+      id: 3505500,
+      descricao: "BARRETOS",
+      id_estado: 35,
+    },
+    {
+      id: 3505609,
+      descricao: "BARRINHA",
+      id_estado: 35,
+    },
+    {
+      id: 3505708,
+      descricao: "BARUERI",
+      id_estado: 35,
+    },
+    {
+      id: 3505807,
+      descricao: "BASTOS",
+      id_estado: 35,
+    },
+    {
+      id: 3505906,
+      descricao: "BATATAIS",
+      id_estado: 35,
+    },
+    {
+      id: 3506003,
+      descricao: "BAURU",
+      id_estado: 35,
+    },
+    {
+      id: 3506102,
+      descricao: "BEBEDOURO",
+      id_estado: 35,
+    },
+    {
+      id: 3506201,
+      descricao: "BENTO DE ABREU",
+      id_estado: 35,
+    },
+    {
+      id: 3506300,
+      descricao: "BERNARDINO DE CAMPOS",
+      id_estado: 35,
+    },
+    {
+      id: 3506359,
+      descricao: "BERTIOGA",
+      id_estado: 35,
+    },
+    {
+      id: 3506409,
+      descricao: "BILAC",
+      id_estado: 35,
+    },
+    {
+      id: 3506508,
+      descricao: "BIRIGUI",
+      id_estado: 35,
+    },
+    {
+      id: 3506607,
+      descricao: "BIRITIBAMIRIM",
+      id_estado: 35,
+    },
+    {
+      id: 3506706,
+      descricao: "BOA ESPERANCA DO SUL",
+      id_estado: 35,
+    },
+    {
+      id: 3506805,
+      descricao: "BOCAINA",
+      id_estado: 35,
+    },
+    {
+      id: 3506904,
+      descricao: "BOFETE",
+      id_estado: 35,
+    },
+    {
+      id: 3507001,
+      descricao: "BOITUVA",
+      id_estado: 35,
+    },
+    {
+      id: 3507100,
+      descricao: "BOM JESUS DOS PERDOES",
+      id_estado: 35,
+    },
+    {
+      id: 3507159,
+      descricao: "BOM SUCESSO DE ITARARE",
+      id_estado: 35,
+    },
+    {
+      id: 3507209,
+      descricao: "BORA",
+      id_estado: 35,
+    },
+    {
+      id: 3507308,
+      descricao: "BORACEIA",
+      id_estado: 35,
+    },
+    {
+      id: 3507407,
+      descricao: "BORBOREMA",
+      id_estado: 35,
+    },
+    {
+      id: 3507456,
+      descricao: "BOREBI",
+      id_estado: 35,
+    },
+    {
+      id: 3507506,
+      descricao: "BOTUCATU",
+      id_estado: 35,
+    },
+    {
+      id: 3507605,
+      descricao: "BRAGANCA PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3507704,
+      descricao: "BRAUNA",
+      id_estado: 35,
+    },
+    {
+      id: 3507753,
+      descricao: "BREJO ALEGRE",
+      id_estado: 35,
+    },
+    {
+      id: 3507803,
+      descricao: "BRODOWSKI",
+      id_estado: 35,
+    },
+    {
+      id: 3507902,
+      descricao: "BROTAS",
+      id_estado: 35,
+    },
+    {
+      id: 3508009,
+      descricao: "BURI",
+      id_estado: 35,
+    },
+    {
+      id: 3508108,
+      descricao: "BURITAMA",
+      id_estado: 35,
+    },
+    {
+      id: 3508207,
+      descricao: "BURITIZAL",
+      id_estado: 35,
+    },
+    {
+      id: 3508306,
+      descricao: "CABRALIA PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3508405,
+      descricao: "CABREUVA",
+      id_estado: 35,
+    },
+    {
+      id: 3508504,
+      descricao: "CACAPAVA",
+      id_estado: 35,
+    },
+    {
+      id: 3508603,
+      descricao: "CACHOEIRA PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3508702,
+      descricao: "CACONDE",
+      id_estado: 35,
+    },
+    {
+      id: 3508801,
+      descricao: "CAFELANDIA",
+      id_estado: 35,
+    },
+    {
+      id: 3508900,
+      descricao: "CAIABU",
+      id_estado: 35,
+    },
+    {
+      id: 3509007,
+      descricao: "CAIEIRAS",
+      id_estado: 35,
+    },
+    {
+      id: 3509106,
+      descricao: "CAIUA",
+      id_estado: 35,
+    },
+    {
+      id: 3509205,
+      descricao: "CAJAMAR",
+      id_estado: 35,
+    },
+    {
+      id: 3509254,
+      descricao: "CAJATI",
+      id_estado: 35,
+    },
+    {
+      id: 3509304,
+      descricao: "CAJOBI",
+      id_estado: 35,
+    },
+    {
+      id: 3509403,
+      descricao: "CAJURU",
+      id_estado: 35,
+    },
+    {
+      id: 3509452,
+      descricao: "CAMPINA DO MONTE ALEGRE",
+      id_estado: 35,
+    },
+    {
+      id: 3509502,
+      descricao: "CAMPINAS",
+      id_estado: 35,
+    },
+    {
+      id: 3509601,
+      descricao: "CAMPO LIMPO PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3509700,
+      descricao: "CAMPOS DO JORDAO",
+      id_estado: 35,
+    },
+    {
+      id: 3509809,
+      descricao: "CAMPOS NOVOS PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3509908,
+      descricao: "CANANEIA",
+      id_estado: 35,
+    },
+    {
+      id: 3509957,
+      descricao: "CANAS",
+      id_estado: 35,
+    },
+    {
+      id: 3510005,
+      descricao: "CANDIDO MOTA",
+      id_estado: 35,
+    },
+    {
+      id: 3510104,
+      descricao: "CANDIDO RODRIGUES",
+      id_estado: 35,
+    },
+    {
+      id: 3510153,
+      descricao: "CANITAR",
+      id_estado: 35,
+    },
+    {
+      id: 3510203,
+      descricao: "CAPAO BONITO",
+      id_estado: 35,
+    },
+    {
+      id: 3510302,
+      descricao: "CAPELA DO ALTO",
+      id_estado: 35,
+    },
+    {
+      id: 3510401,
+      descricao: "CAPIVARI",
+      id_estado: 35,
+    },
+    {
+      id: 3510500,
+      descricao: "CARAGUATATUBA",
+      id_estado: 35,
+    },
+    {
+      id: 3510609,
+      descricao: "CARAPICUIBA",
+      id_estado: 35,
+    },
+    {
+      id: 3510708,
+      descricao: "CARDOSO",
+      id_estado: 35,
+    },
+    {
+      id: 3510807,
+      descricao: "CASA BRANCA",
+      id_estado: 35,
+    },
+    {
+      id: 3510906,
+      descricao: "CASSIA DOS COQUEIROS",
+      id_estado: 35,
+    },
+    {
+      id: 3511003,
+      descricao: "CASTILHO",
+      id_estado: 35,
+    },
+    {
+      id: 3511102,
+      descricao: "CATANDUVA",
+      id_estado: 35,
+    },
+    {
+      id: 3511201,
+      descricao: "CATIGUA",
+      id_estado: 35,
+    },
+    {
+      id: 3511300,
+      descricao: "CEDRAL",
+      id_estado: 35,
+    },
+    {
+      id: 3511409,
+      descricao: "CERQUEIRA CESAR",
+      id_estado: 35,
+    },
+    {
+      id: 3511508,
+      descricao: "CERQUILHO",
+      id_estado: 35,
+    },
+    {
+      id: 3511607,
+      descricao: "CESARIO LANGE",
+      id_estado: 35,
+    },
+    {
+      id: 3511706,
+      descricao: "CHARQUEADA",
+      id_estado: 35,
+    },
+    {
+      id: 3557204,
+      descricao: "CHAVANTES",
+      id_estado: 35,
+    },
+    {
+      id: 3511904,
+      descricao: "CLEMENTINA",
+      id_estado: 35,
+    },
+    {
+      id: 3512001,
+      descricao: "COLINA",
+      id_estado: 35,
+    },
+    {
+      id: 3512100,
+      descricao: "COLOMBIA",
+      id_estado: 35,
+    },
+    {
+      id: 3512209,
+      descricao: "CONCHAL",
+      id_estado: 35,
+    },
+    {
+      id: 3512308,
+      descricao: "CONCHAS",
+      id_estado: 35,
+    },
+    {
+      id: 3512407,
+      descricao: "CORDEIROPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3512506,
+      descricao: "COROADOS",
+      id_estado: 35,
+    },
+    {
+      id: 3512605,
+      descricao: "CORONEL MACEDO",
+      id_estado: 35,
+    },
+    {
+      id: 3512704,
+      descricao: "CORUMBATAI",
+      id_estado: 35,
+    },
+    {
+      id: 3512803,
+      descricao: "COSMOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3512902,
+      descricao: "COSMORAMA",
+      id_estado: 35,
+    },
+    {
+      id: 3513009,
+      descricao: "COTIA",
+      id_estado: 35,
+    },
+    {
+      id: 3513108,
+      descricao: "CRAVINHOS",
+      id_estado: 35,
+    },
+    {
+      id: 3513207,
+      descricao: "CRISTAIS PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3513306,
+      descricao: "CRUZALIA",
+      id_estado: 35,
+    },
+    {
+      id: 3513405,
+      descricao: "CRUZEIRO",
+      id_estado: 35,
+    },
+    {
+      id: 3513504,
+      descricao: "CUBATAO",
+      id_estado: 35,
+    },
+    {
+      id: 3513603,
+      descricao: "CUNHA",
+      id_estado: 35,
+    },
+    {
+      id: 3513702,
+      descricao: "DESCALVADO",
+      id_estado: 35,
+    },
+    {
+      id: 3513801,
+      descricao: "DIADEMA",
+      id_estado: 35,
+    },
+    {
+      id: 3513850,
+      descricao: "DIRCE REIS",
+      id_estado: 35,
+    },
+    {
+      id: 3513900,
+      descricao: "DIVINOLANDIA",
+      id_estado: 35,
+    },
+    {
+      id: 3514007,
+      descricao: "DOBRADA",
+      id_estado: 35,
+    },
+    {
+      id: 3514106,
+      descricao: "DOIS CORREGOS",
+      id_estado: 35,
+    },
+    {
+      id: 3514205,
+      descricao: "DOLCINOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3514304,
+      descricao: "DOURADO",
+      id_estado: 35,
+    },
+    {
+      id: 3514403,
+      descricao: "DRACENA",
+      id_estado: 35,
+    },
+    {
+      id: 3514502,
+      descricao: "DUARTINA",
+      id_estado: 35,
+    },
+    {
+      id: 3514601,
+      descricao: "DUMONT",
+      id_estado: 35,
+    },
+    {
+      id: 3514700,
+      descricao: "ECHAPORA",
+      id_estado: 35,
+    },
+    {
+      id: 3514809,
+      descricao: "ELDORADO",
+      id_estado: 35,
+    },
+    {
+      id: 3514908,
+      descricao: "ELIAS FAUSTO",
+      id_estado: 35,
+    },
+    {
+      id: 3514924,
+      descricao: "ELISIARIO",
+      id_estado: 35,
+    },
+    {
+      id: 3514957,
+      descricao: "EMBAUBA",
+      id_estado: 35,
+    },
+    {
+      id: 3515004,
+      descricao: "EMBU",
+      id_estado: 35,
+    },
+    {
+      id: 3515103,
+      descricao: "EMBUGUACU",
+      id_estado: 35,
+    },
+    {
+      id: 3515129,
+      descricao: "EMILIANOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3515152,
+      descricao: "ENGENHEIRO COELHO",
+      id_estado: 35,
+    },
+    {
+      id: 3515186,
+      descricao: "ESPIRITO SANTO DO PINHAL",
+      id_estado: 35,
+    },
+    {
+      id: 3515194,
+      descricao: "ESPIRITO SANTO DO TURVO",
+      id_estado: 35,
+    },
+    {
+      id: 3557303,
+      descricao: "ESTIVA GERBI",
+      id_estado: 35,
+    },
+    {
+      id: 3515301,
+      descricao: "ESTRELA DO NORTE",
+      id_estado: 35,
+    },
+    {
+      id: 3515202,
+      descricao: "ESTRELA DOESTE",
+      id_estado: 35,
+    },
+    {
+      id: 3515350,
+      descricao: "EUCLIDES DA CUNHA PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3515400,
+      descricao: "FARTURA",
+      id_estado: 35,
+    },
+    {
+      id: 3515608,
+      descricao: "FERNANDO PRESTES",
+      id_estado: 35,
+    },
+    {
+      id: 3515509,
+      descricao: "FERNANDOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3515657,
+      descricao: "FERNAO",
+      id_estado: 35,
+    },
+    {
+      id: 3515707,
+      descricao: "FERRAZ DE VASCONCELOS",
+      id_estado: 35,
+    },
+    {
+      id: 3515806,
+      descricao: "FLORA RICA",
+      id_estado: 35,
+    },
+    {
+      id: 3515905,
+      descricao: "FLOREAL",
+      id_estado: 35,
+    },
+    {
+      id: 3516002,
+      descricao: "FLORIDA PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3516101,
+      descricao: "FLORINIA",
+      id_estado: 35,
+    },
+    {
+      id: 3516200,
+      descricao: "FRANCA",
+      id_estado: 35,
+    },
+    {
+      id: 3516309,
+      descricao: "FRANCISCO MORATO",
+      id_estado: 35,
+    },
+    {
+      id: 3516408,
+      descricao: "FRANCO DA ROCHA",
+      id_estado: 35,
+    },
+    {
+      id: 3516507,
+      descricao: "GABRIEL MONTEIRO",
+      id_estado: 35,
+    },
+    {
+      id: 3516606,
+      descricao: "GALIA",
+      id_estado: 35,
+    },
+    {
+      id: 3516705,
+      descricao: "GARCA",
+      id_estado: 35,
+    },
+    {
+      id: 3516804,
+      descricao: "GASTAO VIDIGAL",
+      id_estado: 35,
+    },
+    {
+      id: 3516853,
+      descricao: "GAVIAO PEIXOTO",
+      id_estado: 35,
+    },
+    {
+      id: 3516903,
+      descricao: "GENERAL SALGADO",
+      id_estado: 35,
+    },
+    {
+      id: 3517000,
+      descricao: "GETULINA",
+      id_estado: 35,
+    },
+    {
+      id: 3517109,
+      descricao: "GLICERIO",
+      id_estado: 35,
+    },
+    {
+      id: 3517208,
+      descricao: "GUAICARA",
+      id_estado: 35,
+    },
+    {
+      id: 3517307,
+      descricao: "GUAIMBE",
+      id_estado: 35,
+    },
+    {
+      id: 3517406,
+      descricao: "GUAIRA",
+      id_estado: 35,
+    },
+    {
+      id: 3517505,
+      descricao: "GUAPIACU",
+      id_estado: 35,
+    },
+    {
+      id: 3517604,
+      descricao: "GUAPIARA",
+      id_estado: 35,
+    },
+    {
+      id: 3517703,
+      descricao: "GUARA",
+      id_estado: 35,
+    },
+    {
+      id: 3517802,
+      descricao: "GUARACAI",
+      id_estado: 35,
+    },
+    {
+      id: 3517901,
+      descricao: "GUARACI",
+      id_estado: 35,
+    },
+    {
+      id: 3518008,
+      descricao: "GUARANI DOESTE",
+      id_estado: 35,
+    },
+    {
+      id: 3518107,
+      descricao: "GUARANTA",
+      id_estado: 35,
+    },
+    {
+      id: 3518206,
+      descricao: "GUARARAPES",
+      id_estado: 35,
+    },
+    {
+      id: 3518305,
+      descricao: "GUARAREMA",
+      id_estado: 35,
+    },
+    {
+      id: 3518404,
+      descricao: "GUARATINGUETA",
+      id_estado: 35,
+    },
+    {
+      id: 3518503,
+      descricao: "GUAREI",
+      id_estado: 35,
+    },
+    {
+      id: 3518602,
+      descricao: "GUARIBA",
+      id_estado: 35,
+    },
+    {
+      id: 3518701,
+      descricao: "GUARUJA",
+      id_estado: 35,
+    },
+    {
+      id: 3518800,
+      descricao: "GUARULHOS",
+      id_estado: 35,
+    },
+    {
+      id: 3518859,
+      descricao: "GUATAPARA",
+      id_estado: 35,
+    },
+    {
+      id: 3518909,
+      descricao: "GUZOLANDIA",
+      id_estado: 35,
+    },
+    {
+      id: 3519006,
+      descricao: "HERCULANDIA",
+      id_estado: 35,
+    },
+    {
+      id: 3519055,
+      descricao: "HOLAMBRA",
+      id_estado: 35,
+    },
+    {
+      id: 3519071,
+      descricao: "HORTOLANDIA",
+      id_estado: 35,
+    },
+    {
+      id: 3519105,
+      descricao: "IACANGA",
+      id_estado: 35,
+    },
+    {
+      id: 3519204,
+      descricao: "IACRI",
+      id_estado: 35,
+    },
+    {
+      id: 3519253,
+      descricao: "IARAS",
+      id_estado: 35,
+    },
+    {
+      id: 3519303,
+      descricao: "IBATE",
+      id_estado: 35,
+    },
+    {
+      id: 3519402,
+      descricao: "IBIRA",
+      id_estado: 35,
+    },
+    {
+      id: 3519501,
+      descricao: "IBIRAREMA",
+      id_estado: 35,
+    },
+    {
+      id: 3519600,
+      descricao: "IBITINGA",
+      id_estado: 35,
+    },
+    {
+      id: 3519709,
+      descricao: "IBIUNA",
+      id_estado: 35,
+    },
+    {
+      id: 3519808,
+      descricao: "ICEM",
+      id_estado: 35,
+    },
+    {
+      id: 3519907,
+      descricao: "IEPE",
+      id_estado: 35,
+    },
+    {
+      id: 3520004,
+      descricao: "IGARACU DO TIETE",
+      id_estado: 35,
+    },
+    {
+      id: 3520103,
+      descricao: "IGARAPAVA",
+      id_estado: 35,
+    },
+    {
+      id: 3520202,
+      descricao: "IGARATA",
+      id_estado: 35,
+    },
+    {
+      id: 3520301,
+      descricao: "IGUAPE",
+      id_estado: 35,
+    },
+    {
+      id: 3520426,
+      descricao: "ILHA COMPRIDA",
+      id_estado: 35,
+    },
+    {
+      id: 3520442,
+      descricao: "ILHA SOLTEIRA",
+      id_estado: 35,
+    },
+    {
+      id: 3520400,
+      descricao: "ILHABELA",
+      id_estado: 35,
+    },
+    {
+      id: 3520509,
+      descricao: "INDAIATUBA",
+      id_estado: 35,
+    },
+    {
+      id: 3520608,
+      descricao: "INDIANA",
+      id_estado: 35,
+    },
+    {
+      id: 3520707,
+      descricao: "INDIAPORA",
+      id_estado: 35,
+    },
+    {
+      id: 3520806,
+      descricao: "INUBIA PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3520905,
+      descricao: "IPAUSSU",
+      id_estado: 35,
+    },
+    {
+      id: 3521002,
+      descricao: "IPERO",
+      id_estado: 35,
+    },
+    {
+      id: 3521101,
+      descricao: "IPEUNA",
+      id_estado: 35,
+    },
+    {
+      id: 3521150,
+      descricao: "IPIGUA",
+      id_estado: 35,
+    },
+    {
+      id: 3521200,
+      descricao: "IPORANGA",
+      id_estado: 35,
+    },
+    {
+      id: 3521309,
+      descricao: "IPUA",
+      id_estado: 35,
+    },
+    {
+      id: 3521408,
+      descricao: "IRACEMAPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3521507,
+      descricao: "IRAPUA",
+      id_estado: 35,
+    },
+    {
+      id: 3521606,
+      descricao: "IRAPURU",
+      id_estado: 35,
+    },
+    {
+      id: 3521705,
+      descricao: "ITABERA",
+      id_estado: 35,
+    },
+    {
+      id: 3521804,
+      descricao: "ITAI",
+      id_estado: 35,
+    },
+    {
+      id: 3521903,
+      descricao: "ITAJOBI",
+      id_estado: 35,
+    },
+    {
+      id: 3522000,
+      descricao: "ITAJU",
+      id_estado: 35,
+    },
+    {
+      id: 3522109,
+      descricao: "ITANHAEM",
+      id_estado: 35,
+    },
+    {
+      id: 3522158,
+      descricao: "ITAOCA",
+      id_estado: 35,
+    },
+    {
+      id: 3522208,
+      descricao: "ITAPECERICA DA SERRA",
+      id_estado: 35,
+    },
+    {
+      id: 3522307,
+      descricao: "ITAPETININGA",
+      id_estado: 35,
+    },
+    {
+      id: 3522406,
+      descricao: "ITAPEVA",
+      id_estado: 35,
+    },
+    {
+      id: 3522505,
+      descricao: "ITAPEVI",
+      id_estado: 35,
+    },
+    {
+      id: 3522604,
+      descricao: "ITAPIRA",
+      id_estado: 35,
+    },
+    {
+      id: 3522653,
+      descricao: "ITAPIRAPUA PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3522703,
+      descricao: "ITAPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3522802,
+      descricao: "ITAPORANGA",
+      id_estado: 35,
+    },
+    {
+      id: 3522901,
+      descricao: "ITAPUI",
+      id_estado: 35,
+    },
+    {
+      id: 3523008,
+      descricao: "ITAPURA",
+      id_estado: 35,
+    },
+    {
+      id: 3523107,
+      descricao: "ITAQUAQUECETUBA",
+      id_estado: 35,
+    },
+    {
+      id: 3523206,
+      descricao: "ITARARE",
+      id_estado: 35,
+    },
+    {
+      id: 3523305,
+      descricao: "ITARIRI",
+      id_estado: 35,
+    },
+    {
+      id: 3523404,
+      descricao: "ITATIBA",
+      id_estado: 35,
+    },
+    {
+      id: 3523503,
+      descricao: "ITATINGA",
+      id_estado: 35,
+    },
+    {
+      id: 3523602,
+      descricao: "ITIRAPINA",
+      id_estado: 35,
+    },
+    {
+      id: 3523701,
+      descricao: "ITIRAPUA",
+      id_estado: 35,
+    },
+    {
+      id: 3523800,
+      descricao: "ITOBI",
+      id_estado: 35,
+    },
+    {
+      id: 3523909,
+      descricao: "ITU",
+      id_estado: 35,
+    },
+    {
+      id: 3524006,
+      descricao: "ITUPEVA",
+      id_estado: 35,
+    },
+    {
+      id: 3524105,
+      descricao: "ITUVERAVA",
+      id_estado: 35,
+    },
+    {
+      id: 3524204,
+      descricao: "JABORANDI",
+      id_estado: 35,
+    },
+    {
+      id: 3524303,
+      descricao: "JABOTICABAL",
+      id_estado: 35,
+    },
+    {
+      id: 3524402,
+      descricao: "JACAREI",
+      id_estado: 35,
+    },
+    {
+      id: 3524501,
+      descricao: "JACI",
+      id_estado: 35,
+    },
+    {
+      id: 3524600,
+      descricao: "JACUPIRANGA",
+      id_estado: 35,
+    },
+    {
+      id: 3524709,
+      descricao: "JAGUARIUNA",
+      id_estado: 35,
+    },
+    {
+      id: 3524808,
+      descricao: "JALES",
+      id_estado: 35,
+    },
+    {
+      id: 3524907,
+      descricao: "JAMBEIRO",
+      id_estado: 35,
+    },
+    {
+      id: 3525003,
+      descricao: "JANDIRA",
+      id_estado: 35,
+    },
+    {
+      id: 3525102,
+      descricao: "JARDINOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3525201,
+      descricao: "JARINU",
+      id_estado: 35,
+    },
+    {
+      id: 3525300,
+      descricao: "JAU",
+      id_estado: 35,
+    },
+    {
+      id: 3525409,
+      descricao: "JERIQUARA",
+      id_estado: 35,
+    },
+    {
+      id: 3525508,
+      descricao: "JOANOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3525607,
+      descricao: "JOAO RAMALHO",
+      id_estado: 35,
+    },
+    {
+      id: 3525706,
+      descricao: "JOSE BONIFACIO",
+      id_estado: 35,
+    },
+    {
+      id: 3525805,
+      descricao: "JULIO MESQUITA",
+      id_estado: 35,
+    },
+    {
+      id: 3525854,
+      descricao: "JUMIRIM",
+      id_estado: 35,
+    },
+    {
+      id: 3525904,
+      descricao: "JUNDIAI",
+      id_estado: 35,
+    },
+    {
+      id: 3526001,
+      descricao: "JUNQUEIROPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3526100,
+      descricao: "JUQUIA",
+      id_estado: 35,
+    },
+    {
+      id: 3526209,
+      descricao: "JUQUITIBA",
+      id_estado: 35,
+    },
+    {
+      id: 3526308,
+      descricao: "LAGOINHA",
+      id_estado: 35,
+    },
+    {
+      id: 3526407,
+      descricao: "LARANJAL PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3526506,
+      descricao: "LAVINIA",
+      id_estado: 35,
+    },
+    {
+      id: 3526605,
+      descricao: "LAVRINHAS",
+      id_estado: 35,
+    },
+    {
+      id: 3526704,
+      descricao: "LEME",
+      id_estado: 35,
+    },
+    {
+      id: 3526803,
+      descricao: "LENCOIS PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3526902,
+      descricao: "LIMEIRA",
+      id_estado: 35,
+    },
+    {
+      id: 3527009,
+      descricao: "LINDOIA",
+      id_estado: 35,
+    },
+    {
+      id: 3527108,
+      descricao: "LINS",
+      id_estado: 35,
+    },
+    {
+      id: 3527207,
+      descricao: "LORENA",
+      id_estado: 35,
+    },
+    {
+      id: 3527256,
+      descricao: "LOURDES",
+      id_estado: 35,
+    },
+    {
+      id: 3527306,
+      descricao: "LOUVEIRA",
+      id_estado: 35,
+    },
+    {
+      id: 3527405,
+      descricao: "LUCELIA",
+      id_estado: 35,
+    },
+    {
+      id: 3527504,
+      descricao: "LUCIANOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3527603,
+      descricao: "LUIS ANTONIO",
+      id_estado: 35,
+    },
+    {
+      id: 3527702,
+      descricao: "LUIZIANIA",
+      id_estado: 35,
+    },
+    {
+      id: 3527801,
+      descricao: "LUPERCIO",
+      id_estado: 35,
+    },
+    {
+      id: 3527900,
+      descricao: "LUTECIA",
+      id_estado: 35,
+    },
+    {
+      id: 3528007,
+      descricao: "MACATUBA",
+      id_estado: 35,
+    },
+    {
+      id: 3528106,
+      descricao: "MACAUBAL",
+      id_estado: 35,
+    },
+    {
+      id: 3528205,
+      descricao: "MACEDONIA",
+      id_estado: 35,
+    },
+    {
+      id: 3528304,
+      descricao: "MAGDA",
+      id_estado: 35,
+    },
+    {
+      id: 3528403,
+      descricao: "MAIRINQUE",
+      id_estado: 35,
+    },
+    {
+      id: 3528502,
+      descricao: "MAIRIPORA",
+      id_estado: 35,
+    },
+    {
+      id: 3528601,
+      descricao: "MANDURI",
+      id_estado: 35,
+    },
+    {
+      id: 3528700,
+      descricao: "MARABA PAULISTA",
+      id_estado: 35,
+    },
+    {
+      id: 3528809,
+      descricao: "MARACAI",
+      id_estado: 35,
+    },
+    {
+      id: 3528858,
+      descricao: "MARAPOAMA",
+      id_estado: 35,
+    },
+    {
+      id: 3528908,
+      descricao: "MARIAPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3529005,
+      descricao: "MARILIA",
+      id_estado: 35,
+    },
+    {
+      id: 3529104,
+      descricao: "MARINOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3529203,
+      descricao: "MARTINOPOLIS",
+      id_estado: 35,
+    },
+    {
+      id: 3529302,
+      descricao: "MATAO",
+      id_estado: 35,
+    },
+    {
+      id: 3529401,
+      descricao: "MAUA",
+      id_estado: 35,
+    },
   ]);
+  if (debug) {
+    // console.log(del.toString());
+    console.log(insert.toString());
+    console.log("Municipios inseridos com sucesso - modo debug");
+  } else {
+    // await del;
+    await insert;
+    console.log("Municipios inseridos com sucesso");
+  }
 };
